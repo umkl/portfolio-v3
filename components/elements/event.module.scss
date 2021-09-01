@@ -1,0 +1,70 @@
+@use './../../styles/abstracts/index' as i;
+@use './../../styles/utils.module.scss' as u;
+
+.eventContainer {
+  position: relative;
+  width: 1000px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 20px 0;
+  @include i.media("<=desktop") {
+    width: 90%;
+  }
+  @include i.media("<=tablet") {
+    width: 500px;
+  }
+  @include i.media("<=phone") {
+    width: 100%;
+  }
+
+  .eventContent {
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    @include i.media("<=phone") {
+      display: flex;
+      flex-direction: column;
+    }
+    .textpart {
+      width: 70%;
+      margin: 20px;
+      .title {
+        color: white;
+        margin: 0;
+        font-size: 40px;
+        font-weight: i.$main_font_weight_700;
+        @include i.media("<=tablet") {
+          font-size: 30px;
+          line-height: 30px;
+        }
+      }
+      .contentHTML {
+        color: white;
+        font-size: 20px;
+        font-weight: i.$main_font_weight_400;
+        @include i.media("<=tablet") {
+          font-size: 15px;
+          line-height: 20px;
+        }
+        p {
+          margin: 0;
+        }
+      }
+    }
+    .imagePart {
+      position: relative;
+      width: 30%;
+      margin: 40px;
+
+      @include i.media("<=tablet") {
+        display: none;
+        margin: 30px;
+      }
+      @include i.media("<=phone") {
+        display: block;
+        margin: 30px;
+      }
+    }
+  }
+}

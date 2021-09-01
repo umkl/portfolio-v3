@@ -1,0 +1,136 @@
+@use './abstracts/index' as i;
+
+:export {
+  small_phone: map-get(i.$breakpoints, "small_phone");
+  phone: map-get(i.$breakpoints, "phone");
+  large_phone: map-get(i.$breakpoints, "large_phone");
+  tablet: map-get(i.$breakpoints, "tablet");
+  large_tablet: map-get(i.$breakpoints, "large_tablet");
+  desktop: map-get(i.$breakpoints, "desktop");
+  large_desktop: map-get(i.$breakpoints, "large_desktop");
+  hSmall: map-get(i.$breakpoints, "hSmall");
+  hMedium: map-get(i.$breakpoints, "hMedium");
+  hLarge: map-get(i.$breakpoints, "hLarge");
+  pr_color: i.$pr_color;
+  drk_color: i.$drk_color;
+  se_blue: i.$se_blue;
+  se_blue_light: i.$se_blue_light;
+  gray: i.$gray;
+  gray_text: i.$gray_text;
+}
+
+.headingLg {
+  font-size: 2.7em;
+  font-weight: i.$main_font_weight_800;
+  margin-bottom: 0;
+  word-wrap: break-word;
+  @include i.media("<=phone") {
+    font-size: 1.7em;
+  }
+}
+
+.headingMd {
+  font-size: 2.2em;
+  font-weight: i.$main_font_weight_800;
+  margin-bottom: 0;
+}
+
+.headingMdFd {
+  margin: 0;
+  font-size: 1.6em;
+  font-weight: i.$main_font_weight_700;
+  color: i.$gray_text;
+  @include i.media("<=phone") {
+    font-size: 1.2em;
+  }
+}
+
+.headingSlFd {
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: i.$main_font_weight_700;
+  color: i.$gray_text;
+}
+
+.textMd {
+  font-weight: i.$main_font_weight_400;
+  font-size: 20px;
+  color: i.$gray_text;
+  @include i.media("<=phone") {
+    font-size: 15px;
+  }
+}
+
+.textLg {
+  font-weight: i.$main_font_weight_500;
+  color: i.$gray_text;
+  font-size: 25px;
+  @include i.media("<=phone") {
+    font-size: 20px;
+  }
+}
+
+.textLgBl {
+  font-weight: i.$main_font_weight_500;
+  color: i.$gray_text;
+  font-size: 25px;
+  color: black;
+  @include i.media("<=phone") {
+    font-size: 20px;
+  }
+}
+
+.heading_home_1 {
+  font-size: 3rem;
+  line-height: 60px;
+  margin: 0;
+  color: black;
+  font-family: i.$main_font;
+  @include i.media("<=desktop") {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  @include i.media("<=tablet") {
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+    width: 350px;
+  }
+  @include i.media("<=phone") {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+  }
+  @include i.media("height<hSmall", "portrait") {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.text_home_1 {
+  font-size: 25px;
+  line-height: 30px;
+  font-family: i.$main_font;
+  @include i.media("<=desktop") {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+  }
+  @include i.media("<=tablet") {
+    max-width: 60%;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 10px 0;
+  }
+  @include i.media("<=phone") {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  @include i.media("height<hSmall", "portrait") {
+    font-size: 10px;
+    line-height: 10px;
+    width: 150px;
+  }
+}
+
+.sectionMargin {
+  margin: 10px;
+}

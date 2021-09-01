@@ -1,0 +1,20 @@
+@use './include-media' as i;
+
+$border_radius: 20px;  
+$button_padding: 5px; 
+$nav_margin: 2px;
+$main_font_weight_400: 400;
+$main_font_weight_500: 500;
+$main_font_weight_600: 600;
+$main_font_weight_700: 700;
+$main_font_weight_800: 800;
+$small_phone: map-get(i.$breakpoints, "small_phone");
+$phone: map-get(i.$breakpoints, "phone");
+$large_phone: map-get(i.$breakpoints, "large_phone");
+$tablet: map-get(i.$breakpoints, "tablet");
+$large_tablet: map-get(i.$breakpoints, "large_tablet");
+$desktop: map-get(i.$breakpoints, "desktop");
+$large_desktop: map-get(i.$breakpoints, "large_desktop");
+$hsmall: map-get(i.$breakpoints, "hSmall");
+$hmedium: map-get(i.$breakpoints, "hMedium");
+$hlarge: map-get(i.$breakpoints, "hLarge");
