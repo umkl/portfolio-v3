@@ -1,14 +1,15 @@
 import React from "react";
 import Head from "next/head";
-import Home from "./Home";
+import Home from "./Home/index";
 
 export default function Index(): JSX.Element {
   return (
     <main>
-      <Head>
+      <Home/>
+      {/* <Head>
         <title>Home - Octagon</title>
       </Head>
-      <Home />
+      <Home /> */}
     </main>
   );
 }

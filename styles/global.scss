@@ -1,13 +1,12 @@
 @use './abstracts/index' as i;
 
 html, body {
-  // font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-family: i.$main_font;
   overflow-x: hidden;
   line-height: 1.6;
   font-size: 18px;
   padding: 0;
   margin: 0;
+  background-color: i.$co_1;
 }
 
 * {

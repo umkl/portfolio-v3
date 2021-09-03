@@ -1,10 +1,17 @@
-$pr_color: #1000BA;
-$drk_color: #000000;
-$se_blue: #81A6BD;
-$se_blue_light: #8EABBD;
-$gray: #BABABA;
-$gray_text: #818181;
+$co_1: #333333;
+$co_1-1: #454545;
+$co_1-2: #4e5358;
+$co_2: #686C76;
+$co_2-1: #81899b;
+$co_3: #95b8d1;
+$co_4: #c2cad1;
 
-:export{
-    pr_color: $pr_color;
+:export {
+  co_1 : $co_1;
+  co_1-1 : $co_1-1;
+  co_1-2 : $co_1-2;
+  co_2 : $co_2;
+  co_2-1 : $co_2-1;
+  co_3 : $co_3;
+  co_4 : $co_4;
 }
