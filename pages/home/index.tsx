@@ -1,12 +1,21 @@
-import u from "./../../styles/utils.module.scss";
+import f from "./../../styles/fonts.module.scss";
+import l from "./home.module.scss";
+import e from "./../../styles/elements.module.scss";
 
 const Home = (): JSX.Element => {
   return (
-    <div>
-      <h1 className={u["Home-code-1"]}>Hi, my name is</h1>
-      <h2 className={u["Home-code-1"]}>Michael Ungar.</h2>
-      <h3 className={u["Home-code-1"]}>Developer and Designer from Austria.</h3>
-      <p >I'm a software engineer and creator currently working as a freelancer focused on creating flawless code and maginificient designs.</p>
+    <div className={l["Section"]}>
+      <div className={l["Container"]}>
+        <h1 className={f["Home-Code-1"]}>Hi, my name is</h1>
+        <h2 className={f["Home-Heading-1"]}>Michael Ungar.</h2>
+        <h3 className={f["Home-Heading-2"]}>
+          Developer and Designer from Austria.
+        </h3>
+        <p className={f["Home-Text-1"]}>
+          I'm a software engineer and creator currently working as a freelancer
+          focused on creating flawless code and maginificient designs.
+        </p>
+      </div>
     </div>
   );
 };
