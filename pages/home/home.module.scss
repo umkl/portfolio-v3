@@ -1,18 +1,35 @@
 @use './../../styles/abstracts/index' as i;
 // @use './../../styles/utils.module.scss' as u;
 
-.Container{
+.Container {
   // height: fit-content;
-  width: clamp(200px, 80%, 1100px);
-  position: relative;
+  width: clamp(200px, 90%, 800px);
+  position: absolute;
   // @include i.center;
-  background-color: gray;
+
+  // left: 50%;
+  top: 50%;
+  transform: translateY( -50%);
+  @include i.media("height<hSmall"){
+    // transform: translateX(-50%);
+    top: 100px;
+    background-color: purple;
+  }
+  @include i.media("<=tablet") {
+    background-color: red;
+    top: 10%;
+    // transform: translateX(-50%);
+  }
 }
 
-.Section{
-  min-height:100vh;
-  width: 100vw;
-
+.Section {
+  position: relative;
+  min-height: 100vh;
+  // height:100vh;
+  width: 80%;
+  background-color: gray;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 // .scrollSuggestor {
@@ -141,4 +158,3 @@
 //     }
 //   }
 // }
-

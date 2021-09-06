@@ -53,9 +53,13 @@
   margin: 20px 0;
   line-height: 1.1;
   max-width: 800px;
-  background-color: red;
 }
 
-
+.Side-Code-1{
+  writing-mode: vertical-rl;
+  letter-spacing: 0.1em;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  color: i.$co_4;
+}
 
 

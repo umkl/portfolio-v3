@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-768,-178)">
+        <g id="Artboard2" transform="matrix(16.4815,0,0,12.6774,3120.73,267.909)">
+            <rect x="-189.347" y="-7.167" width="138.375" height="180.325" style="fill:none;"/>
+            <g id="linkedin" transform="matrix(0.241793,0,0,0.314348,-142.986,-6.37826)">
+                <g transform="matrix(1,0,0,1,0,-2.81262)">
+                    <circle cx="16.881" cy="14.935" r="4.483" style="fill:none;stroke:black;stroke-width:4.52px;"/>
+                </g>
+                <g transform="matrix(1,0,0,1,2.07754,0)">
+                    <path d="M26.277,50.742L35.147,50.742L35.147,38.102C35.147,38.102 35.147,33.5 39.679,33.5C44.211,33.5 44.206,38.102 44.206,38.102L44.206,50.742L53.289,50.742L53.289,36.801C53.289,36.801 53.289,24.047 39.679,24.047C26.069,24.047 26.277,36.801 26.277,36.801L26.277,50.742Z" style="fill:none;stroke:black;stroke-width:4.52px;"/>
+                </g>
+                <path d="M12.398,24.047L21.363,24.079L21.363,50.742L12.398,50.742L12.398,24.047Z" style="fill:none;stroke:black;stroke-width:4.52px;"/>
+            </g>
+            <g id="dribbble">
+            </g>
+        </g>
+    </g>
+</svg>
