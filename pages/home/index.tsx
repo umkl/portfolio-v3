@@ -1,6 +1,6 @@
 import f from "./../../styles/fonts.module.scss";
 import l from "./home.module.scss";
-import e from "./../../styles/elements.module.scss";
+import c from "./../../styles/components.module.scss";
 
 const Home = (): JSX.Element => {
   return (

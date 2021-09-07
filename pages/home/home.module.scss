@@ -9,8 +9,8 @@
 
   // left: 50%;
   top: 50%;
-  transform: translateY( -50%);
-  @include i.media("height<hSmall"){
+  transform: translateY(-50%);
+  @include i.media("height<hSmall") {
     // transform: translateX(-50%);
     top: 100px;
     background-color: purple;
@@ -27,7 +27,6 @@
   min-height: 100vh;
   // height:100vh;
   width: 80%;
-  background-color: gray;
   left: 50%;
   transform: translateX(-50%);
 }

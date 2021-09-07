@@ -1,0 +1,10 @@
+@use './abstracts/index' as i;
+
+.Section {
+  position: relative;
+  // min-height: 100vh;
+  // height:100vh;
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+}

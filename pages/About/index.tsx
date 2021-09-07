@@ -1,7 +1,11 @@
 import React from "react";
-import aboutStyles from "./about.module.scss";
-import utilStyles from "./../../styles/utils.module.scss";
 import Head from "next/head";
+import f from "./../../styles/fonts.module.scss";
+import c from "./../../styles/components.module.scss";
+import l from "./about.module.scss";
+
+// import aboutStyles from "./about.module.scss";
+// import utilStyles from "./../../styles/utils.module.scss";
 
 function About() {
   return (
@@ -9,90 +13,35 @@ function About() {
       <Head>
         <title>About - Octagon</title>
       </Head>
-      <main>
-        <section className={aboutStyles.section}>
-          <div>
-            <h2 className={utilStyles.headingLg}>About us</h2>
-            <h2 className={utilStyles.headingMdFd}>
-              We are a young and talented Team that learnt from the best.
-            </h2>
-            <div>
-              <p className={utilStyles.textMd}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-                fugit odit quibusdam doloribus iure, quae reiciendis aspernatur
-                aperiam inventore modi est totam pariatur, ab quasi iste
-                deleniti, optio molestiae! Totam! Deleniti quia minus earum
-                tempora explicabo obcaecati omnis ab vitae voluptate, ullam
-                deserunt inventore alias ducimus quasi corporis exercitationem?
-                Beatae vero totam, saepe deleniti incidunt dolores provident
-                odit cum quo? Minus debitis ipsam explicabo expedita vero
-                excepturi commodi quidem asperiores officia recusandae?
-                Inventore earum, et hic eos molestias eum! Natus quam
-                exercitationem sunt voluptatum suscipit, hic architecto
-                voluptate magni cupiditate? Hic, nihil, ad officiis consequuntur
-                inventore repellat illum, sint aliquid natus quaerat temporibus
-                similique. Eveniet dolorum expedita omnis rerum, rem adipisci
-                blanditiis quis magnam! Asperiores aperiam consectetur magni non
-                totam?
-              </p>
-              <p className={utilStyles.textMd}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-                fugit odit quibusdam doloribus iure, quae reiciendis aspernatur
-                aperiam inventore modi est totam pariatur, ab quasi iste
-                deleniti, optio molestiae! Totam! Deleniti quia minus earum
-                tempora explicabo obcaecati omnis ab vitae voluptate, ullam
-                deserunt inventore alias ducimus quasi corporis exercitationem?
-                Beatae vero totam, saepe deleniti incidunt dolores provident
-                odit cum quo? Minus debitis ipsam explicabo expedita vero
-                excepturi commodi quidem asperiores officia recusandae?
-                Inventore earum, et hic eos molestias eum! Natus quam
-                exercitationem sunt voluptatum suscipit, hic architecto
-                voluptate magni cupiditate? Hic, nihil, ad officiis consequuntur
-                inventore repellat illum, sint aliquid natus quaerat temporibus
-                similique. Eveniet dolorum expedita omnis rerum, rem adipisci
-                blanditiis quis magnam! Asperiores aperiam consectetur magni non
-                totam?
-              </p>
-              <p className={utilStyles.textMd}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-                fugit odit quibusdam doloribus iure, quae reiciendis aspernatur
-                aperiam inventore modi est totam pariatur, ab quasi iste
-                deleniti, optio molestiae! Totam! Deleniti quia minus earum
-                tempora explicabo obcaecati omnis ab vitae voluptate, ullam
-                deserunt inventore alias ducimus quasi corporis exercitationem?
-                Beatae vero totam, saepe deleniti incidunt dolores provident
-                odit cum quo? Minus debitis ipsam explicabo expedita vero
-                excepturi commodi quidem asperiores officia recusandae?
-                Inventore earum, et hic eos molestias eum! Natus quam
-                exercitationem sunt voluptatum suscipit, hic architecto
-                voluptate magni cupiditate? Hic, nihil, ad officiis consequuntur
-                inventore repellat illum, sint aliquid natus quaerat temporibus
-                similique. Eveniet dolorum expedita omnis rerum, rem adipisci
-                blanditiis quis magnam! Asperiores aperiam consectetur magni non
-                totam?
-              </p>
-              <p className={utilStyles.textMd}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-                fugit odit quibusdam doloribus iure, quae reiciendis aspernatur
-                aperiam inventore modi est totam pariatur, ab quasi iste
-                deleniti, optio molestiae! Totam! Deleniti quia minus earum
-                tempora explicabo obcaecati omnis ab vitae voluptate, ullam
-                deserunt inventore alias ducimus quasi corporis exercitationem?
-                Beatae vero totam, saepe deleniti incidunt dolores provident
-                odit cum quo? Minus debitis ipsam explicabo expedita vero
-                excepturi commodi quidem asperiores officia recusandae?
-                Inventore earum, et hic eos molestias eum! Natus quam
-                exercitationem sunt voluptatum suscipit, hic architecto
-                voluptate magni cupiditate? Hic, nihil, ad officiis consequuntur
-                inventore repellat illum, sint aliquid natus quaerat temporibus
-                similique. Eveniet dolorum expedita omnis rerum, rem adipisci
-                blanditiis quis magnam! Asperiores aperiam consectetur magni non
-                totam?
-              </p>
-            </div>
-          </div>
-        </section>
-      </main>
+
+      <section className={c["Section"]}>
+        <h2 className={l["Heading"]}>
+          <span className={f["Section-Code-1"]}>01.</span>
+          <span className={f["Section-Heading-1"]}>About</span>
+        </h2>
+        <p className={`${l["Text-Container"]} ${f["About-Text-1"]}`}>
+          Hello! My name is Michael and I enjoy creating things that live on the
+          internet. My interest in programming started in 2018 when I learned
+          about the possiblities of programming over soloLearn. My
+          <br />
+          <br />
+          Later I
+          <br />
+          <br />
+          Fast-forward to today, and I've had the privilege of working at an
+          advertising agency, a start-up, a huge corporation, and a student-led
+          design studio. My main focus these days is building accessible,
+          inclusive products and digital experiences at Upstatement for a
+          variety of clients.
+          <br />
+          I also recently launched a course that covers everything you need to
+          build a web app with the Spotify API using Node & React.
+          <br />
+          <br />
+          <br />
+          Here are a few technologies I've been working with recently:
+        </p>
+      </section>
     </>
   );
 }
