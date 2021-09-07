@@ -6,7 +6,6 @@
   position: fixed;
   z-index: 99999;
 
-  //   background-color: gray;
 }
 
 .Linkbar-1 {
@@ -47,17 +46,18 @@
   height: 90px;
   margin: 10px 0 0 0;
   background-color: i.$co_4;
-//   border-radius: 12px;
+  //   border-radius: 12px;
   bottom: 0px;
   left: 0px;
   position: relative;
 }
 
 .Icon-1 {
-    height: 30px;
-    // width: 20px;
+  height: 30px;
+  // width: 20px;
   margin: 10px;
-  path,circle{
+  path,
+  circle {
     stroke: i.$co_4;
   }
   // stroke: red;

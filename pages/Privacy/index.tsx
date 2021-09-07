@@ -7,7 +7,7 @@ function Privacy() {
   return (
     <>
       <Head>
-        <title>Privacy - Octagon</title>
+        <title>Privacy - ungarmichael</title>
         <link rel="icon" href="/Octagon-logo-black.ico"/>
       </Head>
       <main>

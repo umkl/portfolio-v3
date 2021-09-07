@@ -97,3 +97,20 @@
   line-height: 1.1;
   max-width: 800px;
 }
+
+.Nav-Code-1 {
+  color: i.$co_3;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-size: clamp(20px, 2vw, 20px);
+  font-weight: regular;
+  line-height: 1.1;
+}
+
+.Nav-Heading-1 {
+  color: i.$co_4;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-size: clamp(18px, 2vw, 20px);
+  min-height: 0vw;
+  font-weight: 500;
+  line-height: 1.1;
+}
