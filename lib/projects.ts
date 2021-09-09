@@ -4,20 +4,24 @@ import matter from "gray-matter";
 import remark from "remark";
 import html from "remark-html";
 
-const eventsDirectory = path.join(process.cwd(), "events");
+const projectsDirectory = path.join(process.cwd(), "projects");
 
-export interface IEventData {
-  id: string;
-  contentHtml: string;
+export interface IProject {
   date: string;
   title: string;
+  id: string;
+  contentHtml: string;
+  featured: boolean;
+  githubURL?: string;
+  URL?: string;
+  components: string[];
 }
 
-export function getSortedEventsData() {
-  const fileNames = fs.readdirSync(eventsDirectory);
-  const allEventsData = fileNames.map((fileName) => {
+export function getSortedProjectsData() {
+  const fileNames = fs.readdirSync(projectsDirectory);
+  const allProjectsData = fileNames.map((fileName) => {
     const id = fileName.replace(/\.md$/, "");
-    const fullPath = path.join(eventsDirectory, fileName);
+    const fullPath = path.join(projectsDirectory, fileName);
     const fileContents = fs.readFileSync(fullPath, "utf8");
     const matterResult = matter(fileContents);
     return {
@@ -25,7 +29,7 @@ export function getSortedEventsData() {
       ...(<{ date: string; title: string }>matterResult.data),
     };
   });
-  return allEventsData.sort((a, b) => {
+  return allProjectsData.sort((a, b) => {
     if (a.date < b.date) {
       return -1;
     } else {
@@ -35,12 +39,12 @@ export function getSortedEventsData() {
 }
 
 export async function getUpcomingEvent() {
-  const allEvents = getSortedEventsData();
+  const allEvents = getSortedProjectsData();
   return allEvents[0];
 }
 
-export function getAllEventIds() {
-  const fileNames = fs.readdirSync(eventsDirectory);
+export function getAllProjectsIds() {
+  const fileNames = fs.readdirSync(projectsDirectory);
   return fileNames.map((fileName) => {
     return {
       params: {
@@ -50,8 +54,8 @@ export function getAllEventIds() {
   });
 }
 
-export async function getEventData(id: string) {
-  const fullPath = path.join(eventsDirectory, `${id}.md`);
+export async function getProjectData(id: string) {
+  const fullPath = path.join(projectsDirectory, `${id}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const matterResult = matter(fileContents);
   const processedContent = await remark()
@@ -61,31 +65,32 @@ export async function getEventData(id: string) {
   return {
     id,
     contentHtml,
-    ...(matterResult.data as { date: string; title: string }),
+    ...(matterResult.data as IProject),
   };
 }
 
-export async function getCompleteSortedEventsData(): Promise<IEventData[]> {
-  const fileNames = fs.readdirSync(eventsDirectory);
-  const allEventsData = await Promise.all(
+export async function getCompleteSortedProjectsData(): Promise<IProject[]> {
+  const fileNames = fs.readdirSync(projectsDirectory);
+  const allProjectsData = await Promise.all(
     fileNames.map(async (fileName) => {
       const id = fileName.replace(/\.md$/, "");
-      const fullPath = path.join(eventsDirectory, fileName);
+      const fullPath = path.join(projectsDirectory, fileName);
       const fileContents = fs.readFileSync(fullPath, "utf8");
       const matterResult = matter(fileContents);
       const processedContent = await remark()
         .use(html)
         .process(matterResult.content);
+      // console.log(processedContent);
       const contentHtml = processedContent.toString();
       return {
         id,
         contentHtml,
-        ...(<{ date: string; title: string }>matterResult.data),
+        ...(<IProject>matterResult.data),
       };
     })
   );
 
-  allEventsData.sort((a, b) => {
+  allProjectsData.sort((a, b) => {
     if (a.date < b.date) {
       return -1;
     } else {
@@ -93,14 +98,14 @@ export async function getCompleteSortedEventsData(): Promise<IEventData[]> {
     }
   });
 
-  return allEventsData;
+  return allProjectsData;
 }
 
 export async function getStaticProps() {
-  const allEventsData = getCompleteSortedEventsData();
+  const allProjectsData = getCompleteSortedProjectsData();
   return {
     props: {
-      allPostsData: allEventsData,
+      allPostsData: allProjectsData,
     },
   };
 }

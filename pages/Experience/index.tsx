@@ -16,20 +16,10 @@ function Experience() {
   const [currentExperience, setCurrentExperience] = useState("VortexData");
   const getExperienceByCompany = (companyTitle: string): IExperience => {
     for (var experience of experiencesJSON) {
-      console.log(experience.company);
-      console.log(companyTitle);
       if (experience.company == companyTitle) {
         return experience;
       }
     }
-    // const xds = experiencesJSON.map((x) => {
-    //   console.log(x.company, companyTitle)
-    //   if (x.company == companyTitle) {
-    //     return x;
-    //   }
-    // });
-    // return xds;
-    // return experiencesJSON[1];
   };
   const experiencesJSON: IExperience[] = [
     {
@@ -60,18 +50,27 @@ function Experience() {
         </h2>
         <div className={l["Container"]}>
           <ul>
-            <li >
-              <button className={f["Experience-Code-1"]} onClick={() => setCurrentExperience("VortexData")}>
+            <li>
+              <button
+                className={f["Experience-Code-1"]}
+                onClick={() => setCurrentExperience("VortexData")}
+              >
                 VortexData
               </button>
             </li>
-            <li >
-              <button className={f["Experience-Code-1"]} onClick={() => setCurrentExperience("Freelance")}>
+            <li>
+              <button
+                className={f["Experience-Code-1"]}
+                onClick={() => setCurrentExperience("Freelance")}
+              >
                 Freelance
               </button>
             </li>
-            <li >
-              <button className={f["Experience-Code-1"]} onClick={() => setCurrentExperience("Fronius")}>
+            <li>
+              <button
+                className={f["Experience-Code-1"]}
+                onClick={() => setCurrentExperience("Fronius")}
+              >
                 Fronius
               </button>
             </li>

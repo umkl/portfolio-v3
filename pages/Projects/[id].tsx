@@ -1,4 +1,4 @@
-import { getAllEventIds, getEventData } from "../../lib/events";
+import { getAllEventIds, getEventData } from "../../lib/projects";
 import Head from "next/head";
 import Date from "../../components/elements/date";
 import utilStyles from "../../styles/utils.module.scss";
@@ -20,10 +20,11 @@ export default function EventDetail({
       </Head>
       <article>
         <h1 className={utilStyles.headingLg}>{eventData.title}</h1>
-
         <Date dateString={eventData.date} />
-
-        <div className={utilStyles.textMd} dangerouslySetInnerHTML={{ __html: eventData.contentHtml }} />
+        <div
+          className={utilStyles.textMd}
+          dangerouslySetInnerHTML={{ __html: eventData.contentHtml }}
+        />
       </article>
     </>
   );

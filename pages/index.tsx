@@ -3,27 +3,33 @@ import Head from "next/head";
 import Links from "../components/modules/Links/links";
 import Home from "./Home/index";
 import About from "./About/index";
-import IExperience from "./Experience/index";
+import Experience from "./Experience/index";
 import Projects from "./Projects/index";
 import Contact from "./Contact/index";
-import Layout from "./../components/layouts/layout";
+import { GetStaticProps } from "next";
+import { getCompleteSortedProjectsData, IProject } from "../lib/projects";
 
-export default function Index(): JSX.Element {
+export default function Index({
+  allProjects,
+}: {
+  allProjects: IProject[];
+}): JSX.Element {
   return (
     <>
-      <Links />
-      <Layout>
-        <Home />
-        <About />
-        <IExperience/>
-        <Projects/>
-        <Contact />
-        {/* <Head>
-        <title>Home - Octagon</title>
-      </Head>
-      <Home /> */}
-      </Layout>
-
+      <Home />
+      <About />
+      <Experience />
+      <Projects allProjects={allProjects} />
+      <Contact />
     </>
   );
 }
+
+export const getStaticProps: GetStaticProps = async () => {
+  const allProjects: IProject[] = await getCompleteSortedProjectsData();
+  return {
+    props: {
+      allProjects,
+    },
+  };
+};
