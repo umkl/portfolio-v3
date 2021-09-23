@@ -49,10 +49,11 @@ function Experience() {
           <span className={f["Section-Heading-1"]}>My Experience</span>
         </h2>
         <div className={l["Container"]}>
-          <ul>
+          <ul className={l["experience-item-list"]}>
+            <div className={l["bar"]}>akfdj</div>
             <li>
               <button
-                className={f["Experience-Code-1"]}
+                className={`${f["Experience-Code-1"]} ${l["experience-item"]}`}
                 onClick={() => setCurrentExperience("VortexData")}
               >
                 VortexData
@@ -60,7 +61,7 @@ function Experience() {
             </li>
             <li>
               <button
-                className={f["Experience-Code-1"]}
+                className={`${f["Experience-Code-1"]} ${l["experience-item"]}`}
                 onClick={() => setCurrentExperience("Freelance")}
               >
                 Freelance
@@ -68,7 +69,7 @@ function Experience() {
             </li>
             <li>
               <button
-                className={f["Experience-Code-1"]}
+                className={`${f["Experience-Code-1"]} ${l["experience-item"]}`}
                 onClick={() => setCurrentExperience("Fronius")}
               >
                 Fronius

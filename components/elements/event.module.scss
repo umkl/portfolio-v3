@@ -7,15 +7,6 @@
   left: 50%;
   transform: translateX(-50%);
   margin: 20px 0;
-  @include i.media("<=desktop") {
-    width: 90%;
-  }
-  @include i.media("<=tablet") {
-    width: 500px;
-  }
-  @include i.media("<=phone") {
-    width: 100%;
-  }
 
   .eventContent {
     position: relative;

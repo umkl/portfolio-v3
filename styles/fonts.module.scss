@@ -1,19 +1,5 @@
 @use './abstracts/index' as i;
 
-:export {
-  small_phone: map-get(i.$breakpoints, "small_phone");
-  phone: map-get(i.$breakpoints, "phone");
-  large_phone: map-get(i.$breakpoints, "large_phone");
-  tablet: map-get(i.$breakpoints, "tablet");
-  large_tablet: map-get(i.$breakpoints, "large_tablet");
-  desktop: map-get(i.$breakpoints, "desktop");
-  large_desktop: map-get(i.$breakpoints, "large_desktop");
-
-  hSmall: map-get(i.$breakpoints, "hSmall");
-  hMedium: map-get(i.$breakpoints, "hMedium");
-  hLarge: map-get(i.$breakpoints, "hLarge");
-}
-
 .Home-Code-1 {
   color: i.$co_3;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
@@ -160,7 +146,7 @@
   line-height: 2;
 }
 
-.Experience-Text-1{
+.Experience-Text-1 {
   color: i.$co_3;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-weight: Regular;

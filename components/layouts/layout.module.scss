@@ -6,9 +6,7 @@
   height: 100%;
   background-color: white;
   @include i.centerX;
-  @include i.media(">=desktop") {
-    width: 80%;
-  }
+
 }
 
 .header {
@@ -18,9 +16,7 @@
 }
 
 .main {
-  @include i.media("<=small_phone") {
-    width: i.$small_phone;
-  }
+
 }
 
 .backToHome {

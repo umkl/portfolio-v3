@@ -1,5 +1,55 @@
-.Container{
-    margin: 20px;
-    // background-color: red;
-    display: flex;   
+@use './../../styles/abstracts/index' as i;
+
+.Container {
+  margin: 20px;
+  display: flex;
+  @include i.media("<=tablet") {
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    // flex-direction: row;
+  }
+  // @include me{
+
+  // }
+  .experience-item-list {
+    background-color: blue;
+    list-style: none;
+    @include i.media("<=tablet") {
+      background-color: purple;
+      display: flex;
+      flex-direction: row;
+    }
+    .experience-item {
+      border: none;
+      margin-top: 10px;
+      margin-left: 20px;
+      //   border-left: 2px solid green;
+      background-color: transparent;
+    }
+  }
+}
+
+.bar {
+  background-color: gray;
+  margin-top: 20px;
+  height: 230px;
+  width: 1px;
+  position: absolute;
+}
+
+.Heading {
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    background-color: i.$co_3;
+    margin: 0 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }

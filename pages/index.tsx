@@ -16,11 +16,11 @@ export default function Index({
 }): JSX.Element {
   return (
     <>
-      <Home />
+      {/* <Home />
       <About />
       <Experience />
       <Projects allProjects={allProjects} />
-      <Contact />
+      <Contact /> */}
     </>
   );
 }

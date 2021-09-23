@@ -5,7 +5,7 @@ import { Context, ReactNode, useState } from "react";
 import Head from "next/head";
 import Footer from "../modules/Footer/footer";
 import Header from "../modules/Header/header";
-import Links from "./../modules/Links/links";
+import Links from "../modules/Links/links";
 
 interface ILayout {
   children: ReactNode;
@@ -14,7 +14,6 @@ interface ILayout {
 export default function Layout({ children }: ILayout) {
   return (
     <>
-    
       <Head>
         <link rel="icon" href="/ungarmichael-logo.ico" />
         <meta
@@ -23,7 +22,7 @@ export default function Layout({ children }: ILayout) {
         />
         <meta name="og:title" content="Home-Octagon" />
       </Head>
-      <Links />
+      {/* <Links /> */}
       <Header />
       <main className={styles.main}>{children}</main>
       <Footer />
