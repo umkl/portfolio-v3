@@ -11,13 +11,13 @@
 // import useWindowSize, { Size } from "../../hooks/useWindowSize";
 
 import f from "./../../../styles/fonts.module.scss";
-import l from "./nav.module.scss";
+import l from "./topnav.module.scss";
 import c from "./../../styles/components.module.scss";
 
 const Nav = () => {
   return (
     <>
-      <nav className={l["nav"]}>
+      <nav className={l["top-nav"]}>
         <ul className={`${l["nav-items"]}`}>
           <li>
             <span className={`${f["Nav-Code-1"]}`}> 01.</span>

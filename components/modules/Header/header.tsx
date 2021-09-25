@@ -17,7 +17,8 @@
 // import Image from "next/image";
 // import { useRouter } from "next/router";
 
-import Nav from "../Nav/nav";
+import Nav from "../Topnav/topnav";
+import Bottomnav from "../Bottomnav/bottomnav";
 import Logo from "./../../../assets/Logo/logo1.svg";
 import f from "./../../styles/fonts.module.scss";
 import l from "./header.module.scss";

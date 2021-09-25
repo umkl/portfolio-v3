@@ -6,6 +6,7 @@ import styles from "./layout.module.scss";
 import Footer from "../../modules/Footer/footer";
 import Header from "../../modules/Header/header";
 import Links from "../../modules/Links/links";
+import Bottomnav from "../../modules/Bottomnav/bottomnav"
 
 interface ILayout {
   children: ReactNode;
@@ -23,6 +24,7 @@ export default function Layout({ children }: ILayout) {
       </Head>
       <Header />
       <main className={styles.main}>{children}</main>
+      <Bottomnav/>
       <Footer />
     </>
   );
