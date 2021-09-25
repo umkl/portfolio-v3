@@ -48,28 +48,42 @@
   border-radius: a.$button-border-radius;
   opacity: 0;
   display: none;
-  width: 80%;
-  height: 300px;
-  padding: 30px;
+  width: clamp(300px, 80%, 500px);
+  height: clamp(350px, 60vh, 500px);
+  padding: 0;
   margin-bottom: -200px;
+  @include a.media("<=xSize_2") {
+    width: 100%;
+  }
 
   nav {
-    background-color: green;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 
     ul {
       grid-row-start: 1;
       grid-row-end: 3;
       grid-row-start: auto;
-      // grid-row-gap: 100px;
+      height: 100%;
+      grid-row-gap: 20px;
+      grid-column-gap: 20px;
       grid-template-columns: auto auto;
-      background-color: gray;
+      @include a.media("<=xSize_2") {
+        background-color: gold;
+        grid-template-columns: auto;
+      }
       padding: 0;
       display: grid;
-
       // grid-column: auto;
       li {
+        @include a.media("<=xSize_2") {
+          height: 40px;
+          // margin: 10px;
+          background-color: green;
+        }
+        height: 100%;
         list-style: none;
-        height: 50px;
         width: 100%;
         background-color: white;
       }

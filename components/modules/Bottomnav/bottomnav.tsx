@@ -4,6 +4,7 @@ import f from "./../../../styles/fonts.module.scss";
 import l from "./bottomnav.module.scss";
 import c from "./../../styles/components.module.scss";
 import { gsap, TweenMax, Power3 } from "gsap";
+import GridItem from "./../../elements/gridItem/gridItem";
 
 interface Props {}
 
@@ -78,7 +79,7 @@ function Bottomnav(props: Props) {
         gsap.to(socialRef.current, {
           opacity: 0,
           display: "none",
-          marginBottom: "-100%",
+          marginBottom: "-100px",
           duration: 0.8,
           ease: Power3.easeOut,
         });
@@ -95,7 +96,7 @@ function Bottomnav(props: Props) {
         gsap.to(navRef.current, {
           opacity: 0,
           display: "none",
-          marginBottom: "-100%",
+          marginBottom: "-100px",
           duration: 0.8,
           ease: Power3.easeOut,
         });
@@ -121,10 +122,18 @@ function Bottomnav(props: Props) {
       >
         <nav>
           <ul>
-            <li>item 1</li>
-            <li>item 2</li>
-            <li>item 3</li>
-            <li>item 4</li>
+            <li>
+              <GridItem name="01.Home" />
+            </li>
+            <li>
+              <GridItem name="01.Home" />
+            </li>
+            <li>
+              <GridItem name="01.Home" />
+            </li>
+            <li>
+              <GridItem name="01.Home" />
+            </li>
           </ul>
         </nav>
       </div>
