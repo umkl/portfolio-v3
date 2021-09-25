@@ -1,7 +1,78 @@
+@use "./../../../styles/abstracts" as a;
+
 .bottom-nav {
   position: fixed;
-  background-color: green;
+  height: fit-content;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  @include a.media(">=xSize_5") {
+    display: none;
+  }
+  // display:none;
+}
+
+.tlnav {
+  @include a.media("<=xSize_5") {
+    background-color: purple;
+
+    height: clamp(60px, 20vh, 80px);
+  }
+  // background-color: green;
   height: 100px;
   width: 100%;
   bottom: 0;
+  display: flex;
+  opacity: 0;
+  margin-bottom: -100px;
+
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.social-grid {
+  margin-bottom: -200px;
+  background-color: purple;
+}
+
+.nav-grid {
+  margin-bottom: -200px;
+  background-color: green;
+}
+
+.subcontainer {
+  border-radius: a.$button-border-radius;
+  opacity: 0;
+  display: none;
+  width: 80%;
+  height: 300px;
+  padding: 30px;
+  margin-bottom: -200px;
+
+  nav {
+    background-color: green;
+
+    ul {
+      grid-row-start: 1;
+      grid-row-end: 3;
+      grid-row-start: auto;
+      // grid-row-gap: 100px;
+      grid-template-columns: auto auto;
+      background-color: gray;
+      padding: 0;
+      display: grid;
+
+      // grid-column: auto;
+      li {
+        list-style: none;
+        height: 50px;
+        width: 100%;
+        background-color: white;
+      }
+    }
+  }
 }

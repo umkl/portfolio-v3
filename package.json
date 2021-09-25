@@ -12,6 +12,7 @@
     "date-fns": "^2.11.1",
     "fs": "^0.0.1-security",
     "gray-matter": "^4.0.2",
+    "gsap": "^3.7.1",
     "include-media": "^1.4.10",
     "next": "^10.0.0",
     "react": "17.0.1",

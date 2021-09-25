@@ -15,6 +15,9 @@
   ySize_3: map-get(i.$breakpoints, "ySize_3");
 }
 
+$button-border-radius: 6px;
+$container-border-radius: 8px;
+
 // $xSize_1: map-get(i.$breakpoints, "small_phone");
 // $xSize_2: map-get(i.$breakpoints, "phone");
 // $xSize_3: map-get(i.$breakpoints, "large_phone");
