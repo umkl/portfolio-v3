@@ -1,11 +1,11 @@
 import React from "react";
-import styles from "./layout.module.scss";
+import Head from "next/head";
 import { Context, ReactNode, useState } from "react";
 
-import Head from "next/head";
-import Footer from "../modules/Footer/footer";
-import Header from "../modules/Header/header";
-import Links from "../modules/Links/links";
+import styles from "./layout.module.scss";
+import Footer from "../../modules/Footer/footer";
+import Header from "../../modules/Header/header";
+import Links from "../../modules/Links/links";
 
 interface ILayout {
   children: ReactNode;
@@ -18,11 +18,9 @@ export default function Layout({ children }: ILayout) {
         <link rel="icon" href="/ungarmichael-logo.ico" />
         <meta
           name="description"
-          content="5-Star Restaurant in Vienna that supports all Crypto-currencies."
+          content="Developer and Designer from Austria focusing on flawless code and magnificient design."
         />
-        <meta name="og:title" content="Home-Octagon" />
       </Head>
-      {/* <Links /> */}
       <Header />
       <main className={styles.main}>{children}</main>
       <Footer />

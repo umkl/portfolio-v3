@@ -1,4 +1,4 @@
-@use './../../styles/abstracts' as i;
+@use './../../../styles/abstracts' as i;
 
 .container {
   position: relative;
@@ -6,7 +6,6 @@
   height: 100%;
   background-color: white;
   @include i.centerX;
-
 }
 
 .header {
@@ -16,7 +15,7 @@
 }
 
 .main {
-
+  
 }
 
 .backToHome {

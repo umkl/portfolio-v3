@@ -1,4 +1,4 @@
-import { getAllEventIds, getEventData } from "../../lib/projects";
+import { getAllProjectsIds, getProjectData } from "../../lib/projects";
 import Head from "next/head";
 import Date from "../../components/elements/date";
 import utilStyles from "../../styles/utils.module.scss";
@@ -31,7 +31,7 @@ export default function EventDetail({
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = getAllEventIds();
+  const paths = getAllProjectsIds();
   return {
     paths,
     fallback: false,
@@ -39,7 +39,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const eventData = await getEventData(params.id as string);
+  const eventData = await getAllProjectsIds();
   return {
     props: {
       eventData,

@@ -17,7 +17,7 @@ import c from "./../../styles/components.module.scss";
 const Nav = () => {
   return (
     <>
-      <div>
+      <nav className={l["nav"]}>
         <ul className={`${l["nav-items"]}`}>
           <li>
             <span className={`${f["Nav-Code-1"]}`}> 01.</span>
@@ -36,7 +36,7 @@ const Nav = () => {
             <span className={`${f["Nav-Heading-1"]}`}>Contact</span>
           </li>
         </ul>
-      </div>
+      </nav>
     </>
   );
 };

@@ -16,7 +16,8 @@
 // import Button from "../../elements/button";
 // import Image from "next/image";
 // import { useRouter } from "next/router";
-import Nav from "./../Nav/nav";
+
+import Nav from "../Nav/nav";
 import Logo from "./../../../assets/Logo/logo1.svg";
 import f from "./../../styles/fonts.module.scss";
 import l from "./header.module.scss";
@@ -26,8 +27,10 @@ const Header = (): JSX.Element => {
   return (
     <>
       <div className={`${l["Container"]}`}>
-        <Logo className={`${l["Logo"]}`} />
-        <Nav />
+        <div className={l["grid-wrapper"]}>
+          <Logo className={`${l["Logo"]}`} />
+          <Nav />
+        </div>
       </div>
     </>
   );

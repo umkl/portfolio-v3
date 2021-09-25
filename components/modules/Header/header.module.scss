@@ -1,28 +1,62 @@
-// @use './../../styles/abstracts/' as i;
-// @use './../../styles/utils.module.scss' as u;
+@use "./../../../styles/abstracts" as a;
 
 .Container {
-  // background-color: red;
+  @include a.media("height<=ySize_3", "portrait") {
+    background-color: pink;
+    height: clamp(40px, 20vh, 60px);
+  }
+
+  @include a.media("height<=ySize_4", "portrait") {
+    background-color: brown;
+    height: clamp(40px, 20vh, 70px);
+  }
+
+  @include a.media("height>=ySize_4", "portrait") {
+    background-color: gray;
+    height: clamp(50px, 12vh, 150px);
+  }
+
+  @include a.media("height<=ySize_3", "landscape") {
+    background-color: green;
+    height: clamp(50px, 20vh, 80px);
+  }
+
+  @include a.media("height>=ySize_4", "height<=ySize_4", "landscape") {
+    background-color: purple;
+    height: clamp(70px, 20vh, 100px);
+  }
+  height: clamp(70px, 20vh, 100px);
+  // position: relative;
+  background-color: red;
   width: 100%;
-  height: 100px;
   position: fixed;
   display: flex;
   flex-direction: row;
   align-items: center;
   align-content: center;
-  // justify-content: center;
-  // align-content: space-between;
   justify-content: space-between;
 }
 
-.Logo {
-  // background-color: green;
+.grid-wrapper{
+  background-color: gray;
+  width: 90%;
+  // height: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  height: 50px;
-  // margin: 20px;
-  // position: absolute;
-  // top: 50%;
-  top: 10px;
-  margin: 0px 30px;
-  // transform: translateY(-50%);
+.Logo {
+  // display: none;
+  position: relative;
+  height: clamp(50px,10vh,70px);
+  // width: 50px;
+  // background-color: blue;
+  // @include a.media("height<=ySize_1") {
+  //   background-color: green;
+  //   height: clamp(30px, 15vh, 40px);
+  // }
 }
