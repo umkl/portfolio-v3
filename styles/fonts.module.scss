@@ -47,6 +47,7 @@
   letter-spacing: 0.1em;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   color: i.$co_4;
+  font-size: 20px
 }
 
 .Section-Code-1 {
@@ -86,25 +87,22 @@
 
 .Nav-Code-1 {
   color: i.$co_3;
-  // background-color: purple;
-  // font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
-  // font-size: clamp(10px, 1.4vw, 20px);
-  // font-weight: regular;
-  // line-height: 1.1;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-size: clamp(10px, 2.4vw, 20px);
   min-height: 0vw;
-  font-weight: 500;
+  font-weight: 200;
   line-height: 1.1;
 }
 
 .Nav-Heading-1 {
   color: i.$co_4;
-  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-family: Calibre, Inter, "San Francisco", "SF Pro Text",
+    -apple-system system-ui, sans-serif;
   font-size: clamp(10px, 2.4vw, 20px);
   min-height: 0vw;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.1;
+  
 }
 
 .Experience-Heading-1 {

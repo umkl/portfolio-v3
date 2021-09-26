@@ -9,10 +9,12 @@ interface Props {
 
 export default function GridItem({ name }: Props): ReactElement {
   return (
-    <div>
-      <ul>
-        <Icon className={l["icon"]} />
-        <li>{name}</li>
+    <div className={l["gridcontainer"]}>
+      <ul className={l["gridlist"]}>
+        <li className={l["gridlistitem"]}>{name}</li>
+        <li className={l["gridlistitem"]}>
+          <Icon className={l["icon"]} />
+        </li>
       </ul>
     </div>
   );

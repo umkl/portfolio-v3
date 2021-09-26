@@ -1,6 +1,7 @@
 @use "./../../../styles/abstracts" as a;
 
 .bottom-nav {
+  z-index: 1000099;
   position: fixed;
   height: fit-content;
   bottom: 0;
@@ -45,47 +46,53 @@
 }
 
 .subcontainer {
-  border-radius: a.$button-border-radius;
+  border-radius: 4px 4px 0 0;
   opacity: 0;
   display: none;
-  width: clamp(300px, 80%, 500px);
+  width: clamp(300px, 80%, 600px);
   height: clamp(350px, 60vh, 500px);
   padding: 0;
   margin-bottom: -200px;
+  @include a.media("<=xSize_5") {
+    // width: 100%;
+  }
   @include a.media("<=xSize_2") {
     width: 100%;
   }
 
-  nav {
+  .subcontainerNav {
     margin: 0;
-    padding: 0;
+    box-sizing: border-box;
+    padding: 10px;
+    position: relative;
     height: 100%;
 
-    ul {
-      grid-row-start: 1;
-      grid-row-end: 3;
-      grid-row-start: auto;
-      height: 100%;
-      grid-row-gap: 20px;
-      grid-column-gap: 20px;
+    @include a.media("<=xSize_4") {
+      padding: 0;
+    }
+
+    .subcontainerUl {
+      height: 80%;
       grid-template-columns: auto auto;
       @include a.media("<=xSize_2") {
         background-color: gold;
         grid-template-columns: auto;
       }
-      padding: 0;
+      padding: 10px 30px;
+
+      @include a.media("<=xSize_4") {
+        padding: 10px 10px;
+      }
       display: grid;
       // grid-column: auto;
-      li {
+      .subcontainerGridItem {
         @include a.media("<=xSize_2") {
-          height: 40px;
-          // margin: 10px;
+          height: 20px;
           background-color: green;
         }
         height: 100%;
         list-style: none;
         width: 100%;
-        background-color: white;
       }
     }
   }

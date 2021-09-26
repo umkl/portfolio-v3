@@ -1,34 +1,52 @@
-@use './../../styles/abstracts/index' as i;
+@use './../../styles/abstracts/index' as a;
 // @use './../../styles/utils.module.scss' as u;
 
+.Section {
+  background-color: green;
+  position: relative;
+  width: 80vw;
+  // width: clamp(100px, 90vw, 800px);
+  min-height: 100vh;
+  // width: clamp(100px, 80vw, 800px);
+  overflow-wrap: break-word;
+  transform: translateX(-50%);
+  // width: 80%;
+  left: 50%;
+  z-index: 0;
+}
 .Container {
-  // height: fit-content;
-  width: clamp(200px, 90%, 800px);
+  width: clamp(100px, 80vw, 800px);
   position: absolute;
-  // @include i.center;
-
-  // left: 50%;
   top: 50%;
   transform: translateY(-50%);
-  @include i.media("height<hSmall") {
-    // transform: translateX(-50%);
-    // top: 100px;
+  background-color: antiquewhite;
+  @include a.media(">=xSize_3") {
     background-color: purple;
   }
-  @include i.media("<=tablet") {
-    background-color: green;
-    top: 200px;
-    transform: translateY(0);
-  }
+
+  background-color: green;
+  // top: 200px;
+  // transform: translateY(0);
 }
 
-.Section {
-  position: relative;
-  min-height: 100vh;
-  // height:100vh;
-  width: 80%;
-  left: 50%;
-  transform: translateX(-50%);
+// @include i.center;
+
+// left: 50%;
+// top: 50%;
+// transform: translateY(-50%);
+// @include i.media("height<hSmall") {
+//   // transform: translateX(-50%);
+//   // top: 100px;
+//   background-color: purple;
+// }
+// @include i.media("<=tablet") {
+//   background-color: green;
+//   top: 200px;
+//   transform: translateY(0);
+// }
+// }
+
+.Container {
 }
 
 // .scrollSuggestor {

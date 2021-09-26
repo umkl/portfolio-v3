@@ -1,10 +1,17 @@
-@use '../../../styles/abstracts/index' as i;
+@use '../../../styles/abstracts/index' as a;
 @use '../../../styles/fonts.module.scss' as f;
 
 .Linkbar {
   bottom: 0;
   position: fixed;
-  z-index: 99999;
+  z-index: 9999;
+  margin: 0 clamp(0px, 4vw, 40px);
+  @include a.media("<=xSize_7") {
+    margin: 0 clamp(0px, 2vw, 40px);
+  }
+  @include a.media("<=xSize_6") {
+    margin: 0;
+  }
 }
 
 .Linkbar-1 {
@@ -14,6 +21,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: start;
+  @include a.media("<=xSize_5") {
+    display: none;
+  }
 }
 .Linkbar-2 {
   display: flex;
@@ -24,9 +34,12 @@
   //   height: 400px;
   width: 70px;
   right: 0;
+  @include a.media("<=xSize_5") {
+    display: none;
+  }
   a {
     &:hover {
-      background-color: i.$co_4;
+      background-color: a.$co_4;
     }
     @extend .Side-Code-1;
     // position: absolute;
@@ -39,23 +52,21 @@
 
 .Line-1 {
   z-index: 999999999;
-  width: 0.9918478727340698px;
-  height: 90px;
-  margin: 10px 0 0 0;
-  background-color: i.$co_4;
-  //   border-radius: 12px;
+  width: 2px;
+  height: 100px;
+  margin: 50px 0 0 0;
+  background-color: a.$co_4;
   bottom: 0px;
   left: 0px;
   position: relative;
 }
 
 .Icon-1 {
-  height: 30px;
-  // width: 20px;
-  margin: 10px;
+  height: 40px;
+  margin: 20px 0;
   path,
   circle {
-    stroke: i.$co_4;
+    stroke: a.$co_4;
   }
   // stroke: red;
   // path{

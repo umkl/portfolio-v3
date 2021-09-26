@@ -1,15 +1,31 @@
 @use "./../../../styles/abstracts" as a;
 
-.icon{
-    height: 10px;
-    width: 10px;
+.icon {
+  height: 100px;
+  width: 100px;
 }
 
-div {
-    
+.gridcontainer {
+  height: 100%;
+  width: 100%;
+  background-color: gray;
+  .gridlist {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: antiquewhite;
+    height: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 20px;
 
-
-  @include a.media("<=xSize_2") {
-    // display: flex;
+    .gridlistitem {
+      padding: 0;
+      list-style: none;
+      box-sizing: border-box;
+      height: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }

@@ -14,26 +14,26 @@ import f from "./../../../styles/fonts.module.scss";
 import l from "./topnav.module.scss";
 import c from "./../../styles/components.module.scss";
 
-const Nav = () => {
+const TopNav = () => {
   return (
     <>
-      <nav className={l["top-nav"]}>
-        <ul className={`${l["nav-items"]}`}>
-          <li>
+      <nav className={l["Parent"]}>
+        <ul className={`${l["List-Parent"]}`}>
+          <li onClick={() => {}}>
             <span className={`${f["Nav-Code-1"]}`}> 01.</span>
-            <span className={`${f["Nav-Heading-1"]}`}>About</span>
+            <span className={`${f["Nav-Heading-1"]} ${l["Hover"]} `}>About</span>
           </li>
-          <li>
+          <li onClick={() => {}}>
             <span className={`${f["Nav-Code-1"]}`}> 02.</span>
-            <span className={`${f["Nav-Heading-1"]}`}>Experience</span>
+            <span className={`${f["Nav-Heading-1"]} ${l["Hover"]} `}>Experience</span>
           </li>
-          <li>
+          <li onClick={() => {}}>
             <span className={`${f["Nav-Code-1"]}`}> 03.</span>
-            <span className={`${f["Nav-Heading-1"]}`}>Projects</span>
+            <span className={`${f["Nav-Heading-1"]} ${l["Hover"]} `}>Projects</span>
           </li>
-          <li>
+          <li onClick={() => {}}>
             <span className={`${f["Nav-Code-1"]}`}> 04.</span>
-            <span className={`${f["Nav-Heading-1"]}`}>Contact</span>
+            <span className={`${f["Nav-Heading-1"]} ${l["Hover"]} `}>Contact</span>
           </li>
         </ul>
       </nav>
@@ -41,4 +41,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default TopNav;

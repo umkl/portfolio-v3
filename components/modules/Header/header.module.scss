@@ -1,62 +1,52 @@
 @use "./../../../styles/abstracts" as a;
 
-.Container {
+.Parent {
+  z-index: 11;
+  position: fixed;
+
+  display: flex;
+  flex-direction: row;
+
+  height: clamp(70px, 20vh, 100px);
+  width: 100%;
+
   @include a.media("height<=ySize_3", "portrait") {
-    background-color: pink;
     height: clamp(40px, 20vh, 60px);
   }
 
   @include a.media("height<=ySize_4", "portrait") {
-    background-color: brown;
     height: clamp(40px, 20vh, 70px);
   }
 
   @include a.media("height>=ySize_4", "portrait") {
-    background-color: gray;
     height: clamp(50px, 12vh, 150px);
   }
 
   @include a.media("height<=ySize_3", "landscape") {
-    background-color: green;
     height: clamp(50px, 20vh, 80px);
   }
 
   @include a.media("height>=ySize_4", "height<=ySize_4", "landscape") {
-    background-color: purple;
     height: clamp(70px, 20vh, 100px);
   }
-  height: clamp(70px, 20vh, 100px);
-  // position: relative;
-  background-color: red;
-  width: 100%;
-  position: fixed;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  align-content: center;
-  justify-content: space-between;
-}
+  .Positioner {
+    position: relative;
 
-.grid-wrapper{
-  background-color: gray;
-  width: 90%;
-  // height: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    // width: 90%;
+    // margin: 0 auto;
+    margin: 0 4%;
+    @include a.media(">=xSize_5"){
+      margin: 0 50px;
+    }
+  }
 }
 
 .Logo {
-  // display: none;
   position: relative;
-  height: clamp(50px,10vh,70px);
-  // width: 50px;
-  // background-color: blue;
-  // @include a.media("height<=ySize_1") {
-  //   background-color: green;
-  //   height: clamp(30px, 15vh, 40px);
-  // }
+  height: clamp(50px, 10vh, 70px);
 }
