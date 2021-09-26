@@ -2,11 +2,14 @@
 // @use './../../styles/utils.module.scss' as u;
 
 .Section {
-  background-color: green;
+  // background-color: green;
   position: relative;
-  width: 80vw;
-  // width: clamp(100px, 90vw, 800px);
+  // width: 0vw;
+  width: clamp(100px, 70vw, 1200px);
   min-height: 100vh;
+  @include a.media(">=xSize_5") {
+    // background-color: aqua;
+  }
   // width: clamp(100px, 80vw, 800px);
   overflow-wrap: break-word;
   transform: translateX(-50%);
@@ -15,18 +18,17 @@
   z-index: 0;
 }
 .Container {
-  width: clamp(100px, 80vw, 800px);
+  width: clamp(100px, 70vw, 800px);
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: antiquewhite;
-  @include a.media(">=xSize_3") {
-    background-color: purple;
-  }
+  // background-color: gray;
+  @include a.media(">=xSize_7") {
+    // background-color: gold;
+    left: 50%;
+    transform: translate(-50%,-50%)
 
-  background-color: green;
-  // top: 200px;
-  // transform: translateY(0);
+  }
 }
 
 // @include i.center;

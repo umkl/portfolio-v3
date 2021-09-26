@@ -13,10 +13,20 @@ const links = (): JSX.Element => {
   return (
     <>
       <aside className={`${l["Linkbar-1"]} ${l["Linkbar"]}`}>
-        <DribbbleIcon className={l["Icon-1"]} />
-        <GithubIcon className={l["Icon-1"]} />
-        <TwitterIcon className={l["Icon-1"]} />
-        <LinkedinIcon className={l["Icon-1"]} />
+        <div className={l["Icon-frame"]}>
+          <DribbbleIcon className={l["Icon-1"]} />
+        </div>
+        <div className={l["Icon-frame"]}>
+          <GithubIcon className={l["Icon-1"]} />
+        </div>
+        <div className={l["Icon-frame"]}>
+          <TwitterIcon className={l["Icon-1"]} />
+        </div>
+
+        <div className={l["Icon-frame"]}>
+          <LinkedinIcon className={l["Icon-1"]} />
+        </div>
+
         <div className={l["Line-1"]}></div>
       </aside>
       <aside className={`${l["Linkbar-2"]} ${l["Linkbar"]}`}>
