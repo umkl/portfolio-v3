@@ -43,7 +43,7 @@ function Experience() {
   ];
   return (
     <>
-      <section className={c["Section"]}>
+      <section className={l["Section"]}>
         <h2 className={l["Heading"]}>
           <span className={f["Section-Code-1"]}>02.</span>
           <span className={f["Section-Heading-1"]}>My Experience</span>

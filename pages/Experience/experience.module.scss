@@ -1,9 +1,18 @@
-@use './../../styles/abstracts/index' as i;
+@use './../../styles/abstracts/index' as a;
+
+.Section {
+  position: relative;
+  width: clamp(100px, 70vw, 1200px);
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 300px;
+}
 
 .Container {
   margin: 20px;
   display: flex;
-  @include i.media("<=tablet") {
+
+  @include a.media("<=xSize_5") {
     background-color: green;
     display: flex;
     flex-direction: column;
@@ -15,7 +24,7 @@
   .experience-item-list {
     background-color: blue;
     list-style: none;
-    @include i.media("<=tablet") {
+    @include a.media("<=xSize_5") {
       background-color: purple;
       display: flex;
       flex-direction: row;
@@ -47,7 +56,7 @@
     position: absolute;
     width: 200px;
     height: 1px;
-    background-color: i.$co_3;
+    background-color: a.$co_3;
     margin: 0 20px;
     top: 50%;
     transform: translateY(-50%);

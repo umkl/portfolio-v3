@@ -16,7 +16,7 @@ function About() {
         <title>ungarmichael - portfolio</title>
       </Head>
 
-      <section className={c["Section"]}>
+      <section className={l["Section"]}>
         <h2 className={l["Heading"]}>
           <span className={f["Section-Code-1"]}>01.</span>
           <span className={f["Section-Heading-1"]}>About</span>
@@ -27,7 +27,7 @@ function About() {
             in tech in general started with lego mindstorms and
             circuit-soldering kits back when I was about 8 years old. After
             watching countless youtube-tutorials my parents allowed me to build
-            my own computer after proving them I was capable of doing so.
+            my own computer after proving thems I was capable of doing so.
             Eventually I got into coding when trying to create minecraft mods
             and servers. In my first year at the HTL Grieskirchen for Computer
             Science I was able to learn about all of the possibilites with code.
@@ -51,6 +51,26 @@ function About() {
             <br />
             <br />
             Here are a few technologies I am currently working with:
+            <div className={l["tech-element"]}>
+              <div className={l["list-indicator"]} />
+              <div className={f["about-code-1"]}>ReactJS/NextJS</div>
+            </div>
+            <div className={l["tech-element"]}>
+              <div className={l["list-indicator"]} />
+              <div className={f["about-code-1"]}>Javascript/Typescript</div>
+            </div>
+            <div className={l["tech-element"]}>
+              <div className={l["list-indicator"]} />
+              <div className={f["about-code-1"]}>Figma</div>
+            </div>
+            <div className={l["tech-element"]}>
+              <div className={l["list-indicator"]} />
+              <div className={f["about-code-1"]}>C#/.NET</div>
+            </div>
+            <div className={l["tech-element"]}>
+              <div className={l["list-indicator"]} />
+              <div className={f["about-code-1"]}>Ruby</div>
+            </div>
           </p>
           <div className={l["Image-Wrapper"]}>
             <div className={l["Image-Filter"]}></div>
@@ -62,11 +82,11 @@ function About() {
                   height={500}
                   width={900}
                   src={setup}
-                  alt="Picture of the author"
+                  alt="Michael's setup"
                 />
               </div>
             </div>
-            <div className={l["Image-Frame"]}>miksl image</div>
+            <div className={l["Image-Frame"]}></div>
           </div>
         </div>
       </section>

@@ -18,7 +18,8 @@ export default function Index({
     <>
       <Home />
       <About />
-
+      <Experience />
+      
       {/*
       <Home />
       <About />
