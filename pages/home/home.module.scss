@@ -17,17 +17,21 @@
   left: 50%;
   z-index: 0;
 }
+
+.bottomBefore {
+  position: relative;
+}
+
 .Container {
   width: clamp(100px, 70vw, 800px);
   position: absolute;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
   // background-color: gray;
   @include a.media(">=xSize_7") {
     // background-color: gold;
     left: 50%;
-    transform: translate(-50%,-50%)
-
+    transform: translate(-50%, -50%);
   }
 }
 

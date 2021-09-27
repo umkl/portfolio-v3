@@ -1,7 +1,6 @@
 @use './abstracts/index' as i;
 
-html,
-body {
+html{
   // overflow-x: hidden;
   background-color: i.$co_1;
   padding: 0;
