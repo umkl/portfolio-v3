@@ -104,11 +104,9 @@
 .Content-Wrapper {
   display: flex;
   width: 100%;
+  // background-color: red;
   align-items: flex-start;
-  // padding: 0;
-  // min-height: 600px;
   justify-content: center;
-  // background-color: azure;
   @include a.media("<=xSize_7") {
     flex-direction: column;
     justify-content: flex-start;

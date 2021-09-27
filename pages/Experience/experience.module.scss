@@ -9,42 +9,52 @@
 }
 
 .Container {
-  margin: 20px;
+  margin: 60px 20px;
   display: flex;
 
   @include a.media("<=xSize_5") {
     background-color: green;
     display: flex;
     flex-direction: column;
-    // flex-direction: row;
   }
-  // @include me{
 
-  // }
   .experience-item-list {
-    background-color: blue;
     list-style: none;
+    height: 300px;
     @include a.media("<=xSize_5") {
       background-color: purple;
       display: flex;
       flex-direction: row;
     }
     .experience-item {
+      // background-color: red;
       border: none;
-      margin-top: 10px;
-      margin-left: 20px;
-      //   border-left: 2px solid green;
+      height: 100px;
+      margin-left: 50px;
       background-color: transparent;
     }
   }
 }
 
+.Experience-Container {
+  margin: 10px 80px;
+}
+
 .bar {
-  background-color: gray;
-  margin-top: 20px;
-  height: 230px;
-  width: 1px;
+  background-color: a.$co_2;
+  // margin-top: 20px;
+  height: 400px;
+  width: 3px;
   position: absolute;
+  display: flex;
+}
+
+.indicator {
+  position: absolute;
+  left: -1px;
+  background-color: a.$co_3;
+  height: 100px;
+  width: 5px;
 }
 
 .Heading {
@@ -61,4 +71,24 @@
     top: 50%;
     transform: translateY(-50%);
   }
+}
+
+.list-indicator {
+  background-color: a.$co_3;
+  height: 20px;
+  border-radius: 2px;
+  width: 15px;
+  margin: 24px; 
+}
+
+.experience_detail-container{
+  justify-content: start;
+  margin: 10px 0;
+  // background-color: red;
+  display: flex;
+  flex-direction: row;
+}
+
+.Experience_detail-list{
+  padding: 0;
 }

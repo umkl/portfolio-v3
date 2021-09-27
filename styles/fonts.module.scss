@@ -86,6 +86,8 @@
 }
 
 .about-code-1 {
+  color: i.$co_2;
+  font-size: 23px;
   margin: 0 20px;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-weight: 700;
@@ -123,9 +125,10 @@
 }
 
 .Experience-Code-1 {
-  color: i.$co_3;
+  color: i.$co_4;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-weight: Regular;
+
   font-size: clamp(20px, 4vw, 34px);
   min-height: 0vw;
   margin-top: 0px;
@@ -137,7 +140,7 @@
   color: i.$co_3;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-weight: Regular;
-  font-size: clamp(20px, 4vw, 34px);
+  font-size: clamp(30px, 8vw, 51px);
   min-height: 0vw;
   margin-top: 0px;
   margin-right: 10px;
@@ -145,7 +148,7 @@
 }
 
 .Experience-Code-3 {
-  color: i.$co_3;
+  color: i.$co_2-1;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-weight: Regular;
   font-size: clamp(20px, 4vw, 34px);
@@ -156,9 +159,12 @@
 }
 
 .Experience-Text-1 {
-  color: i.$co_3;
-  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  color: i.$co_2-1;
+  font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif;
+  width: 90%;
   font-weight: Regular;
+  list-style: none;
   font-size: clamp(20px, 4vw, 34px);
   min-height: 0vw;
   margin-top: 0px;

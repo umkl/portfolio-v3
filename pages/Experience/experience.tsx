@@ -8,7 +8,7 @@ import Experience, { IExperience } from "./index";
 function ExperienceComponent(props) {
   const { experience } = props;
   return (
-    <div>
+    <div className={l["Experience-Container"]}>
       <h1>
         <span className={`${f["Experience-Heading-1"]}`}>{experience.job}</span>
         &nbsp;
@@ -17,9 +17,14 @@ function ExperienceComponent(props) {
         </span>
       </h1>
       <p className={`${f["Experience-Code-3"]}`}>{experience.time}</p>
-      <ul className={`l[]`}>
+      <ul className={l['Experience_detail-list']}>
         {experience.descriptions.map((x) => {
-          return <li className={`${f["Experience-Text-1"]}`}>{x}</li>;
+          return (
+            <div className={l["experience_detail-container"]}>
+              <div className={l["list-indicator"]}/>
+              <li className={`${f["Experience-Text-1"]}`}>{x}</li>
+            </div>
+          );
         })}
       </ul>
     </div>
