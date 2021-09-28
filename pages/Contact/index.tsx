@@ -10,16 +10,17 @@ function Contact(props: Props) {
   const {} = props;
   return (
     <>
-      <section className={c["Section"]}>
+      <section className={l["Section"]}>
         <h2 className={l["Heading"]}>
           <span className={f["Section-Code-1"]}>04.</span>
-          <span className={f["Section-Heading-1"]}>Let us get in touch!</span>
+          <span className={f["Section-Heading-1"]}>Contact</span>
         </h2>
         <h1 className={f["Contact-Heading-1"]}>Get in Touch</h1>
         <p className={f["Contact-Text-1"]}>
           I would love to chat with anyone who is interested in saying hello. So
           feel free to contact me!
         </p>
+        <button className={l["Contact-button"]}>Send a mail</button>
       </section>
     </>
   );

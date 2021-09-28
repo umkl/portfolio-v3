@@ -70,7 +70,7 @@ function Experience() {
       <section className={l["Section"]}>
         <h2 className={l["Heading"]}>
           <span className={f["Section-Code-1"]}>02.</span>
-          <span className={f["Section-Heading-1"]}>My Experience</span>
+          <span className={f["Section-Heading-1"]}>Experience</span>
         </h2>
         <div className={l["Container"]}>
           <ul className={l["experience-item-list"]}>

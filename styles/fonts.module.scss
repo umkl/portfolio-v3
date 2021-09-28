@@ -114,7 +114,7 @@
 
 .Experience-Heading-1 {
   min-height: 0vw;
-  font-size: clamp(30px, 8vw, 51px);
+  font-size: clamp(20px, 3vw, 51px);
   color: i.$co_4;
   font-weight: Semi Bold;
   font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system,
@@ -129,7 +129,7 @@
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-weight: Regular;
 
-  font-size: clamp(20px, 4vw, 34px);
+  font-size: clamp(10px, 2vw, 34px);
   min-height: 0vw;
   margin-top: 0px;
   margin-right: 10px;
@@ -140,34 +140,130 @@
   color: i.$co_3;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-weight: Regular;
-  font-size: clamp(30px, 8vw, 51px);
+  font-size: clamp(20px, 3vw, 51px);
   min-height: 0vw;
   margin-top: 0px;
   margin-right: 10px;
-  line-height: 2;
+  line-height: clamp(20px, 3vw, 51px);
 }
 
 .Experience-Code-3 {
   color: i.$co_2-1;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-weight: Regular;
-  font-size: clamp(20px, 4vw, 34px);
+  font-size: clamp(20px, 2vw, 34px);
+  line-height: 2;
   min-height: 0vw;
   margin-top: 0px;
   margin-right: 10px;
-  line-height: 2;
 }
 
 .Experience-Text-1 {
   color: i.$co_2-1;
   font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
+
   width: 90%;
-  font-weight: Regular;
+  // background-color: green;
+  // font-weight: thin;
+  font-weight: 300;
   list-style: none;
-  font-size: clamp(20px, 4vw, 34px);
+  font-size: clamp(10px, 2.4vw, 34px);
+  line-height: clamp(14px, 2.6vw, 40px);
+  min-height: 0vw;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.Projects-code-1 {
+  margin: 20px;
+  color: i.$co_3;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-size: clamp(20px, 2vw, 34px);
+  line-height: 2;
+  min-height: 0vw;
+  font-weight: 10;
+  margin-top: 0px;
+  margin-right: 10px;
+}
+
+.Projects-code-2 {
+  margin: 20px;
+  color: i.$co_2-1;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-weight: Regular;
+  font-size: clamp(30px, 3vw, 44px);
+  // line-height: 0;
+  line-height: 1;
   min-height: 0vw;
   margin-top: 0px;
   margin-right: 10px;
+}
+
+.Projects-heading-1 {
+  margin: 20px;
+  min-height: 0vw;
+  font-size: clamp(90px, 3vw, 100px);
+  color: i.$co_4;
+  font-weight: Semi Bold;
+  font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif;
+  // margin: 20px 0;
+  line-height: 0.6;
+  max-width: 800px;
+}
+
+.Projects-text-1 {
+  color: i.$co_2-1;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-weight: Regular;
+  font-size: clamp(20px, 2vw, 34px);
   line-height: 2;
+  display: flex;
+  min-height: 0vw;
+  margin-top: 0px;
+  margin-right: 10px;
+  // background-color: red;
+}
+
+.Projects-code-3 {
+  color: i.$co_2-1;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-weight: Regular;
+  font-size: clamp(20px, 2vw, 34px);
+  line-height: 2;
+  min-height: 0vw;
+  margin-top: 0px;
+  margin-right: 10px;
+  display: flex;
+}
+
+.Contact-Heading-1 {
+  margin: 50px 20px;
+  min-height: 0vw;
+  font-size: clamp(90px, 3vw, 100px);
+  color: i.$co_4;
+  font-weight: Semi Bold;
+  font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif;
+  // margin: 20px 0;
+  line-height: 0.6;
+  max-width: 800px;
+  margin-bottom: 0px;
+}
+
+.Contact-Text-1 {
+  color: i.$co_2-1;
+  font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif;
+    width: 90%;
+    // background-color: green;
+    // font-weight: thin;
+    font-weight: 300;
+    list-style: none;
+    font-size: clamp(10px, 2.4vw, 34px);
+    line-height: clamp(14px, 2.6vw, 40px);
+    min-height: 0vw;
+    margin:30px 20px;
+    margin-bottom: 20px;
 }
