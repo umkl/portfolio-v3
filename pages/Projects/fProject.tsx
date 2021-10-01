@@ -14,10 +14,13 @@ function FProject({ Project }: { Project: IProject }) {
       <p className={f["Projects-code-1"]}>Featured Project</p>
       <p className={f["Projects-code-2"]}>{Project.date}</p>
       <h1 className={f["Projects-heading-1"]}>{Project.title}</h1>
-      <div
-        className={f["Projects-text-1"]}
-        dangerouslySetInnerHTML={{ __html: Project.contentHtml }}
-      ></div>
+      <div className={l["Text-container"]}>
+        <div
+          className={f["Projects-text-1"]}
+          dangerouslySetInnerHTML={{ __html: Project.contentHtml }}
+        ></div>
+      </div>
+
       <div className={f["Projects-code-3"]}>{Project.components}</div>
       <div className={l["Iconframe"]}>
         {Project.githubURL != undefined ? (

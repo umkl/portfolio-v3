@@ -184,6 +184,7 @@
   min-height: 0vw;
   font-weight: 10;
   margin-top: 0px;
+  margin-left: 0;
   margin-right: 10px;
 }
 
@@ -195,8 +196,10 @@
   font-size: clamp(30px, 3vw, 44px);
   // line-height: 0;
   line-height: 1;
+  margin-bottom: 0px;
   min-height: 0vw;
   margin-top: 0px;
+  margin-left: 0;
   margin-right: 10px;
 }
 
@@ -205,19 +208,23 @@
   min-height: 0vw;
   font-size: clamp(90px, 3vw, 100px);
   color: i.$co_4;
-  font-weight: Semi Bold;
+  font-weight: 700;
   font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
-  // margin: 20px 0;
+  // margin: 20px 0
+  margin-left: 0;
   line-height: 0.6;
   max-width: 800px;
 }
 
 .Projects-text-1 {
   color: i.$co_2-1;
-  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
-  font-weight: Regular;
+  font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif;
+    // background-color: red;
+  font-weight: 500;
   font-size: clamp(20px, 2vw, 34px);
+
   line-height: 2;
   display: flex;
   min-height: 0vw;
@@ -256,14 +263,14 @@
   color: i.$co_2-1;
   font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
-    width: 90%;
-    // background-color: green;
-    // font-weight: thin;
-    font-weight: 300;
-    list-style: none;
-    font-size: clamp(10px, 2.4vw, 34px);
-    line-height: clamp(14px, 2.6vw, 40px);
-    min-height: 0vw;
-    margin:30px 20px;
-    margin-bottom: 20px;
+  width: 90%;
+  // background-color: green;
+  // font-weight: thin;
+  font-weight: 300;
+  list-style: none;
+  font-size: clamp(10px, 2.4vw, 34px);
+  line-height: clamp(14px, 2.6vw, 40px);
+  min-height: 0vw;
+  margin: 30px 20px;
+  margin-bottom: 20px;
 }

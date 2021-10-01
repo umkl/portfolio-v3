@@ -22,17 +22,20 @@
 
   .experience-item-list {
     list-style: none;
-    height: 300px;
+    // height: 300px;
     width: 300px;
+    
     // background-color: rebeccapurple;
     @include a.media("<=xSize_5") {
-      background-color: purple;
+      
       display: flex;
       flex-direction: row;
     }
     .experience-item {
       // background-color: red;
       text-align: start;
+      
+      
       border: none;
       height: 100px;
       width: 260px;
@@ -40,8 +43,10 @@
       margin-left: 0px;
       background-color: transparent;
       transition: 0.8s;
+
       &:hover {
-        background-color: a.$co_1-1;
+        cursor: pointer;
+        background-color: #4e53581a;
         transition: 0.8s;
       }
     }
@@ -62,6 +67,7 @@
 }
 
 .indicator {
+  
   position: absolute;
   left: -1px;
   background-color: a.$co_3;
@@ -70,6 +76,7 @@
 }
 
 .Heading {
+  
   align-items: center;
   justify-content: center;
   position: relative;
@@ -102,5 +109,6 @@
 }
 
 .Experience_detail-list {
+  
   padding: 0;
 }
