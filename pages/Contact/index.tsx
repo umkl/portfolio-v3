@@ -20,7 +20,9 @@ function Contact(props: Props) {
           I would love to chat with anyone who is interested in saying hello. So
           feel free to contact me!
         </p>
-        <button className={l["Contact-button"]}>Send a mail</button>
+        <a href="mailto:EMAILADDRESS">
+          <div className={l["Contact-button"]}>Send a mail</div>
+        </a>
       </section>
     </>
   );

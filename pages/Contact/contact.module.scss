@@ -24,7 +24,6 @@
 }
 
 .Contact-button {
-  
   margin: 20px;
   height: 70px;
   width: 250px;
@@ -34,4 +33,16 @@
   border: 2px solid a.$co_3;
   border-radius: 10px;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // height: 100px;
+  // top: 10px;
+  box-sizing: border-box;
+  transition: 0.3s;
+  &:hover {
+    transition: 0.3s;
+    background-color: rgba(149, 184, 209, 0.144);
+    cursor: pointer;
+  }
 }

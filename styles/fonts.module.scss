@@ -1,7 +1,7 @@
-@use './abstracts/index' as i;
+@use './abstracts/index' as a;
 
 .Home-Code-1 {
-  color: i.$co_3;
+  color: a.$co_3;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-weight: bold;
   font-size: clamp(20px, 4vw, 25px);
@@ -11,7 +11,7 @@
 }
 
 .Home-Heading-1 {
-  color: i.$co_4;
+  color: a.$co_4;
   font-size: clamp(35px, 15vw, 100px);
   min-height: 0vw;
   font-weight: bold;
@@ -21,7 +21,7 @@
 }
 
 .Home-Heading-2 {
-  color: i.$co_2-1;
+  color: a.$co_2-1;
   font-size: clamp(23px, 10vw, 51px);
   min-height: 0vw;
   font-weight: bold;
@@ -33,7 +33,7 @@
 .Home-Text-1 {
   min-height: 0vw;
   font-size: clamp(10px, 8vw, 25px);
-  color: i.$co_2;
+  color: a.$co_2;
   font-weight: 300;
   font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
@@ -46,12 +46,12 @@
   writing-mode: vertical-rl;
   letter-spacing: 0.1em;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
-  color: i.$co_4;
+  color: a.$co_4;
   font-size: 20px;
 }
 
 .Section-Code-1 {
-  color: i.$co_3;
+  color: a.$co_3;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-weight: Regular;
   font-size: clamp(20px, 4vw, 34px);
@@ -64,7 +64,7 @@
 .Section-Heading-1 {
   min-height: 0vw;
   font-size: clamp(30px, 8vw, 51px);
-  color: i.$co_4;
+  color: a.$co_4;
   font-weight: Semi Bold;
   font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
@@ -76,7 +76,7 @@
 .About-Text-1 {
   min-height: 0vw;
   font-size: clamp(12px, 8vw, 25px);
-  color: i.$co_2;
+  color: a.$co_2;
   font-weight: 300;
   font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
@@ -86,7 +86,7 @@
 }
 
 .about-code-1 {
-  color: i.$co_2;
+  color: a.$co_2;
   font-size: 23px;
   margin: 0 20px;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
@@ -94,7 +94,7 @@
 }
 
 .Nav-Code-1 {
-  color: i.$co_3;
+  color: a.$co_3;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-size: clamp(10px, 2.4vw, 20px);
   min-height: 0vw;
@@ -103,7 +103,7 @@
 }
 
 .Nav-Heading-1 {
-  color: i.$co_4;
+  color: a.$co_4;
   font-family: Calibre, Inter, "San Francisco", "SF Pro Text",
     -apple-system system-ui, sans-serif;
   font-size: clamp(10px, 2.4vw, 20px);
@@ -115,7 +115,7 @@
 .Experience-Heading-1 {
   min-height: 0vw;
   font-size: clamp(20px, 3vw, 51px);
-  color: i.$co_4;
+  color: a.$co_4;
   font-weight: Semi Bold;
   font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
@@ -125,7 +125,7 @@
 }
 
 .Experience-Code-1 {
-  color: i.$co_4;
+  color: a.$co_4;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-weight: Regular;
 
@@ -137,7 +137,7 @@
 }
 
 .Experience-Code-2 {
-  color: i.$co_3;
+  color: a.$co_3;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-weight: Regular;
   font-size: clamp(20px, 3vw, 51px);
@@ -148,7 +148,7 @@
 }
 
 .Experience-Code-3 {
-  color: i.$co_2-1;
+  color: a.$co_2-1;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-weight: Regular;
   font-size: clamp(20px, 2vw, 34px);
@@ -159,7 +159,7 @@
 }
 
 .Experience-Text-1 {
-  color: i.$co_2-1;
+  color: a.$co_2-1;
   font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
 
@@ -177,7 +177,7 @@
 
 .Projects-code-1 {
   margin: 20px;
-  color: i.$co_3;
+  color: a.$co_3;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-size: clamp(20px, 2vw, 34px);
   line-height: 2;
@@ -189,7 +189,7 @@
 }
 
 .Projects-code-2 {
-  color: i.$co_2-1;
+  color: a.$co_2-1;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-weight: Regular;
   font-size: clamp(30px, 1.2vw, 44px);
@@ -206,7 +206,7 @@
   margin: 20px;
   min-height: 0vw;
   font-size: clamp(90px, 3vw, 100px);
-  color: i.$co_4;
+  color: a.$co_4;
   font-weight: 700;
   font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
@@ -217,7 +217,7 @@
 }
 
 .Projects-text-1 {
-  color: i.$co_2-1;
+  color: a.$co_2-1;
   font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
     // background-color: red;
@@ -233,7 +233,7 @@
 }
 
 .Projects-code-3 {
-  color: i.$co_2-1;
+  color: a.$co_2-1;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-weight: Regular;
   font-size: clamp(20px, 2vw, 34px);
@@ -248,7 +248,7 @@
   margin: 50px 20px;
   min-height: 0vw;
   font-size: clamp(90px, 3vw, 100px);
-  color: i.$co_4;
+  color: a.$co_4;
   font-weight: Semi Bold;
   font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
@@ -259,7 +259,7 @@
 }
 
 .Contact-Text-1 {
-  color: i.$co_2-1;
+  color: a.$co_2-1;
   font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
   width: 90%;
@@ -272,4 +272,22 @@
   min-height: 0vw;
   margin: 30px 20px;
   margin-bottom: 20px;
+}
+
+
+.footer-text{
+  color: a.$co_4;
+  color: a.$co_2-1;
+  font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif;
+  // width: 90%;
+  // background-color: green;
+  // font-weight: thin;
+  font-weight: 300;
+  list-style: none;
+  font-size: clamp(10px, 2vw, 34px);
+  line-height: clamp(14px, 2.2vw, 40px);
+  min-height: 0vw;
+  margin: 5px 0px;
+  // margin-bottom: 20px;
 }
