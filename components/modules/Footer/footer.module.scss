@@ -1,6 +1,15 @@
-// // @use './../../styles/abstracts/' as i;
-// // @use './../../styles/utils.module.scss' as u;
+@use './../../../styles/abstracts' as a;
+// @use './../../styles/utils.module.scss' as u;
 
+
+
+.parent{
+    background-color: red;
+    // width: 300px;
+    left: 50%;
+    position:absolute;
+    transform: translateX(-50%);
+}
 // .prBg {
 //   background: url(/images/Footer-section-background-1000BA.png);
 //   background-size: cover;

@@ -1,16 +1,19 @@
 import footerStyle from "./footer.module.scss";
 import SuperEllipse from "react-superellipse";
-// import OctagonLogo from "./../../assets/Logo/Octagon-logo-grayed.svg";
+import l from "./footer.module.scss";
+import f from "./../../../styles/fonts.module.scss";
 import React from "react";
 import Link from "next/link";
 
 const Footer = (): JSX.Element => {
   return (
     <footer>
-      <ul>
-        <li>© 2020 ungarmichael </li>
-        <li>Made with {"<"}3 in Austria</li>
-      </ul>
+      <div className={l.parent}>
+        <ul>
+          <li>© 2020 ungarmichael </li>
+          <li>Made with {"<"}3 in Austria</li>
+        </ul>
+      </div>
     </footer>
   );
 };

@@ -182,24 +182,23 @@
   font-size: clamp(20px, 2vw, 34px);
   line-height: 2;
   min-height: 0vw;
-  font-weight: 10;
+  font-weight: 200;
   margin-top: 0px;
   margin-left: 0;
   margin-right: 10px;
 }
 
 .Projects-code-2 {
-  margin: 20px;
   color: i.$co_2-1;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-weight: Regular;
-  font-size: clamp(30px, 3vw, 44px);
-  // line-height: 0;
+  font-size: clamp(30px, 1.2vw, 44px);
   line-height: 1;
   margin-bottom: 0px;
   min-height: 0vw;
   margin-top: 0px;
   margin-left: 0;
+  margin-bottom: 10px;
   margin-right: 10px;
 }
 
