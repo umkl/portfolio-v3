@@ -15,6 +15,7 @@ export interface IProject {
   githubURL?: string;
   URL?: string;
   components: string[];
+  imageURL: string;
 }
 
 export function getSortedProjectsData() {

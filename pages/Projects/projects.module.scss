@@ -29,14 +29,15 @@
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    z-index: 100;
   }
   .icon {
     height: 40px;
     margin: 20px 30px 20px 0px;
-    &:hover{
+    &:hover {
       cursor: pointer;
     }
-    path{
+    path {
       stroke: i.$co_4;
     }
   }
@@ -57,14 +58,32 @@
   //   }
 }
 
-
-
-.Text-container{
+.Text-container {
   // background-color: red;
   padding: 20px 30px;
   margin: 20px 10px 10px 0px;
   background-color: i.$co_1-1;
-  border-radius: 8px ;
+  border-radius: 8px;
   height: 100px;
-  width: 100%;
+  width: 60%;
+}
+
+.project-image {
+  height: 100%;
+  width: 700px;
+  background-color: red;
+  position: absolute;
+  right: 0;
+  top: 0px;
+  z-index: -10;
+  
+  background-size: cover;
+}
+
+.Content-coordinator {
+  // position: absolute;
+  z-index: 11;
+  position: relative;
+  background-color: green;
+  // display: flex;
 }

@@ -18,7 +18,7 @@ const Projects = ({
   return (
     <>
       {/* {console.log(allProjects)} */}
-      <section className={l["Section"]}>
+      <section className={l["Section"]} id="projects">
         <h2 className={l["Heading"]}>
           <span className={f["Section-Code-1"]}>03.</span>
           <span className={f["Section-Heading-1"]}>Projects</span>

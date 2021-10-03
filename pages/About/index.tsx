@@ -16,7 +16,7 @@ function About() {
         <title>ungarmichael - portfolio</title>
       </Head>
 
-      <section className={l["Section"]}>
+      <section className={l["Section"]} id="about">
         <h2 className={l["Heading"]}>
           <span className={f["Section-Code-1"]}>01.</span>
           <span className={f["Section-Heading-1"]}>About</span>

@@ -10,7 +10,7 @@ function Contact(props: Props) {
   const {} = props;
   return (
     <>
-      <section className={l["Section"]}>
+      <section className={l["Section"]} id="contact">
         <h2 className={l["Heading"]}>
           <span className={f["Section-Code-1"]}>04.</span>
           <span className={f["Section-Heading-1"]}>Contact</span>
@@ -20,7 +20,7 @@ function Contact(props: Props) {
           I would love to chat with anyone who is interested in saying hello. So
           feel free to contact me!
         </p>
-        <a href="mailto:EMAILADDRESS">
+        <a href="mailto:ungarmichael.mail@gmail.com">
           <div className={l["Contact-button"]}>Send a mail</div>
         </a>
       </section>
