@@ -17,13 +17,11 @@
 }
 
 .bar-icon {
-  // background-color: red;
   height: 60px;
   width: 60px;
   &:hover {
     cursor: pointer;
   }
-  // background-color: red;
 }
 .grid-icon {
   height: 50px;
@@ -31,7 +29,6 @@
 
 .tlnav {
   @include a.media("<=xSize_5") {
-    // background-color: purple;
     background-color: a.$co_4-2;
 
     height: clamp(60px, 20vh, 80px);
@@ -45,11 +42,9 @@
       height: 80%;
       margin: 10px 30px;
       background-color: transparent;
-      // background-color: purple;
       border: none;
     }
   }
-  // background-color: green;
   height: 100px;
   width: 100vw;
   bottom: 0;
@@ -57,19 +52,16 @@
   opacity: 0;
   margin-bottom: -100px;
   justify-content: space-between;
-  // padding: 20px;
   box-sizing: border-box;
   z-index: 1000;
 }
 
 .social-grid {
   margin-bottom: -200px;
-  background-color: purple;
 }
 
 .nav-grid {
   margin-bottom: -200px;
-  // background-color: green;
 }
 
 .subcontainer {
@@ -82,7 +74,6 @@
   margin-bottom: -200px;
   background-color: a.$co_4-2;
   @include a.media("<=xSize_5") {
-    // width: 100%;
   }
   @include a.media("<=xSize_2") {
     width: 100%;
@@ -94,17 +85,19 @@
     padding: 10px;
     position: relative;
     height: 100%;
-    background-color: transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
     @include a.media("<=xSize_4") {
       padding: 0;
     }
 
-    .subcontainerUl {
-      height: 80%;
+    .subcontainerDiv {
+      height: fit-content;
+      width: 100%;
       grid-template-columns: auto auto;
-      background-color: transparent;
       @include a.media("<=xSize_2") {
-        // background-color: gold;
         grid-template-columns: auto;
       }
       padding: 10px 30px;
@@ -113,17 +106,6 @@
         padding: 10px 10px;
       }
       display: grid;
-      // grid-column: auto;
-      .subcontainerGridItem {
-        @include a.media("<=xSize_2") {
-          height: 20px;
-          // background-color: green;
-        }
-        background-color: transparent;
-        height: 100%;
-        list-style: none;
-        width: 100%;
-      }
     }
   }
 }

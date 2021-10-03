@@ -141,39 +141,23 @@ function Bottomnav(props: Props) {
         ref={socialRef}
       >
         <nav className={l["subcontainerNav"]}>
-          <ul className={l["subcontainerUl"]}>
-            <li className={l["subcontainerGridItem"]}>
-              <GridItem name="01.about" />
-            </li>
-            <li className={l["subcontainerGridItem"]}>
-              <GridItem name="02.experience" />
-            </li>
-            <li className={l["subcontainerGridItem"]}>
-              <GridItem name="03.projects" />
-            </li>
-            <li className={l["subcontainerGridItem"]}>
-              <GridItem name="04.contact" />
-            </li>
-          </ul>
+          <div className={l["subcontainerDiv"]}>
+            <GridItem name="dribbble" />
+            <GridItem name="github" />
+            <GridItem name="linkedin" />
+            <GridItem name="twitter" />
+          </div>
         </nav>
       </div>
 
       <div className={`${l["nav-grid"]} ${l["subcontainer"]}`} ref={navRef}>
         <nav className={l["subcontainerNav"]}>
-          <ul className={l["subcontainerUl"]}>
-            <li className={l["subcontainerGridItem"]}>
-              <GridItem name="01.About" />
-            </li>
-            <li className={l["subcontainerGridItem"]}>
-              <GridItem name="02.Experience" />
-            </li>
-            <li className={l["subcontainerGridItem"]}>
-              <GridItem name="03.Projects" />
-            </li>
-            <li className={l["subcontainerGridItem"]}>
-              <GridItem name="04.Contact" />
-            </li>
-          </ul>
+          <div className={l["subcontainerDiv"]}>
+            <GridItem name="01.about" />
+            <GridItem name="02.experience" />
+            <GridItem name="03.projects" />
+            <GridItem name="04.contact" />
+          </div>
         </nav>
       </div>
     </nav>

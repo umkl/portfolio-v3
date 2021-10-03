@@ -1,35 +1,47 @@
 @use "./../../../styles/abstracts" as a;
 
 .icon {
-  height: 100px;
-  width: 100px;
+  // width: 200px;
+  // background-color: red;
+  position: relative;
+  // height: 400px;
+  height: 80px;
+  width: 80px;
+  path,
+  circle {
+    stroke: a.$co_3;
+  }
 }
 
 .gridcontainer {
-  height: 100%;
+  // height: 100%;
+  // width: 100%;
+  // background-color: green;
+  // height: 100px;
   width: 100%;
-  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   .gridlist {
-    display: flex;
-    flex-direction: column-reverse;
-    background-color: antiquewhite;
-    height: 100%;
-    box-sizing: border-box;
-    align-items: center;
+    // height: 80%;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
     padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
 
     .gridlistitem {
       padding: 0;
       list-style: none;
       box-sizing: border-box;
-      height: 50%;
       display: flex;
       align-items: center;
+      height: 80px;
       justify-content: center;
     }
   }
-}
-
-.icon {
-  height: 30px;
 }

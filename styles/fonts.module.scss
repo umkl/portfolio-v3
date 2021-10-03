@@ -220,7 +220,7 @@
   color: a.$co_2-1;
   font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
-    // background-color: red;
+  // background-color: red;
   font-weight: 500;
   font-size: clamp(20px, 2vw, 34px);
 
@@ -274,8 +274,7 @@
   margin-bottom: 20px;
 }
 
-
-.footer-text{
+.footer-text {
   color: a.$co_4;
   color: a.$co_2-1;
   font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system,
@@ -290,4 +289,21 @@
   min-height: 0vw;
   margin: 5px 0px;
   // margin-bottom: 20px;
+}
+
+.nav-code-3 {
+  color: a.$co_4;
+  // color: a.$co_2-1;
+  font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system,
+  system-ui, sans-serif;
+
+  // width: 90%;
+  // background-color: green;
+  // font-weight: thin;
+  font-weight: 500;
+  list-style: none;
+  font-size: clamp(10px, 3.4vw, 40px);
+  line-height: clamp(14px, 3vw, 40px);
+  min-height: 0vw;
+  margin: 5px 0px;
 }
