@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import Head from "next/head";
 import ExperienceComponent from "./experience";
+import InlineExperienceComponent from "./inlineExperience";
 import f from "./../../styles/fonts.module.scss";
 import c from "./../../styles/components.module.scss";
 import a from "./../../styles/export.module.scss";
@@ -72,7 +73,8 @@ function Experience() {
           <span className={f["Section-Code-1"]}>02.</span>
           <span className={f["Section-Heading-1"]}>Experience</span>
         </h2>
-        <div className={l["Container"]}>
+
+        <div className={`${l["Container"]}`}>
           <ul className={l["experience-item-list"]}>
             <div className={l["bar"]}>
               <div className={l["indicator"]} ref={indicator} />

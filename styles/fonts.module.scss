@@ -128,15 +128,17 @@
   color: a.$co_4;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-weight: Regular;
-
+  
   font-size: clamp(10px, 2vw, 34px);
   min-height: 0vw;
   margin-top: 0px;
   margin-right: 10px;
   line-height: 2;
+  
 }
 
 .Experience-Code-2 {
+  
   color: a.$co_3;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-weight: Regular;

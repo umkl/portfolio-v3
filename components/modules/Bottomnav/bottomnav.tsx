@@ -152,7 +152,11 @@ function Bottomnav(props: Props) {
               link={"https://github.com/ungarmichael"}
               type={"social"}
             />
-            <GridItem name="linkedin" link={""} type={"social"} />
+            <GridItem
+              name="linkedin"
+              link={"https://www.linkedin.com/in/michael-ungar-9624391b4/"}
+              type={"social"}
+            />
             <GridItem
               name="twitter"
               link={"https://twitter.com/ungarmichael_"}

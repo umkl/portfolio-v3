@@ -13,19 +13,26 @@ const links = (): JSX.Element => {
   return (
     <>
       <aside className={`${l["Linkbar-1"]} ${l["Linkbar"]}`}>
-        <div className={l["Icon-frame"]}>
-          <DribbbleIcon className={l["Icon-1"]} />
-        </div>
-        <div className={l["Icon-frame"]}>
-          <GithubIcon className={l["Icon-1"]} />
-        </div>
-        <div className={l["Icon-frame"]}>
-          <TwitterIcon className={l["Icon-1"]} />
-        </div>
-
-        <div className={l["Icon-frame"]}>
-          <LinkedinIcon className={l["Icon-1"]} />
-        </div>
+        <a href="https://dribbble.com/ungarmichael">
+          <div className={l["Icon-frame"]}>
+            <DribbbleIcon className={l["Icon-1"]} />
+          </div>
+        </a>
+        <a href="https://github.com/ungarmichael">
+          <div className={l["Icon-frame"]}>
+            <GithubIcon className={l["Icon-1"]} />
+          </div>
+        </a>
+        <a href="https://twitter.com/ungarmichael_">
+          <div className={l["Icon-frame"]}>
+            <TwitterIcon className={l["Icon-1"]} />
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/michael-ungar-9624391b4/">
+          <div className={l["Icon-frame"]}>
+            <LinkedinIcon className={l["Icon-1"]} />
+          </div>
+        </a>
 
         <div className={l["Line-1"]}></div>
       </aside>

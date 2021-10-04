@@ -8,12 +8,24 @@
   margin-bottom: 300px;
 }
 
+.ContainerLargeExperienceList {
+  @include a.media("<=xSize_6") {
+    background-color: red;
+    display: none;
+  }
+}
+.ContainerSmallExperienceList {
+  @include a.media(">=xSize_6") {
+    background-color: green;
+    display: none;
+  }
+}
+
 .Container {
   margin: 60px 20px;
   display: flex;
-  // background-color: red;
-  height: 600px;
-
+  // height: 600px;
+  height: fit-content;
   @include a.media("<=xSize_5") {
     // background-color: green;
     display: flex;
@@ -24,21 +36,23 @@
     list-style: none;
     // height: 300px;
     width: 300px;
-    
-    // background-color: rebeccapurple;
+    height: fit-content;
+    // background-color: red;
+
+    // background-color: transparent;
     @include a.media("<=xSize_5") {
-      
       display: flex;
-      flex-direction: row;
+      // background-color: red;
+      flex-direction: column;
     }
+
     .experience-item {
       // background-color: red;
       text-align: start;
-      
-      
+
       border: none;
       height: 100px;
-      width: 260px;
+      width: clamp(100px, 20vw, 260px);
       padding-left: 50px;
       margin-left: 0px;
       background-color: transparent;
@@ -48,7 +62,7 @@
         cursor: pointer;
         background-color: #4e53581a;
         transition: 0.8s;
-        
+        border-radius: 0px 8px 8px 0px;
       }
     }
   }
@@ -56,6 +70,8 @@
 
 .Experience-Container {
   margin: 10px 80px;
+  background-color: green;
+  width: 100%;
 }
 
 .bar {
@@ -65,19 +81,23 @@
   width: 3px;
   position: absolute;
   display: flex;
+  // @include a.media("<=xSize_6") {
+  //   height: 100%;
+  // }
 }
 
 .indicator {
-  
   position: absolute;
   left: -1px;
   background-color: a.$co_3;
   height: 100px;
   width: 5px;
+  // @include a.media("<=xSize_6") {
+  //   display: none;
+  // }
 }
 
 .Heading {
-  
   align-items: center;
   justify-content: center;
   position: relative;
@@ -98,7 +118,7 @@
   height: 20px;
   border-radius: 2px;
   width: 15px;
-  margin: 24px;
+  // margin: 24px;
 }
 
 .experience_detail-container {
@@ -107,9 +127,10 @@
   // background-color: red;
   display: flex;
   flex-direction: row;
+  background-color: red;
 }
 
 .Experience_detail-list {
-  
   padding: 0;
+  background-color: rebeccapurple;
 }
