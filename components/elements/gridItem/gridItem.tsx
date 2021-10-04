@@ -11,7 +11,7 @@ import Dribbble from "./../../../assets/Icons/dribbble.svg";
 
 import { Link, animateScroll as scroll } from "react-scroll";
 
-import l from "./griditem.module.scss";
+import l from "./gridItem.module.scss";
 import f from "./../../../styles/fonts.module.scss";
 
 interface Props {
