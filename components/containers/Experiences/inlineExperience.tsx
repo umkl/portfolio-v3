@@ -1,11 +1,11 @@
-import f from "./../../styles/fonts.module.scss";
-import c from "./../../styles/components.module.scss";
-import l from "./experience.module.scss";
+import f from "./../../../styles/fonts.module.scss";
+import c from "./../../../styles/components.module.scss";
+import l from "./../../../pages/Experience/experience.module.scss";
 
 import React from "react";
-import Experience, { IExperience } from "./index";
+import Experience, { IExperience } from "../../content/Experience/index";
 
-function ExperienceComponent(props) {
+function InlineExperienceComponent(props) {
   const { experience } = props;
   return (
     <div className={l["Experience-Container"]}>
@@ -17,11 +17,11 @@ function ExperienceComponent(props) {
         </span>
       </h1>
       <p className={`${f["Experience-Code-3"]}`}>{experience.time}</p>
-      <ul className={l['Experience_detail-list']}>
+      <ul className={l["Experience_detail-list"]}>
         {experience.descriptions.map((x) => {
           return (
             <div className={l["experience_detail-container"]}>
-              <div className={l["list-indicator"]}/>
+              <div className={l["list-indicator"]} />
               <li className={`${f["Experience-Text-1"]}`}>{x}</li>
             </div>
           );
@@ -31,4 +31,4 @@ function ExperienceComponent(props) {
   );
 }
 
-export default ExperienceComponent;
+export default InlineExperienceComponent;

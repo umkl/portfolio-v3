@@ -1,23 +1,19 @@
 import React from "react";
 import Head from "next/head";
-import f from "./../../styles/fonts.module.scss";
-import c from "./../../styles/components.module.scss";
+import f from "./../../../styles/fonts.module.scss";
+import c from "./../../../styles/components.module.scss";
 import l from "./projects.module.scss";
-import FProject from "./fProject";
+import FProject from "../../containers/Projects/fProject";
 import { GetStaticProps } from "next";
-import { getCompleteSortedProjectsData, IProject } from "../../lib/projects";
+import { getCompleteSortedProjectsData, IProject } from "../../../lib/projects";
 
 const Projects = ({
   allProjects,
-}: // allEventsData
-{
+}: {
   allProjects: IProject[];
 }): JSX.Element => {
-  // console.log(allProjects.length);
-
   return (
     <>
-      {/* {console.log(allProjects)} */}
       <section className={l["Section"]} id="projects">
         <h2 className={l["Heading"]}>
           <span className={f["Section-Code-1"]}>03.</span>

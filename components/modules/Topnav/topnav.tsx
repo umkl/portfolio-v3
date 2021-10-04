@@ -1,15 +1,3 @@
-// import { animated as a, useSpring } from "react-spring";
-// import SuperEllipse from "react-superellipse";
-// import navStyles from "./nav.module.scss";
-// import utilStyles from "./../../styles/utils.module.scss";
-// import { useContext } from "react";
-// import { NavActiveContext } from "./../layouts/layout";
-// import Button from "./../elements/button";
-// import { useRouter } from "next/router";
-// import Link from "next/link";
-// import { Link as Link2, animateScroll as scroll } from "react-scroll";
-// import useWindowSize, { Size } from "../../hooks/useWindowSize";
-
 import { Link, animateScroll as scroll } from "react-scroll";
 
 import f from "./../../../styles/fonts.module.scss";

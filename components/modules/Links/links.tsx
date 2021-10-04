@@ -1,8 +1,3 @@
-// import footerStyle from "./footer.module.scss";
-// import SuperEllipse from "react-superellipse";
-// import OctagonLogo from "./../../assets/Logo/Octagon-logo-grayed.svg";
-// import React from "react";
-// import Link from "next/link";
 import l from "./links.module.scss";
 import GithubIcon from "./../../../assets/Icons/github.svg";
 import LinkedinIcon from "./../../../assets/Icons/linkedin.svg";

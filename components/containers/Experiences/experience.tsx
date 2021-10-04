@@ -1,11 +1,11 @@
-import f from "./../../styles/fonts.module.scss";
-import c from "./../../styles/components.module.scss";
-import l from "./experience.module.scss";
+import f from "./../../../styles/fonts.module.scss";
+import c from "./../../../styles/components.module.scss";
+import l from "../../content/Experience/experience.module.scss";
 
 import React from "react";
-import Experience, { IExperience } from "./index";
+import Experience, { IExperience } from "../../content/Experience/index";
 
-function InlineExperienceComponent(props) {
+function ExperienceComponent(props) {
   const { experience } = props;
   return (
     <div className={l["Experience-Container"]}>
@@ -31,4 +31,4 @@ function InlineExperienceComponent(props) {
   );
 }
 
-export default InlineExperienceComponent;
+export default ExperienceComponent;

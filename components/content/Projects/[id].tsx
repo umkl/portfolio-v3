@@ -1,21 +1,12 @@
-import { getAllProjectsIds, getProjectData } from "../../lib/projects";
+import { getAllProjectsIds, getProjectData } from "../../../lib/projects";
 import Head from "next/head";
-import Date from "../../components/elements/date";
-import utilStyles from "../../styles/utils.module.scss";
+import Date from "../../elements/date";
 import { GetStaticPaths, GetStaticProps } from "next";
 
-export default function EventDetail({
-  eventData,
-}: {
-  eventData: {
-    title: string;
-    date: string;
-    contentHtml: string;
-  };
-}) {
+export default function ProjectDetail() {
   return (
     <>
-      <Head>
+      {/* <Head>
         <title>{eventData.title}</title>
       </Head>
       <article>
@@ -25,7 +16,7 @@ export default function EventDetail({
           className={utilStyles.textMd}
           dangerouslySetInnerHTML={{ __html: eventData.contentHtml }}
         />
-      </article>
+      </article> */}
     </>
   );
 }

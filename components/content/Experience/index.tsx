@@ -1,10 +1,10 @@
 import React, { useState, useRef } from "react";
 import Head from "next/head";
-import ExperienceComponent from "./experience";
-import InlineExperienceComponent from "./inlineExperience";
-import f from "./../../styles/fonts.module.scss";
-import c from "./../../styles/components.module.scss";
-import a from "./../../styles/export.module.scss";
+import ExperienceComponent from "../../../components/containers/Experiences/experience";
+import InlineExperienceComponent from "../../../components/containers/Experiences/inlineExperience";
+import f from "./../../../styles/fonts.module.scss";
+import c from "./../../../styles/components.module.scss";
+import a from "./../../../styles/export.module.scss";
 import l from "./experience.module.scss";
 import { gsap, TweenMax, Power3 } from "gsap";
 

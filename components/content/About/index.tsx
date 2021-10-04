@@ -1,13 +1,10 @@
 import React from "react";
 import Head from "next/head";
-import f from "./../../styles/fonts.module.scss";
-import c from "./../../styles/components.module.scss";
+import f from "./../../../styles/fonts.module.scss";
+import c from "./../../../styles/components.module.scss";
 import l from "./about.module.scss";
 import Image from "next/image";
-import setup from "./../../public/images/setup.jpg";
-
-// import aboutStyles from "./about.module.scss";
-// import utilStyles from "./../../styles/utils.module.scss";
+import setup from "./../../../public/images/setup.jpg";
 
 function About() {
   return (

@@ -1,13 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
-import GithubLogo from "./../../assets/Icons/github.svg";
-import LinkIcon from "./../../assets/Icons/link.svg";
-import { IProject } from "../../lib/projects";
-import l from "./projects.module.scss";
-import f from "../../styles/fonts.module.scss";
+import GithubLogo from "./../../../assets/Icons/github.svg";
+import LinkIcon from "./../../../assets/Icons/link.svg";
+import { IProject } from "./../../../lib/projects";
+
+import f from "./../../../styles/fonts.module.scss";
+import c from "./../../../styles/components.module.scss";
+import l from "../../content/Projects/projects.module.scss";
 
 function FProject({ Project }: { Project: IProject }) {
-  // const Project = props;
   console.log(Project);
   return (
     <div className={l["Content-coordinator"]}>
