@@ -5,8 +5,8 @@
   // background-color: red;
   position: relative;
   // height: 400px;
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
   path,
   circle {
     stroke: a.$co_3;
@@ -22,6 +22,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  // background-color: red;
+  border-radius: 8px;
+  transition: 0.8s;
+  &:hover {
+    cursor: pointer;
+    background-color: #92999f1a;
+    transition: 0.8s;
+  }
+
   .gridlist {
     // height: 80%;
     width: 200px;

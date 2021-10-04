@@ -142,10 +142,22 @@ function Bottomnav(props: Props) {
       >
         <nav className={l["subcontainerNav"]}>
           <div className={l["subcontainerDiv"]}>
-            <GridItem name="dribbble" />
-            <GridItem name="github" />
-            <GridItem name="linkedin" />
-            <GridItem name="twitter" />
+            <GridItem
+              name="dribbble"
+              type={"social"}
+              link={"https://dribbble.com/ungarmichael"}
+            />
+            <GridItem
+              name="github"
+              link={"https://github.com/ungarmichael"}
+              type={"social"}
+            />
+            <GridItem name="linkedin" link={""} type={"social"} />
+            <GridItem
+              name="twitter"
+              link={"https://twitter.com/ungarmichael_"}
+              type={"social"}
+            />
           </div>
         </nav>
       </div>
@@ -153,10 +165,10 @@ function Bottomnav(props: Props) {
       <div className={`${l["nav-grid"]} ${l["subcontainer"]}`} ref={navRef}>
         <nav className={l["subcontainerNav"]}>
           <div className={l["subcontainerDiv"]}>
-            <GridItem name="01.about" />
-            <GridItem name="02.experience" />
-            <GridItem name="03.projects" />
-            <GridItem name="04.contact" />
+            <GridItem name="01.about" link={"about"} type={"nav"} />
+            <GridItem name="02.experience" link={"experience"} type={"nav"} />
+            <GridItem name="03.projects" link={"projects"} type={"nav"} />
+            <GridItem name="04.contact" link={"contact"} type={"nav"} />
           </div>
         </nav>
       </div>
