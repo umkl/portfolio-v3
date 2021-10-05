@@ -179,7 +179,7 @@
   margin: 20px;
   color: a.$co_3;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
-  font-size: clamp(20px, 2vw, 34px);
+  font-size: clamp(18px, 2vw, 34px);
   line-height: 2;
   min-height: 0vw;
   font-weight: 200;
@@ -192,7 +192,7 @@
   color: a.$co_2-1;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-weight: Regular;
-  font-size: clamp(30px, 1.2vw, 44px);
+  font-size: clamp(22px, 1.2vw, 44px);
   line-height: 1;
   margin-bottom: 0px;
   min-height: 0vw;
@@ -214,6 +214,9 @@
   margin-left: 0;
   line-height: 0.6;
   max-width: 800px;
+  @include a.media("<=xSize_6"){
+    font-size: clamp(50px, 6vw, 100px); 
+  }
 }
 
 .Projects-text-1 {
@@ -252,7 +255,7 @@
   // -webkit-text-stroke-width: 1px;
   // -webkit-text-stroke-color: rgb(255, 255, 255);
   font-size: clamp(50px, 3vw, 100px);
-  line-height: clamp(20px, 2vw, 80px);
+  line-height: clamp(50px, 2vw, 80px);
   color: a.$co_4-1;
   
   font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system,
@@ -289,8 +292,8 @@
   // font-weight: thin;
   font-weight: 300;
   list-style: none;
-  font-size: clamp(10px, 2vw, 34px);
-  line-height: clamp(14px, 2.2vw, 40px);
+  font-size: clamp(20px, 2vw, 34px);
+  line-height: clamp(30px, 2.2vw, 40px);
   min-height: 0vw;
   margin: 5px 0px;
   // margin-bottom: 20px;

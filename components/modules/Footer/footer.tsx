@@ -1,5 +1,4 @@
 import footerStyle from "./footer.module.scss";
-import SuperEllipse from "react-superellipse";
 import l from "./footer.module.scss";
 import f from "./../../../styles/fonts.module.scss";
 import React from "react";
@@ -17,6 +16,7 @@ const Footer = (): JSX.Element => {
           <li className={f["footer-text"]}>Made with {"<"}3 in Austria</li>
         </ul>
       </div>
+      <div className={l.spacer}></div>
     </footer>
   );
 };

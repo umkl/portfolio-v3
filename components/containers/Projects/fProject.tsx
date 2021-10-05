@@ -26,12 +26,12 @@ function FProject({ Project }: { Project: IProject }) {
         <div className={f["Projects-code-3"]}>{Project.components}</div>
         <div className={l["Iconframe"]}>
           {Project.githubURL != undefined ? (
-            <a>
+            <a href={Project.githubURL}>
               <GithubLogo className={l["icon"]} />
             </a>
           ) : null}
           {Project.URL != undefined ? (
-            <a>
+            <a href={Project.URL}>
               <LinkIcon className={l["icon"]} />
             </a>
           ) : null}

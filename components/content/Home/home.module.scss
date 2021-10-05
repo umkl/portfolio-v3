@@ -7,15 +7,19 @@
   // width: 0vw;
   width: clamp(100px, 70vw, 1200px);
   min-height: 100vh;
-  @include a.media(">=xSize_5") {
-    // background-color: aqua;
-  }
-  // width: clamp(100px, 80vw, 800px);
   overflow-wrap: break-word;
   transform: translateX(-50%);
   // width: 80%;
   left: 50%;
   z-index: 0;
+  // background-color: red;
+  @include a.media("<=ySize_3") {
+    // background-color: aqua;
+    // background-color: red;
+    height: 600px;
+  }
+  // width: clamp(100px, 80vw, 800px);
+
 }
 
 .bottomBefore {

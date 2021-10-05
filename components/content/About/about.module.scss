@@ -7,6 +7,10 @@
   left: 50%;
   transform: translateX(-50%);
   margin-bottom: 300px;
+  // background-color: red;
+  @include a.media("<=xSize_5") {
+    width: clamp(100px, 85vw, 1200px);
+  }
 }
 
 .Heading {
@@ -16,7 +20,7 @@
   &:after {
     content: "";
     position: absolute;
-    width: 200px;
+    width: clamp(10px, 30vw, 200px);
     height: 1px;
     background-color: a.$co_3;
     margin: 0 20px;
@@ -41,10 +45,14 @@
     }
   }
 
-  @include a.media(">=xSize_7") {
-    height: 100%;
-    width: 40%;
+  @include a.media("<=xSize_5") {
+    width: 80%;
   }
+
+  // @include a.media(">=xSize_7") {
+  //   height: 100%;
+  //   width: 40%;
+  // }
   display: flex;
   justify-content: center;
   .Image-Mask {
@@ -122,6 +130,10 @@
     // background-color: green;
     margin: 20px;
     width: 80%;
+  }
+  @include a.media("<=xSize_5"){
+    margin: 20px 0px;
+    width: 100%; 
   }
 }
 

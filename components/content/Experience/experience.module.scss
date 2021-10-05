@@ -6,6 +6,9 @@
   left: 50%;
   transform: translateX(-50%);
   margin-bottom: 300px;
+  @include a.media("<=xSize_5") {
+    width: clamp(100px, 85vw, 1200px);
+  }
 }
 
 .ContainerLargeExperienceList {
@@ -82,15 +85,22 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  
   &:after {
     content: "";
     position: absolute;
-    width: 200px;
+    width: clamp(10px, 40vw, 200px); 
     height: 1px;
     background-color: a.$co_3;
     margin: 0 20px;
     top: 50%;
     transform: translateY(-50%);
+    @include a.media("<=xSize_5"){
+      width: clamp(10px, 30vw, 200px);
+    }
+    @include a.media("<=xSize_4"){
+      width: clamp(10px, 20vw, 200px);
+    }
   }
 }
 

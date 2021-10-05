@@ -6,6 +6,9 @@
   left: 50%;
   transform: translateX(-50%);
   margin-bottom: 300px;
+  @include a.media("<=xSize_5") {
+    width: clamp(100px, 85vw, 1200px);
+  }
   .Heading {
     align-items: center;
     justify-content: center;
@@ -19,6 +22,12 @@
       margin: 0 20px;
       top: 50%;
       transform: translateY(-50%);
+      @include a.media("<=xSize_5") {
+        width: clamp(10px, 30vw, 200px);
+      }
+      @include a.media("<=xSize_4") {
+        width: clamp(10px, 20vw, 200px);
+      }
     }
   }
 }
@@ -38,7 +47,7 @@
   justify-content: center;
   box-sizing: border-box;
   transition: 0.3s;
-  @include a.media("<=xSize_6"){
+  @include a.media("<=xSize_6") {
     left: 50%;
     width: 80%;
   }
