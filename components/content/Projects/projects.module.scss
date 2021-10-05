@@ -1,6 +1,5 @@
 @use './../../../styles/abstracts/index' as i;
 
-
 .Section {
   width: clamp(100px, 70vw, 1200px);
   left: 50%;
@@ -72,12 +71,12 @@
 .project-image {
   height: 100%;
   width: 700px;
-  background-color: red;
   position: absolute;
   right: 0;
   top: 0px;
   z-index: -10;
-  
+  border-radius: 20px;
+
   background-size: cover;
 }
 
@@ -85,6 +84,6 @@
   // position: absolute;
   z-index: 11;
   position: relative;
-  background-color: green;
+  // background-color: green;
   // display: flex;
 }

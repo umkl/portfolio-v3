@@ -10,54 +10,48 @@
 
 .ContainerLargeExperienceList {
   @include a.media("<=xSize_6") {
-    background-color: red;
     display: none;
   }
 }
 .ContainerSmallExperienceList {
   @include a.media(">=xSize_6") {
-    background-color: green;
     display: none;
   }
 }
 
-.Container {
-  margin: 60px 20px;
-  display: flex;
-  // height: 600px;
-  height: fit-content;
-  @include a.media("<=xSize_5") {
-    // background-color: green;
-    display: flex;
-    flex-direction: column;
-  }
+.Experience-Container {
+  margin: 10px 0px;
+  // width: 100%;
+  // background-color: blue;
+}
 
+.Container {
+  // background-color: red;
+  margin: 60px 0px;
+  display: flex;
+  height: fit-content;
+  @include a.media("<=xSize_6") {
+    display: none;
+  }
   .experience-item-list {
     list-style: none;
-    // height: 300px;
-    width: 300px;
     height: fit-content;
-    // background-color: red;
 
-    // background-color: transparent;
     @include a.media("<=xSize_5") {
       display: flex;
-      // background-color: red;
       flex-direction: column;
     }
+    // background-color: green;
 
     .experience-item {
-      // background-color: red;
       text-align: start;
-
       border: none;
       height: 100px;
-      width: clamp(100px, 20vw, 260px);
+      width: clamp(100px, 20vw, 300px);
       padding-left: 50px;
       margin-left: 0px;
       background-color: transparent;
       transition: 0.8s;
-
       &:hover {
         cursor: pointer;
         background-color: #4e53581a;
@@ -68,22 +62,12 @@
   }
 }
 
-.Experience-Container {
-  margin: 10px 80px;
-  background-color: green;
-  width: 100%;
-}
-
 .bar {
   background-color: a.$co_2;
-  // margin-top: 20px;
   height: 400px;
   width: 3px;
   position: absolute;
   display: flex;
-  // @include a.media("<=xSize_6") {
-  //   height: 100%;
-  // }
 }
 
 .indicator {
@@ -92,9 +76,6 @@
   background-color: a.$co_3;
   height: 100px;
   width: 5px;
-  // @include a.media("<=xSize_6") {
-  //   display: none;
-  // }
 }
 
 .Heading {
@@ -118,19 +99,16 @@
   height: 20px;
   border-radius: 2px;
   width: 15px;
-  // margin: 24px;
+  margin: 20px;
 }
 
 .experience_detail-container {
   justify-content: start;
   margin: 10px 0;
-  // background-color: red;
   display: flex;
   flex-direction: row;
-  background-color: red;
 }
 
 .Experience_detail-list {
   padding: 0;
-  background-color: rebeccapurple;
 }

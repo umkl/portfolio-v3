@@ -128,17 +128,15 @@
   color: a.$co_4;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-weight: Regular;
-  
+
   font-size: clamp(10px, 2vw, 34px);
   min-height: 0vw;
   margin-top: 0px;
   margin-right: 10px;
   line-height: 2;
-  
 }
 
 .Experience-Code-2 {
-  
   color: a.$co_3;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-weight: Regular;
@@ -249,13 +247,18 @@
 .Contact-Heading-1 {
   margin: 50px 20px;
   min-height: 0vw;
-  font-size: clamp(90px, 3vw, 100px);
-  color: a.$co_4;
-  font-weight: Semi Bold;
+  font-weight: 300;
+  // -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  // -webkit-text-stroke-width: 1px;
+  // -webkit-text-stroke-color: rgb(255, 255, 255);
+  font-size: clamp(50px, 3vw, 100px);
+  line-height: clamp(20px, 2vw, 80px);
+  color: a.$co_4-1;
+  
   font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
   // margin: 20px 0;
-  line-height: 0.6;
+
   max-width: 800px;
   margin-bottom: 0px;
 }
@@ -269,8 +272,8 @@
   // font-weight: thin;
   font-weight: 300;
   list-style: none;
-  font-size: clamp(10px, 2.4vw, 34px);
-  line-height: clamp(14px, 2.6vw, 40px);
+  font-size: clamp(20px, 2vw, 34px);
+  line-height: clamp(20px, 2.2vw, 40px);
   min-height: 0vw;
   margin: 30px 20px;
   margin-bottom: 20px;
@@ -297,7 +300,7 @@
   color: a.$co_4;
   // color: a.$co_2-1;
   font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system,
-  system-ui, sans-serif;
+    system-ui, sans-serif;
 
   // width: 90%;
   // background-color: green;
