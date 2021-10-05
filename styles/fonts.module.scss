@@ -205,6 +205,7 @@
 .Projects-heading-1 {
   margin: 20px;
   min-height: 0vw;
+  line-height: clamp(90px, 4vw, 100px);
   font-size: clamp(90px, 3vw, 100px);
   color: a.$co_4;
   font-weight: 700;
@@ -212,10 +213,10 @@
     system-ui, sans-serif;
   // margin: 20px 0
   margin-left: 0;
-  line-height: 0.6;
+  // line-height: 0.6;
   max-width: 800px;
-  @include a.media("<=xSize_6"){
-    font-size: clamp(50px, 6vw, 100px); 
+  @include a.media("<=xSize_6") {
+    font-size: clamp(50px, 6vw, 100px);
   }
 }
 
@@ -257,7 +258,7 @@
   font-size: clamp(50px, 3vw, 100px);
   line-height: clamp(50px, 2vw, 80px);
   color: a.$co_4-1;
-  
+
   font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
   // margin: 20px 0;
