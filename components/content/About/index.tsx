@@ -59,7 +59,7 @@ function About() {
             </div>
             <div className={l["tech-element"]}>
               <div className={l["list-indicator"]} />
-              <div className={f["about-code-1"]}>Javascript/Typescript</div>
+              <div className={f["about-code-1"]}>Typescript</div>
             </div>
             <div className={l["tech-element"]}>
               <div className={l["list-indicator"]} />

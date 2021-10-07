@@ -9,7 +9,6 @@
   @include a.media("<=xSize_5") {
     width: clamp(100px, 85vw, 1200px);
   }
-  //   background-color: red;
 
   .Heading {
     align-items: center;
@@ -41,7 +40,7 @@
     flex-direction: column;
     z-index: 100;
     padding: 30px;
-    @include a.media("<=xSize_4"){
+    @include a.media("<=xSize_4") {
       padding: 10px;
     }
   }
@@ -79,8 +78,15 @@
   border-radius: 8px;
   min-height: 100px;
   width: 60%;
-  @include a.media("<=xSize_7") {
+  @include a.media("<=xSize_8") {
     width: 80%;
+  }
+  @include a.media("<=xSize_7") {
+    width: 90%;
+  }
+  @include a.media("<=xSize_6") {
+    background-color: transparent;
+    padding: 20px 0px;
   }
 }
 
@@ -110,11 +116,10 @@
   border-radius: 20px;
   background-size: cover;
   background-position: center;
-  filter: grayscale(100%);
-
-  transition: 0.3s;
-
+  filter: grayscale(100%) brightness(20%);
+  transition: .5s;
   @include a.media("<=xSize_7") {
+    transition: .5s;
     width: 100%;
   }
 }
@@ -128,8 +133,8 @@
   &:hover {
     // background-color: red;
     .project-image {
-      filter: grayscale(0%);
-      transition: 0.3s;
+      filter: grayscale(0%) brightness(100%);
+      transition: .5s;
     }
   }
 }

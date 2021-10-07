@@ -1,11 +1,11 @@
 ---
 title: "neighboroo"
-date: "2020-06-20"
+date: "2020"
 featured: true
-githubURL: "https://github.com/ungarmichael"
+githubURL: "https://github.com/ungarmichael/neighboroo"
 # URL: "https://github.com/ungarmichael"
 components: "Dart · Flutter · Google Maps"
 imageURL: "/images/neighboroo.png"
 ---
 
-App for making neighbor
+Application for sharing and trading goods and informations with your neighbors.

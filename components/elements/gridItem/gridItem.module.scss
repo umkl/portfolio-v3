@@ -1,28 +1,10 @@
 @use "./../../../styles/abstracts" as a;
 
-.icon {
-  // width: 200px;
-  // background-color: red;
-  position: relative;
-  // height: 400px;
-  height: 60px;
-  width: 60px;
-  path,
-  circle {
-    stroke: a.$co_3;
-  }
-}
-
 .gridcontainer {
-  // height: 100%;
-  // width: 100%;
-  // background-color: green;
-  // height: 100px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  // background-color: red;
   border-radius: 8px;
   transition: 0.8s;
   &:hover {
@@ -30,11 +12,7 @@
     background-color: #92999f1a;
     transition: 0.8s;
   }
-
   .gridlist {
-    // height: 80%;
-    width: 200px;
-    height: 200px;
     margin: 10px;
     padding: 20px;
     box-sizing: border-box;
@@ -42,7 +20,9 @@
     justify-content: center;
     flex-direction: column-reverse;
     align-items: center;
-
+    @include a.media("<=xSize_2", "height>=xSize_6") {
+      flex-direction: row-reverse;
+    }
     .gridlistitem {
       padding: 0;
       list-style: none;
@@ -51,6 +31,19 @@
       align-items: center;
       height: 80px;
       justify-content: center;
+      @include a.media("<=xSize_2", "height>=xSize_6") {
+        width: 120px;
+      }
     }
+  }
+}
+
+.icon {
+  position: relative;
+  height: 60px;
+  width: 60px;
+  path,
+  circle {
+    stroke: a.$co_3;
   }
 }

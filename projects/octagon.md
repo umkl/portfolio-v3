@@ -1,8 +1,8 @@
 ---
 title: "octagon landingpage"
-date: "2020-06-20"
+date: "2021"
 featured: true
-githubURL: "https://github.com/ungarmichael"
+githubURL: "https://github.com/ungarmichael/octagon-landing"
 URL: "https://en.wikipedia.org/wiki/Squircle"
 components: "squricles · typescript · reactjs · nextjs · figma"
 imageURL: "/images/octagon.png"
