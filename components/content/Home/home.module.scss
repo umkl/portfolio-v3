@@ -1,25 +1,16 @@
 @use './../../../styles/abstracts/index' as a;
-// @use './../../styles/utils.module.scss' as u;
 
 .Section {
-  // background-color: green;
   position: relative;
-  // width: 0vw;
   width: clamp(100px, 70vw, 1200px);
   min-height: 100vh;
   overflow-wrap: break-word;
   transform: translateX(-50%);
-  // width: 80%;
   left: 50%;
   z-index: 0;
-  // background-color: red;
   @include a.media("<=ySize_3") {
-    // background-color: aqua;
-    // background-color: red;
     height: 600px;
   }
-  // width: clamp(100px, 80vw, 800px);
-
 }
 
 .bottomBefore {
@@ -31,157 +22,11 @@
   position: absolute;
   top: 60%;
   transform: translateY(-50%);
-  // background-color: gray;
   @include a.media(">=xSize_7") {
-    // background-color: gold;
     left: 50%;
     transform: translate(-50%, -50%);
   }
 }
 
-// @include i.center;
-
-// left: 50%;
-// top: 50%;
-// transform: translateY(-50%);
-// @include i.media("height<hSmall") {
-//   // transform: translateX(-50%);
-//   // top: 100px;
-//   background-color: purple;
-// }
-// @include i.media("<=tablet") {
-//   background-color: green;
-//   top: 200px;
-//   transform: translateY(0);
-// }
-// }
-
 .Container {
 }
-
-// .scrollSuggestor {
-//   position: fixed;
-//   bottom: 10px;
-//   top: calc(90vh - 10px);
-//   margin: 10px 0;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-
-//   @include i.centerX;
-//   @include i.media("height<hSmall", "portrait") {
-//     bottom: unset;
-//     top: calc(i.$hsmall - 10px);
-//   }
-//   @include i.media("height<hSmall") {
-//     bottom: unset;
-//     top: 515px;
-//   }
-//   @include i.media("<=small_phone") {
-//     width: i.$small_phone;
-//     left: unset;
-//     transform: unset;
-//   }
-//   span {
-//     margin: 5px;
-//     font-weight: i.$main_font_weight_600;
-//     font-size: 10px;
-//     color: i.$pr_color;
-//   }
-//   .scrollIcon {
-//     height: 20px;
-//     width: 20px;
-//   }
-// }
-
-// .section1 {
-//   position: relative;
-//   width: 90%;
-//   height: fit-content;
-//   display: flex;
-//   flex-direction: row;
-//   @include i.centerX;
-//   @include i.media("<=tablet") {
-//     width: 95%;
-//     flex-direction: column-reverse;
-//     justify-content: center;
-//   }
-//   @include i.media("<=desktop") {
-//     width: 95%;
-//   }
-//   @include i.media(">=desktop") {
-//     width: 1000px;
-//   }
-//   @include i.media("height<hLarge") {
-//     height: i.$hlarge;
-//   }
-//   @include i.media("height<hSmall", "<=phone") {
-//     align-items: flex-start;
-//     justify-content: flex-end;
-//   }
-//   .introtext {
-//     width: 50%;
-//     top: 50%;
-//     transform: translateY(-50%);
-//     position: relative;
-//     height: fit-content;
-//     @include i.media("<=tablet") {
-//       width: 100%;
-//       display: flex;
-//       align-items: center;
-//       flex-direction: column;
-//       text-align: center;
-//       top: 0;
-//       transform: translateY(0);
-//     }
-//     .clickSection {
-//       display: flex;
-//       position: relative;
-//       .arrow {
-//         position: absolute;
-//         left: 200px;
-//         bottom: -20px;
-//         height: 80px;
-//         width: 80px;
-//         transform: rotate(60deg) rotateY(180deg);
-//         margin-left: 30px;
-//         @include i.media("<=tablet") {
-//           height: 40px;
-//           width: 40px;
-//           transform: rotate(75deg) rotateY(180deg);
-//           left: 190px;
-//         }
-//       }
-//     }
-//   }
-//   .image1 {
-//     @include i.media(">=tablet") {
-//       position: absolute;
-//       right: 0;
-//       top: 50%;
-//       transform: translateY(-50%);
-//       width: 50%;
-//       z-index: -99999;
-//       display: flex;
-//       align-items: center;
-//       justify-content: center;
-//     }
-//     @include i.media("<=tablet") {
-//       position: relative;
-//       transform: translateX(-50%);
-//       left: 50%;
-//       width: 300px;
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//     }
-//     @include i.media("height<hSmall", "<=tablet") {
-//       height: 300px;
-//       width: 300px;
-//     }
-//     @include i.media("height<hSmall", "<=phone") {
-//       height: 240px;
-//       width: 240px;
-//     }
-//   }
-// }

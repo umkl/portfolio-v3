@@ -88,7 +88,9 @@
 .about-code-1 {
   color: a.$co_2;
   font-size: 23px;
-  margin: 0 20px;
+  margin: 0px 30px;
+  width: 80%;
+  line-break: auto;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-weight: 700;
 }
@@ -114,26 +116,34 @@
 
 .Experience-Heading-1 {
   min-height: 0vw;
-  font-size: clamp(20px, 3vw, 51px);
   color: a.$co_4;
   font-weight: Semi Bold;
   font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
   margin: 20px 0;
-  line-height: 1.1;
   max-width: 800px;
+  line-height: 1.1;
+  font-size: clamp(20px, 3vw, 51px);
+  @include a.media("<=xSize_5") {
+    font-size: clamp(30px, 4vw, 51px);
+    // background-color: antiquewhite;
+  }
 }
 
 .Experience-Code-1 {
   color: a.$co_4;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-weight: Regular;
-
   font-size: clamp(10px, 2vw, 34px);
   min-height: 0vw;
   margin-top: 0px;
   margin-right: 10px;
   line-height: 2;
+
+  @include a.media("<=xSize_5") {
+    font-size: clamp(30px, 4vw, 51px);
+    // background-color: antiquewhite;
+  }
 }
 
 .Experience-Code-2 {
@@ -144,7 +154,13 @@
   min-height: 0vw;
   margin-top: 0px;
   margin-right: 10px;
-  line-height: clamp(20px, 3vw, 51px);
+
+  line-height: 1.1;
+  font-size: clamp(20px, 3vw, 51px);
+  @include a.media("<=xSize_5") {
+    font-size: clamp(30px, 4vw, 51px);
+    // background-color: antiquewhite;
+  }
 }
 
 .Experience-Code-3 {
@@ -156,6 +172,9 @@
   min-height: 0vw;
   margin-top: 0px;
   margin-right: 10px;
+  @include a.media("<=xSize_5") {
+    font-size: clamp(20px, 3vw, 51px);
+  }
 }
 
 .Experience-Text-1 {
@@ -173,6 +192,10 @@
   min-height: 0vw;
   margin-top: 10px;
   margin-right: 10px;
+  @include a.media("<=xSize_5") {
+    font-size: clamp(20px, 3vw, 51px);
+    line-height: clamp(30px, 3vw, 40px);
+  }
 }
 
 .Projects-code-1 {
@@ -216,7 +239,8 @@
   // line-height: 0.6;
   max-width: 800px;
   @include a.media("<=xSize_6") {
-    font-size: clamp(50px, 6vw, 100px);
+    font-size: clamp(40px, 6vw, 100px);
+    line-height: clamp(40px, 3vw, 100px);
   }
 }
 
@@ -227,12 +251,15 @@
   // background-color: red;
   font-weight: 500;
   font-size: clamp(20px, 2vw, 34px);
-
   line-height: 2;
   display: flex;
   min-height: 0vw;
   margin-top: 0px;
   margin-right: 10px;
+  @include a.media("<=xSize_5") {
+    color: a.$co_4;
+    // background-color: red;
+  }
   // background-color: red;
 }
 
@@ -252,19 +279,13 @@
   margin: 50px 20px;
   min-height: 0vw;
   font-weight: 300;
-  // -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-  // -webkit-text-stroke-width: 1px;
-  // -webkit-text-stroke-color: rgb(255, 255, 255);
   font-size: clamp(50px, 3vw, 100px);
-  line-height: clamp(50px, 2vw, 80px);
   color: a.$co_4-1;
-
   font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
-  // margin: 20px 0;
-
   max-width: 800px;
   margin-bottom: 0px;
+  line-height: clamp(50px, 3vw, 80px);
 }
 
 .Contact-Text-1 {
@@ -302,17 +323,21 @@
 
 .nav-code-3 {
   color: a.$co_4;
-  // color: a.$co_2-1;
   font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
 
   // width: 90%;
-  // background-color: green;
+  background-color: green;
   // font-weight: thin;
   font-weight: 500;
   list-style: none;
-  font-size: clamp(10px, 3.4vw, 40px);
-  line-height: clamp(14px, 3vw, 40px);
+  font-size: clamp(20px, 3.4vw, 40px);
+  line-height: clamp(10px, 3vw, 40px);
   min-height: 0vw;
   margin: 5px 0px;
+  @include a.media("<=xSize_2","height>=xSize_6") {
+    width: 150px;
+    overflow: visible;
+    z-index: 9999;
+  }
 }

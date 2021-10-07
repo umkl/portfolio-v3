@@ -1,19 +1,20 @@
 @use "./../../../styles/abstracts" as a;
 
 .bottom-nav {
-  z-index: 1000099;
+  z-index: 10;
   position: fixed;
   height: fit-content;
+  width: 100vw;
+  left: 0;
   bottom: 0;
-  width: 100%;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
   margin: 0;
+  box-sizing: border-box;
   @include a.media(">=xSize_5") {
     display: none;
   }
-  // display:none;
 }
 
 .bar-icon {
@@ -28,9 +29,20 @@
 }
 
 .tlnav {
+  z-index: 1000;
+  height: 100px;
+  width: 100vw;
+  bottom: 0;
+  opacity: 0;
+  display: flex;
+  margin-bottom: -100px;
+  position: relative;
+  // left: 50%;
+  // transform: translateX(-50%);
+  justify-content: space-between;
+  box-sizing: border-box;
   @include a.media("<=xSize_5") {
     background-color: a.$co_4-2;
-
     height: clamp(60px, 20vh, 80px);
     .bottom-nav-btn {
       &:hover {
@@ -45,15 +57,6 @@
       border: none;
     }
   }
-  height: 100px;
-  width: 100vw;
-  bottom: 0;
-  display: flex;
-  opacity: 0;
-  margin-bottom: -100px;
-  justify-content: space-between;
-  box-sizing: border-box;
-  z-index: 1000;
 }
 
 .social-grid {
@@ -69,11 +72,14 @@
   opacity: 0;
   display: none;
   width: clamp(300px, 80%, 600px);
-  height: clamp(350px, 60vh, 500px);
+
+  // height: clamp(350px, 60vh, 500px);
   padding: 0;
   margin-bottom: -200px;
   background-color: a.$co_4-2;
+
   @include a.media("<=xSize_5") {
+    width: 90%;
   }
   @include a.media("<=xSize_2") {
     width: 100%;
@@ -84,28 +90,37 @@
     box-sizing: border-box;
     padding: 10px;
     position: relative;
-    height: 100%;
-
     display: flex;
     align-items: center;
     justify-content: center;
     @include a.media("<=xSize_4") {
       padding: 0;
     }
-
-    .subcontainerDiv {
-      height: fit-content;
+    @include a.media("<=xSize_2") {
       width: 100%;
+    }
+    .subcontainerDiv {
+      display: grid;
+      height: fit-content;
+      background-color: purple;
       grid-template-columns: auto auto;
+
+      // @include a.media("<=xSize_2") {
+      //   grid-template-columns: auto;
+      //   width: 100%;
+      // }
+      width: 400px;
+      padding: 10px 30px;
+
       @include a.media("<=xSize_2") {
+        width: 100%;
+        background-color: red;
         grid-template-columns: auto;
       }
-      padding: 10px 30px;
 
       @include a.media("<=xSize_4") {
         padding: 10px 10px;
       }
-      display: grid;
     }
   }
 }

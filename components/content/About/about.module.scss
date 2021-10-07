@@ -7,7 +7,6 @@
   left: 50%;
   transform: translateX(-50%);
   margin-bottom: 300px;
-  // background-color: red;
   @include a.media("<=xSize_5") {
     width: clamp(100px, 85vw, 1200px);
   }
@@ -131,22 +130,26 @@
     margin: 20px;
     width: 80%;
   }
-  @include a.media("<=xSize_5"){
+  @include a.media("<=xSize_5") {
     margin: 20px 0px;
-    width: 100%; 
+    width: 100%;
   }
 }
 
 .tech-element {
   margin: 20px 0;
-  display: flex;
-  align-items: center;
-
+  // display: flex;
   padding: 10px;
+  // background-color: red;
+  height: fit-content;
+  // align-items: flex-start;
   .list-indicator {
     background-color: a.$co_3;
     height: 20px;
-    border-radius: 2px;
     width: 15px;
+    border-radius: 2px;
+    margin: 4px 0px;
+    position: absolute;
+
   }
 }
