@@ -183,8 +183,6 @@
     system-ui, sans-serif;
 
   width: 90%;
-  // background-color: green;
-  // font-weight: thin;
   font-weight: 300;
   list-style: none;
   font-size: clamp(10px, 2.4vw, 34px);
@@ -293,8 +291,6 @@
   font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
   width: 90%;
-  // background-color: green;
-  // font-weight: thin;
   font-weight: 300;
   list-style: none;
   font-size: clamp(20px, 2vw, 34px);
@@ -309,9 +305,6 @@
   color: a.$co_2-1;
   font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
-  // width: 90%;
-  // background-color: green;
-  // font-weight: thin;
   font-weight: 300;
   list-style: none;
   font-size: clamp(20px, 2vw, 34px);
@@ -326,16 +319,13 @@
   font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
 
-  // width: 90%;
-  background-color: green;
-  // font-weight: thin;
   font-weight: 500;
   list-style: none;
   font-size: clamp(20px, 3.4vw, 40px);
   line-height: clamp(10px, 3vw, 40px);
   min-height: 0vw;
   margin: 5px 0px;
-  @include a.media("<=xSize_2","height>=xSize_6") {
+  @include a.media("<=xSize_2", "height>=xSize_6") {
     width: 150px;
     overflow: visible;
     z-index: 9999;
