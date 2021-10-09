@@ -125,13 +125,9 @@
 }
 
 .Content-coordinator {
-  // position: absolute;
   z-index: 11;
   position: relative;
-  // background-color: green;
-  // display: flex;
   &:hover {
-    // background-color: red;
     .project-image {
       filter: grayscale(0%) brightness(100%);
       transition: .5s;
