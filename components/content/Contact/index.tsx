@@ -18,7 +18,7 @@ function Contact(props: Props) {
         <h1 className={f["Contact-Heading-1"]}>Let us get in Touch</h1>
         <p className={f["Contact-Text-1"]}>
           I would love to chat with anyone who is interested in saying hello.
-          <br /> So feel free to contact me!
+          So feel free to contact me!
         </p>
         <a href="mailto:ungarmichael.mail@gmail.com">
           <div className={l["Contact-button"]}>Send a mail</div>

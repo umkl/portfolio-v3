@@ -69,12 +69,9 @@
       width: 900px;
       left: -300px;
       position: relative;
-
-      // background-color: aqua;
     }
   }
   .Image-Frame {
-    // background-color: green;
     border: 2px solid a.$co_3;
     margin-left: 10%;
     margin-top: 5%;
@@ -122,11 +119,9 @@
 
 .Text-Container {
   position: relative;
-  // background-color: red;
   width: 60%;
   margin: 0;
   @include a.media("<=xSize_7") {
-    // background-color: green;
     margin: 20px;
     width: 80%;
   }

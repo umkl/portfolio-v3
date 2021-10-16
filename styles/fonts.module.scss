@@ -276,28 +276,32 @@
 .Contact-Heading-1 {
   margin: 50px 20px;
   min-height: 0vw;
-  font-weight: 300;
+  font-weight: 500;
   font-size: clamp(50px, 3vw, 100px);
   color: a.$co_4-1;
   font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
   max-width: 800px;
   margin-bottom: 0px;
-  line-height: clamp(50px, 3vw, 80px);
+  line-height: clamp(55px, 3vw, 80px);
 }
 
 .Contact-Text-1 {
   color: a.$co_2-1;
   font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
-  width: 90%;
-  font-weight: 300;
+  width: 50%;
+  // background-color: red;
+  font-weight: 400;
   list-style: none;
-  font-size: clamp(20px, 2vw, 34px);
-  line-height: clamp(20px, 2.2vw, 40px);
+  font-size: clamp(25px, 2vw, 34px);
+  line-height: clamp(30px, 2.2vw, 40px);
   min-height: 0vw;
-  margin: 30px 20px;
-  margin-bottom: 20px;
+  margin: 20px 20px;
+  @include a.media("<=xSize_5"){
+    width: 80%;
+  }
+  // margin-bottom: 20px;
 }
 
 .footer-text {

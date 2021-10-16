@@ -8,4 +8,4 @@ components: "notionAPI · Google Cloud services · Microsoft Graph · Typescript
 imageURL: "/images/nis.png"
 ---
 
-CLI-Server for integrating the popular notetaking application notion with other 3rd party applications.
+A CLI-Server that integrates <i>Notion</i> (popular note-taking application) with other 3rd party applications and automating certain tasks for a more efficient use.

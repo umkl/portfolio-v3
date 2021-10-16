@@ -8,4 +8,4 @@ components: "ReactJS · Typescript"
 imageURL: "/images/divex.png"
 ---
 
-Digitizing the questionnaires for a consultating company in Switzerland.
+Digitizing the questionnaires for a consulting company in Switzerland.

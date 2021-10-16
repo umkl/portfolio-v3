@@ -33,7 +33,7 @@
 }
 
 .Contact-button {
-  margin: 20px;
+  margin: 40px 20px;
   height: 70px;
   width: 250px;
   background-color: transparent;
@@ -47,9 +47,16 @@
   justify-content: center;
   box-sizing: border-box;
   transition: 0.3s;
+
   @include a.media("<=xSize_6") {
     left: 50%;
     width: 80%;
+  }
+  @include a.media("<=xSize_4") {
+    width: 90%;
+    // left: 50%;
+    // position: absolute;
+    // transform: translateX(-50%);
   }
 
   &:hover {
