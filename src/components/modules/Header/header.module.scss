@@ -1,0 +1,52 @@
+@use "./../../../styles/abstracts" as a;
+
+.Parent {
+  z-index: 11;
+  position: fixed;
+
+  display: flex;
+  flex-direction: row;
+
+  height: clamp(70px, 20vh, 100px);
+  width: 100%;
+
+  @include a.media("height<=ySize_3", "portrait") {
+    height: clamp(40px, 20vh, 60px);
+  }
+
+  @include a.media("height<=ySize_4", "portrait") {
+    height: clamp(40px, 20vh, 70px);
+  }
+
+  @include a.media("height>=ySize_4", "portrait") {
+    height: clamp(50px, 12vh, 150px);
+  }
+
+  @include a.media("height<=ySize_3", "landscape") {
+    height: clamp(50px, 20vh, 80px);
+  }
+
+  @include a.media("height>=ySize_4", "height<=ySize_4", "landscape") {
+    height: clamp(70px, 20vh, 100px);
+  }
+  .Positioner {
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    // width: 90%;
+    // margin: 0 auto;
+    margin: 0 4%;
+    @include a.media(">=xSize_5"){
+      margin: 0 50px;
+    }
+  }
+}
+
+.Logo {
+  position: relative;
+  height: clamp(50px, 10vh, 70px);
+}

@@ -1,0 +1,60 @@
+@use './../../../styles/abstracts/index' as a;
+
+.Section {
+  position: relative;
+  width: clamp(100px, 70vw, 1200px);
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 300px;
+  @include a.media("<=xSize_5") {
+    width: clamp(100px, 85vw, 1200px);
+  }
+  .Heading {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 200px;
+      height: 1.4px;
+      background-color: a.$co_3;
+      margin: 0 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      @include a.media("<=xSize_5") {
+        width: clamp(10px, 30vw, 200px);
+      }
+      @include a.media("<=xSize_4") {
+        width: clamp(10px, 20vw, 200px);
+      }
+    }
+  }
+}
+
+.Contact-button {
+  margin: 20px;
+  height: 70px;
+  width: 250px;
+  background-color: transparent;
+  color: a.$co_3;
+  font-size: 23px;
+  border: 2px solid a.$co_3;
+  border-radius: 10px;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  transition: 0.3s;
+  @include a.media("<=xSize_6") {
+    left: 50%;
+    width: 80%;
+  }
+
+  &:hover {
+    transition: 0.3s;
+    background-color: rgba(149, 184, 209, 0.144);
+    cursor: pointer;
+  }
+}
