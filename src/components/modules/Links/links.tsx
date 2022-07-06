@@ -1,8 +1,8 @@
 import l from "./links.module.scss";
-import GithubIcon from "./../../../assets/Icons/github.svg";
-import LinkedinIcon from "./../../../assets/Icons/linkedin.svg";
-import TwitterIcon from "./../../../assets/Icons/twitter.svg";
-import DribbbleIcon from "./../../../assets/Icons/dribbble.svg";
+import GithubIcon from "../../../../assets/Icons/github.svg";
+import LinkedinIcon from "../../../../assets/Icons/linkedin.svg";
+import TwitterIcon from "../../../../assets/Icons/twitter.svg";
+import DribbbleIcon from "../../../../assets/Icons/dribbble.svg";
 
 const links = (): JSX.Element => {
   return (

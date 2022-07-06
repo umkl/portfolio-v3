@@ -1,9 +1,9 @@
-import TopNav from "../Topnav/topnav";
-import Bottomnav from "../Bottomnav/bottomnav";
-import Logo from "./../../../assets/Logo/logo1.svg";
-import f from "./../../styles/fonts.module.scss";
+import TopNav from "@components/modules/Topnav/topnav";
+import Bottomnav from "@components/modules/Bottomnav/bottomnav";
+import Logo from "../../../../assets/Logo/logo1.svg";
+import f from "@styles/fonts.module.scss";
+import c from "@styles/components.module.scss";
 import l from "./header.module.scss";
-import c from "./../../styles/components.module.scss";
 
 const Header = (): JSX.Element => {
   return (

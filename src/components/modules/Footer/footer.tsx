@@ -1,9 +1,9 @@
 import footerStyle from "./footer.module.scss";
 import l from "./footer.module.scss";
-import f from "./../../../styles/fonts.module.scss";
+import f from "@styles/fonts.module.scss";
 import React from "react";
 import Link from "next/link";
-import LogoSkeleton from "./../../../assets/Logo/logoSkeleton.svg";
+import LogoSkeleton from "../../../../assets/Logo/logoSkeleton.svg";
 
 const Footer = (): JSX.Element => {
   return (

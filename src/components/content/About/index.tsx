@@ -4,7 +4,7 @@ import f from "./../../../styles/fonts.module.scss";
 import c from "./../../../styles/components.module.scss";
 import l from "./about.module.scss";
 import Image from "next/image";
-import setup from "./../../../public/images/setup.jpg";
+
 
 function About() {
   return (
@@ -84,7 +84,7 @@ function About() {
                   layout="responsive"
                   height={500}
                   width={900}
-                  src={setup}
+                  src={"/images/setup.jpg"}
                   alt="Michael's setup"
                 />
               </div>

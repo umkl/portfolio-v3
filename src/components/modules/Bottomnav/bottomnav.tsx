@@ -1,14 +1,13 @@
 import React, { useState, useRef, useEffect } from "react";
 
-import f from "./../../../styles/fonts.module.scss";
+import f from "@styles/fonts.module.scss";
 import l from "./bottomnav.module.scss";
-import c from "./../../styles/components.module.scss";
+import c from "@styles/components.module.scss";
 import { gsap, TweenMax, Power3 } from "gsap";
-import GridItem from "../../elements/gridItem/gridItem";
-
-import GlobeIcon from "./../../../assets/Icons/globe.svg";
-import GridIcon from "./../../../assets/Icons/gridburger.svg";
-import XIcon from "./../../../assets/Icons/x.svg";
+import GridItem from "@components/elements/gridItem/gridItem";
+import GlobeIcon from "../../../../assets/Icons/globe.svg";
+import GridIcon from "../../../../assets/Icons/gridburger.svg";
+import XIcon from "../../../../assets/Icons/x.svg";
 
 interface Props {}
 

@@ -1,18 +1,18 @@
 import React, { ReactElement } from "react";
-import About from "./../../../assets/Icons/about.svg";
-import Experience from "./../../../assets/Icons/experience.svg";
-import Projects from "./../../../assets/Icons/projects.svg";
-import Contact from "./../../../assets/Icons/contact.svg";
+import About from "../../../../assets/Icons/About.svg";
+import Experience from "../../../../assets/Icons/experience.svg";
+import Projects from "../../../../assets/Icons/projects.svg";
+import Contact from "../../../../assets/Icons/contact.svg";
 
-import Github from "./../../../assets/Icons/github.svg";
-import Linkedin from "./../../../assets/Icons/linkedin.svg";
-import Twitter from "./../../../assets/Icons/twitter.svg";
-import Dribbble from "./../../../assets/Icons/dribbble.svg";
+import Github from "../../../../assets/Icons/github.svg";
+import Linkedin from "../../../../assets/Icons/linkedin.svg";
+import Twitter from "../../../../assets/Icons/twitter.svg";
+import Dribbble from "../../../../assets/Icons/dribbble.svg";
 
 import { Link, animateScroll as scroll } from "react-scroll";
 
 import l from "./gridItem.module.scss";
-import f from "./../../../styles/fonts.module.scss";
+import f from "@styles/fonts.module.scss";
 
 interface Props {
   name: string;
@@ -22,7 +22,12 @@ interface Props {
 
 export default function GridItem({ name, link, type }: Props): ReactElement {
   return type == "nav" ? (
-    <Link to={link} onClick={()=>{console.log("link triggered")}}>
+    <Link
+      to={link}
+      onClick={() => {
+        console.log("link triggered");
+      }}
+    >
       <div className={l["gridcontainer"]}>
         <ul className={l["gridlist"]}>
           <li className={l["gridlistitem"]}>

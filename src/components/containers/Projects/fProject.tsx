@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import GithubLogo from "./../../../assets/Icons/github.svg";
-import LinkIcon from "./../../../assets/Icons/link.svg";
+import GithubLogo from "../../../../assets/Icons/github.svg";
+import LinkIcon from "../../../../assets/Icons/link.svg";
 import { IProject } from "../../../lib/projects";
 
 import f from "./../../../styles/fonts.module.scss";

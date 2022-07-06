@@ -1,7 +1,7 @@
 import { parseISO, format } from "date-fns";
 import styles from "./date.module.scss";
-import CalendarIcon from "./../../assets/Icons/Calendar.svg";
-import ClockIcon from "./../../assets/Icons/Clock.svg";
+import CalendarIcon from "../../../../assets/Icons/Calendar.svg";
+import ClockIcon from "../../../../assets/Icons/Clock.svg";
 
 export default function Date({ dateString }: { dateString: string }) {
   const date = parseISO(dateString);
