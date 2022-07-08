@@ -11,10 +11,12 @@ const Wrapper = styled.div`
 const MoreProjects = () => {
   return (
     <Wrapper>
-      <h2 className={l["Heading"]}>
-        <span className={f["Section-Code-1"]}>03.</span>
-        <span className={f["Section-Heading-1"]}>Projects</span>
-      </h2>
+      <section className={l["Section"]} id="projects">
+        <h2 className={l["Heading"]}>
+          <span className={f["Section-Code-1"]}>03.1.</span>
+          <span className={f["Section-Heading-1"]}>More Projects</span>
+        </h2>
+      </section>
     </Wrapper>
   );
 };
