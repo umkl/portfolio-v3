@@ -8,9 +8,9 @@ import Experience from "../components/content/Experience/index";
 import Projects from "../components/content/Projects/index";
 import Contact from "../components/content/Contact/index";
 
-import { GetStaticProps } from "next";
 import { getCompleteSortedProjectsData, IProject } from "../lib/projects";
 import Home from "@components/content/Home";
+import { GetStaticProps } from "next";
 
 export default function Index({
   allProjects,

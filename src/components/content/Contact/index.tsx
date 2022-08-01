@@ -1,4 +1,3 @@
-import React from "react";
 import Head from "next/head";
 import f from "./../../../styles/fonts.module.scss";
 import c from "./../../../styles/components.module.scss";
