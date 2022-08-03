@@ -27,7 +27,7 @@ export default function Layout({ children }: ILayout) {
         <link rel="icon" href="/ungarmichael-logo.ico" />
         <meta
           name="description"
-          content="Developer and Designer from Austria focusing on flawless code and magnificient design."
+          content="Developer and Designer from Austria focused on flawless code and magnificient design."
         />
       </Head>
       <Header />
