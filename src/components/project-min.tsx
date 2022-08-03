@@ -1,18 +1,22 @@
 import styled from "styled-components";
 import { Tag } from "./Tag";
 import GithubIcon from "../../assets/Icons/github.svg";
+import pm from "./project-min.module.scss";
+import Techs from "./Techs";
 
 const Wrapper = styled.div`
+  padding: 30px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   width: 400px;
-  height: 500px;
+  /* height: 500px; */
+
   border-radius: 5px;
-  background-color: gray;
+  background-color: #454545;
   border-radius: 20px;
   position: relative;
-  
 `;
 
 const ImageStyle = styled.div`
@@ -22,26 +26,34 @@ const ImageStyle = styled.div`
 `;
 
 const Heading = styled.div`
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
+  font-family: "Inter";
+  color: white;
+  margin: 8px;
 `;
 
 const FixedSideRow = styled.div`
-  background-color: red;
   display: flex;
   position: absolute;
   top: 10px;
   right: 10px;
+  margin: 8px;
 `;
 
 const Date = styled.div`
   font-size: 20px;
-  font-weight: bold;
+
+  color: #81899b;
 `;
 
 const DescriptionText = styled.p`
-  font-size: 20px;
-  font-weight: bold;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16.2775px;
+  line-height: 20px;
+  color: #c2cad1;
 `;
 
 interface Props {
@@ -51,6 +63,12 @@ interface Props {
 }
 
 const ProjectMin = ({ image, name, description }: Props) => {
+  const iconStyle = {
+    "stroke": "#2a60df",
+    "path": {
+      "stroke": "#2a60df",
+    },
+  };
   return (
     <Wrapper>
       <ImageStyle>image</ImageStyle>
@@ -58,9 +76,10 @@ const ProjectMin = ({ image, name, description }: Props) => {
       <Date>2020</Date>
       <Tag />
       <DescriptionText>asdjflkjasd</DescriptionText>
+      <Techs />
       <FixedSideRow>
-        <GithubIcon height="50px" width="50px" />
-        <GithubIcon height="50px" width="50px" />
+        <GithubIcon height="30px" width="30px" className={pm["icon"]} />
+        <GithubIcon height="30px" width="30px" className={pm["icon"]} />
       </FixedSideRow>
     </Wrapper>
   );
