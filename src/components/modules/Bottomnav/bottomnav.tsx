@@ -21,7 +21,6 @@ function Bottomnav(props: Props) {
   const navBtn = useRef(null);
 
   useEffect(() => {
-    console.log(tlnav);
     gsap.to(tlnav.current, {
       opacity: 1,
       marginBottom: "0px",

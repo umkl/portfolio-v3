@@ -1,4 +1,4 @@
-import l from "../content/Projects/Projects.module.scss";
+import l from "../content/Projects/projects.module.scss";
 import f from "@styles/fonts.module.scss";
 import Header from "@components/modules/Header/header";
 import ProjectMin from "@components/project-min";

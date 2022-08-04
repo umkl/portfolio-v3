@@ -80,8 +80,7 @@ export async function getCompleteSortedProjectsData(): Promise<IProject[]> {
       const matterResult = matter(fileContents);
       const processedContent = await remark()
         .use(html)
-        .process(matterResult.content);
-      // console.log(processedContent);
+        .process(matterResult.content); 
       const contentHtml = processedContent.toString();
       return {
         id,

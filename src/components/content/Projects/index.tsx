@@ -20,7 +20,6 @@ const Projects = ({
           <span className={f["Section-Heading-1"]}>Projects</span>
         </h2>
         {allProjects.map((x) => {
-          console.log("ok");
           return <FProject Project={x} />;
         })}
         {/* {allProjects.map(({ title, date, featured, id, contentHtml }) => {

@@ -20,7 +20,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   @include a.media("<=xSize_5") {
     display: none;
   }
@@ -29,7 +29,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   //   left: auto;
   //   height: 400px;
   width: 70px;

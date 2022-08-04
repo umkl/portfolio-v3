@@ -22,12 +22,7 @@ interface Props {
 
 export default function GridItem({ name, link, type }: Props): ReactElement {
   return type == "nav" ? (
-    <Link
-      to={link}
-      onClick={() => {
-        console.log("link triggered");
-      }}
-    >
+    <Link to={link}>
       <div className={l["gridcontainer"]}>
         <ul className={l["gridlist"]}>
           <li className={l["gridlistitem"]}>

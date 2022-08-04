@@ -9,7 +9,6 @@ import c from "./../../../styles/components.module.scss";
 import l from "../../content/Projects/projects.module.scss";
 
 function FProject({ Project }: { Project: IProject }) {
-  console.log(Project);
   return (
     <div className={l["Content-coordinator"]}>
       <div className={l["Container"]}>
