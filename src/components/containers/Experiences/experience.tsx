@@ -3,9 +3,9 @@ import c from "./../../../styles/components.module.scss";
 import l from "../../content/Experience/experience.module.scss";
 
 import React from "react";
-import Experience, { IExperience } from "../../content/Experience/index";
+import Experience, { IExperience } from "../../home-sections/Experience/experience";
 
-function ExperienceComponent(props) {
+function ExperienceComponent(props:any) {
   const { experience } = props;
   return (
     <div className={l["Experience-Container"]}>

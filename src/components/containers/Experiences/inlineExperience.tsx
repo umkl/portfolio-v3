@@ -3,9 +3,11 @@ import c from "./../../../styles/components.module.scss";
 import l from "./../../../pages/Experience/experience.module.scss";
 
 import React from "react";
-import Experience, { IExperience } from "../../content/Experience/index";
+import Experience, {
+  IExperience,
+} from "../../home-sections/Experience/experience";
 
-function InlineExperienceComponent(props) {
+function InlineExperienceComponent(props: { experience: any }) {
   const { experience } = props;
   return (
     <div className={l["Experience-Container"]}>
@@ -20,7 +22,7 @@ function InlineExperienceComponent(props) {
       <ul className={l["Experience_detail-list"]}>
         {experience.descriptions.map((x) => {
           return (
-            <div className={l["experience_detail-container"]}>
+            <div className={l["experience_detail-container"]} key={x}>
               <div className={l["list-indicator"]} />
               <li className={`${f["Experience-Text-1"]}`}>{x}</li>
             </div>
