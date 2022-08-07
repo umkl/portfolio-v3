@@ -17,6 +17,7 @@ const Wrapper = styled.div`
   background-color: #454545;
   border-radius: 20px;
   position: relative;
+  margin: 20px;
 `;
 
 const ImageStyle = styled.div`

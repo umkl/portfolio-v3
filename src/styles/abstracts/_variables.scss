@@ -9,12 +9,10 @@
   xSize_6: map-get(i.$breakpoints, "xSize_6");
   xSize_7: map-get(i.$breakpoints, "xSize_7");
   xSize_8: map-get(i.$breakpoints, "xSize_8");
-
   ySize_1: map-get(i.$breakpoints, "ySize_1");
   ySize_2: map-get(i.$breakpoints, "ySize_2");
   ySize_3: map-get(i.$breakpoints, "ySize_3");
 }
-
 $button-border-radius: 6px;
 $container-border-radius: 8px;
 

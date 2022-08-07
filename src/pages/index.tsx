@@ -1,15 +1,17 @@
 import React from "react";
 import Head from "next/head";
-import Links from "@components/modules/Links/links";
-import About from "@components/content/About/index";
-import MoreProjects from "@components/content/MoreProjects";
 
-import Experience from "../components/content/Experience/index";
-import Projects from "../components/content/Projects/index";
-import Contact from "../components/content/Contact/index";
+//sections
+import Home from "@components/home-sections/Landing/landing";
+import About from "@components/home-sections/About/about";
+import Experience from "@components/home-sections/Experience/experience";
+import Projects from "@components/home-sections/Projects/projects";
+import Contact from "@components/home-sections/Contact/contact";
+
+//components
+import Links from "@components/modules/Links/links";
 
 import { getCompleteSortedProjectsData, IProject } from "../lib/projects";
-import Home from "@components/content/Home";
 import { GetStaticProps } from "next";
 
 export default function Index({
@@ -21,9 +23,8 @@ export default function Index({
     <>
       <Home />
       <About />
-      <Experience /> 
-       <Projects allProjects={allProjects} />
-      <MoreProjects />
+      <Experience />
+      <Projects allProjects={allProjects} />
       <Contact />
     </>
   );

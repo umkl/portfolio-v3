@@ -20,7 +20,7 @@ function ExperienceComponent(props) {
       <ul className={l["Experience_detail-list"]}>
         {experience.descriptions.map((x) => {
           return (
-            <div className={l["experience_detail-container"]}>
+            <div key={x} className={l["experience_detail-container"]}>
               <div className={l["list-indicator"]} />
               <li className={`${f["Experience-Text-1"]}`}>{x}</li>
             </div>
