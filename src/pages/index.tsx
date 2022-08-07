@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 
 //sections
-import Home from "@components/home-sections/Landing/landing";
+import Home from "@components/modules/Landing/landing";
 import About from "@components/home-sections/About/about";
 import Experience from "@components/home-sections/Experience/experience";
 import Projects from "@components/home-sections/Projects/projects";

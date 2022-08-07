@@ -9,7 +9,7 @@ const Header = (): JSX.Element => {
   return (
     <>
       <div className={`${l["Parent"]}`}>
-        <div className={l["Positioner"]}>
+        <div className={l.Positioner}>
           <Logo className={`${l["Logo"]}`} />
           <TopNav />
         </div>

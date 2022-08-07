@@ -4,15 +4,12 @@ import f from "@styles/fonts.module.scss";
 import l from "./bottomnav.module.scss";
 import c from "@styles/components.module.scss";
 import { gsap, TweenMax, Power3 } from "gsap";
-import GridItem from "@components/elements/gridItem/gridItem";
+import GridItem from "@components/elements/GridItem/gridItem";
 import GlobeIcon from "../../../../assets/Icons/globe.svg";
 import GridIcon from "../../../../assets/Icons/gridburger.svg";
 import XIcon from "../../../../assets/Icons/x.svg";
 
-interface Props {}
-
-function Bottomnav(props: Props) {
-  const {} = props;
+function Bottomnav() {
   const [currentGrid, setCurrentGrid] = useState(null);
   const tlnav = useRef(null);
   const socialRef = useRef(null);
