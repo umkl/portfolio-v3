@@ -1,12 +1,13 @@
-import React, { useEffect } from "react";
+import React, { useEffect, Context, ReactNode, useState } from "react";
 import Head from "next/head";
-import { Context, ReactNode, useState } from "react";
-import l from "./layout.module.scss";
+
+import l from "@styles/layout.module.scss";
 import Footer from "@components/modules/Footer/footer";
 import Header from "@components/modules/Header/header";
 import Links from "@components/modules/Links/links";
 import Bottomnav from "@components/modules/Bottomnav/bottomnav";
-import Usculpture from "../../../../assets/Illustrations/usculpture.svg";
+
+import Usculpture from "../../../../assets/Illustrations/Usculpture.svg";
 
 interface ILayout {
   children: ReactNode;
