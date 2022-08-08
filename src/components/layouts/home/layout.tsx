@@ -1,7 +1,7 @@
 import React, { useEffect, Context, ReactNode, useState } from "react";
 import Head from "next/head";
 
-import l from "@styles/layout.module.scss";
+import layoutStyle from "@styles/layout.module.scss";
 import Footer from "@components/modules/Footer/footer";
 import Header from "@components/modules/Header/header";
 import Links from "@components/modules/Links/links";
@@ -31,17 +31,21 @@ export default function Layout({ children }: ILayout) {
           content="Developer and Designer from Austria focused on flawless code and magnificient design."
         />
       </Head>
-      <Header />
-      <main className={l.main}>
+
+      {/* <Header /> */}
+
+      <main className={layoutStyle.root}>
         {children}
-        <Usculpture
-          className={l["u_sculpture"]}
+        {/* <Usculpture
+          className={layoutStyle["u_sculpture"]}
           style={{ transform: `translateY(${offsetY * 0.8}px)` }}
-        />
+        /> */}
       </main>
-      <Bottomnav />
+      
       <Footer />
-      <Links />
+      {/* <Bottomnav />
+      
+      <Links /> */}
     </>
   );
 }

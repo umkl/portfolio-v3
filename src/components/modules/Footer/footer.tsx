@@ -9,17 +9,57 @@ import Emoji from "@components/elements/Emoji";
 
 const Footer = (): JSX.Element => {
   return (
-    <footer>
-      <div className={footerStyle.parent}>
+    <footer id={footerStyle.parent}>
+      <div id={footerStyle.initials}>
         <LogoSkeleton className={footerStyle.LogoSkeleton} />
         <ul>
           <li className={footerStyle.initialsText}>
-            <Emoji symbol={"0x1F3D7"} /> 2020 ungarmichael{" "}
+            &nbsp;
+            <Emoji symbol={"0x1F3D7"} /> 2022 ungarmichael{" "}
           </li>
-          <li className={footerStyle.initialsText}>Made with {"<"}3 in Austria</li>
+          <li className={footerStyle.initialsText}>
+            Made with <Emoji symbol={"0x1F496"} />
+            &nbsp;in Austria
+          </li>
         </ul>
       </div>
-      <div className={footerStyle.spacer}></div>
+      <div id={footerStyle.divider}>
+        <div id={footerStyle.dividerLine} />
+      </div>
+      <div id={footerStyle.content}>
+        <section className={footerStyle.sectionColumn}>
+          <div>
+            <h3 className={footerStyle.sectionTitle}>Mehr von mir</h3>
+            <h4 className={footerStyle.contentTitle}>blog</h4>
+            <h4 className={footerStyle.contentTitle}>scrapbook</h4>
+            <h4 className={footerStyle.contentTitle}>wiki</h4>
+          </div>
+        </section>
+        <section className={footerStyle.sectionColumn}>
+          <div>
+            <h3 className={footerStyle.sectionTitle}>Mehr von mir</h3>
+            <h4 className={footerStyle.contentTitle}>blog</h4>
+            <h4 className={footerStyle.contentTitle}>scrapbook</h4>
+            <h4 className={footerStyle.contentTitle}>wiki</h4>
+          </div>
+        </section>
+        <section className={footerStyle.sectionColumn}>
+          <div>
+            <h3 className={footerStyle.sectionTitle}>Mehr von mir</h3>
+            <h4 className={footerStyle.contentTitle}>blog</h4>
+            <h4 className={footerStyle.contentTitle}>scrapbook</h4>
+            <h4 className={footerStyle.contentTitle}>wiki</h4>
+          </div>
+        </section>
+        <section className={footerStyle.sectionColumn}>
+          <div>
+            <h3 className={footerStyle.sectionTitle}>Mehr von mir</h3>
+            <h4 className={footerStyle.contentTitle}>blog</h4>
+            <h4 className={footerStyle.contentTitle}>scrapbook</h4>
+            <h4 className={footerStyle.contentTitle}>wiki</h4>
+          </div>
+        </section>
+      </div>
     </footer>
   );
 };

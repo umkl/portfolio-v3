@@ -1,41 +1,94 @@
 @use 'abstracts' as a;
-
-.parent {
+#parent {
   display: flex;
-  left: 50%;
-  width: fit-content;
-  position: absolute;
-  transform: translateX(-50%);
-  align-items: center;
-  justify-content: center;
-  ul {
-    margin: 0;
-    padding: 0;
-    margin: 10px;
-  }
-}
+  flex-direction: column;
+  position: relative;
+  width: 100vw;
+  margin: 0px;
+  height: fit-content;
 
-.LogoSkeleton {
-  margin: 10px;
-  width: 40px;
-  height: 40px;
-  path {
-    stroke: a.$co_3-1;
+  #initials {
+    margin-top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    .LogoSkeleton {
+      margin: 10px;
+      width: 50px;
+      height: 50px;
+      path {
+        stroke: a.$co_3-1;
+        stroke-width: 150px;
+      }
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      .initialsText {
+        font-size: 1.2em;
+        font-family: a.$font-family-text;
+        color: a.$co_3-1;
+        font-weight: 400;
+        text-decoration: none;
+        list-style: none;
+      }
+    }
   }
-}
-
-.spacer {
-  @include a.media("<=xSize_5") {
-    width: 1px;
-    height: 180px;
+  #divider {
+    #dividerLine {
+      width: 100%;
+      height: 1px;
+      margin: 20px 0;
+      background-color: a.$co_4-1;
+    }
+    @include a.media("<=xSize_5") {
+      width: 1px;
+      height: 180px;
+    }
   }
-}
-
-.initialsText{
-  font-size: 1.5rem;
-  font-family: a.$font-family-text;
-  color: a.$co_3-1;
-  @include a.media("<=xSize_5") {
-    display: none;
+  #content {
+    display: flex;
+    .sectionColumn {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      .sectionTitle {
+        text-align: start;
+        font-size: 1.2em;
+        font-family: a.$font-family-text;
+        color: a.$co_4;
+        font-weight: 400;
+        text-decoration: none;
+        list-style: none;
+        margin: 1.1em 0;
+        padding: 0;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.1em;
+        line-height: 30px;
+      }
+      .contentTitle {
+        font-size: 1em;
+        font-family: a.$font-family-text;
+        color: a.$co_4;
+        font-weight: 300;
+        text-decoration: none;
+        list-style: none;
+        margin: 0.7em 0;
+        padding: 0;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.1em;
+        line-height: 30px;
+      }
+    }
   }
 }

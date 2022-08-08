@@ -1,4 +1,7 @@
 @use 'abstracts' as a;
+.root{
+  z-index: 4;
+}
 
 .container {
   position: relative;
@@ -12,10 +15,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.main {
-  z-index: 11;
 }
 
 .backToHome {
