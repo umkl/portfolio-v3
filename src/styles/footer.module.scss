@@ -1,0 +1,41 @@
+@use 'abstracts' as a;
+
+.parent {
+  display: flex;
+  left: 50%;
+  width: fit-content;
+  position: absolute;
+  transform: translateX(-50%);
+  align-items: center;
+  justify-content: center;
+  ul {
+    margin: 0;
+    padding: 0;
+    margin: 10px;
+  }
+}
+
+.LogoSkeleton {
+  margin: 10px;
+  width: 40px;
+  height: 40px;
+  path {
+    stroke: a.$co_3-1;
+  }
+}
+
+.spacer {
+  @include a.media("<=xSize_5") {
+    width: 1px;
+    height: 180px;
+  }
+}
+
+.initialsText{
+  font-size: 1.5rem;
+  font-family: a.$font-family-text;
+  color: a.$co_3-1;
+  @include a.media("<=xSize_5") {
+    display: none;
+  }
+}
