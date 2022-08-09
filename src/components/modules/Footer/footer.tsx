@@ -28,7 +28,7 @@ const Footer = (): JSX.Element => {
       </div>
       <div id={footerStyle.content}>
         <section className={footerStyle.sectionColumn}>
-          <div>
+          <div className={footerStyle.sectionContainer}>
             <h3 className={footerStyle.sectionTitle}>Mehr von mir</h3>
             <h4 className={footerStyle.contentTitle}>blog</h4>
             <h4 className={footerStyle.contentTitle}>scrapbook</h4>
@@ -36,27 +36,27 @@ const Footer = (): JSX.Element => {
           </div>
         </section>
         <section className={footerStyle.sectionColumn}>
-          <div>
-            <h3 className={footerStyle.sectionTitle}>Mehr von mir</h3>
-            <h4 className={footerStyle.contentTitle}>blog</h4>
-            <h4 className={footerStyle.contentTitle}>scrapbook</h4>
-            <h4 className={footerStyle.contentTitle}>wiki</h4>
+          <div className={footerStyle.sectionContainer}>
+            <h3 className={footerStyle.sectionTitle}>Communities</h3>
+            <h4 className={footerStyle.contentTitle}>waterbyte</h4>
+            <h4 className={footerStyle.contentTitle}>hackclub</h4>
+            <h4 className={footerStyle.contentTitle}>project access</h4>
           </div>
         </section>
         <section className={footerStyle.sectionColumn}>
-          <div>
-            <h3 className={footerStyle.sectionTitle}>Mehr von mir</h3>
-            <h4 className={footerStyle.contentTitle}>blog</h4>
-            <h4 className={footerStyle.contentTitle}>scrapbook</h4>
-            <h4 className={footerStyle.contentTitle}>wiki</h4>
+          <div className={footerStyle.sectionContainer}>
+            <h3 className={footerStyle.sectionTitle}>Contact</h3>
+            <h4 className={footerStyle.contentTitle}>@gmail.com</h4>
+            <h4 className={footerStyle.contentTitle}>schedule-a-meeting</h4>
+            <h4 className={footerStyle.contentTitle}>linkedin</h4>
           </div>
         </section>
         <section className={footerStyle.sectionColumn}>
-          <div>
-            <h3 className={footerStyle.sectionTitle}>Mehr von mir</h3>
-            <h4 className={footerStyle.contentTitle}>blog</h4>
-            <h4 className={footerStyle.contentTitle}>scrapbook</h4>
-            <h4 className={footerStyle.contentTitle}>wiki</h4>
+          <div className={footerStyle.sectionContainer}>
+            <h3 className={footerStyle.sectionTitle}>Formelles</h3>
+            <h4 className={footerStyle.contentTitle}>schemantics</h4>
+            <h4 className={footerStyle.contentTitle}>impressum</h4>
+            <h4 className={footerStyle.contentTitle}>info</h4>
           </div>
         </section>
       </div>

@@ -1,6 +1,6 @@
-@use "./../../../styles/abstracts" as a;
+@use "@styles/abstracts" as a;
 
-.bottom-nav {
+.bottomNav {
   z-index: 10;
   position: fixed;
   height: fit-content;
@@ -18,8 +18,8 @@
 }
 
 .bar-icon {
-  height: 60px;
-  width: 60px;
+  height: 40px;
+  color: a.$co_3;
   &:hover {
     cursor: pointer;
   }
@@ -68,16 +68,17 @@
 }
 
 .subcontainer {
-  border-radius: 4px 4px 0 0;
   opacity: 0;
-  display: none;
-  width: clamp(300px, 80%, 600px);
-
-  // height: clamp(350px, 60vh, 500px);
-  padding: 0;
   margin-bottom: -200px;
+  padding: 0;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 4px 4px 0 0;
+  width: clamp(300px, 80%, 600px);
   background-color: a.$co_4-2;
-
   @include a.media("<=xSize_5") {
     width: 90%;
   }
@@ -89,7 +90,6 @@
     margin: 0;
     box-sizing: border-box;
     padding: 10px;
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;

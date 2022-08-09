@@ -1,10 +1,12 @@
 import React, { useState, useRef, useEffect } from "react";
 
 import f from "@styles/fonts.module.scss";
-import l from "./bottomnav.module.scss";
 import c from "@styles/components.module.scss";
+import bottomNavStyles from "@styles/bottomnav.module.scss";
 import { gsap, TweenMax, Power3 } from "gsap";
 import GridItem from "@components/elements/GridItem/gridItem";
+import { ArrowsSplit2, X, Link } from "tabler-icons-react";
+
 import GlobeIcon from "../../../../assets/Icons/globe.svg";
 import GridIcon from "../../../../assets/Icons/gridburger.svg";
 import XIcon from "../../../../assets/Icons/x.svg";
@@ -103,40 +105,40 @@ function Bottomnav() {
       }
     }
   };
-
   return (
-    <nav className={l["bottom-nav"]}>
-      <div className={l["tlnav"]} ref={tlnav}>
+    <nav className={bottomNavStyles.bottomNav}>
+      <div className={bottomNavStyles["tlnav"]} ref={tlnav}>
         <button
-          className={l["bottom-nav-btn"]}
+          className={bottomNavStyles["bottom-nav-btn"]}
           ref={socialBtn}
           onClick={() => onClickEvent("social")}
         >
           {currentGrid == "social" ? (
-            <XIcon className={l["bar-icon"]} />
+            <X className={bottomNavStyles["bar-icon"]} />
           ) : (
-            <GlobeIcon className={l["bar-icon"]} />
+            <ArrowsSplit2 className={bottomNavStyles["bar-icon"]} />
           )}
         </button>
         <button
-          className={l["bottom-nav-btn"]}
+          className={bottomNavStyles["bottom-nav-btn"]}
           ref={navBtn}
           onClick={() => onClickEvent("nav")}
         >
           {currentGrid == "nav" ? (
-            <XIcon className={l["bar-icon"]} />
+            <X className={bottomNavStyles["bar-icon"]} />
           ) : (
-            <GridIcon className={`${l["bar-icon"]} ${l["grid-icon"]}`} />
+            <Link
+              className={`${bottomNavStyles["bar-icon"]} ${bottomNavStyles["grid-icon"]}`}
+            />
           )}
         </button>
       </div>
-
       <div
-        className={`${l["social-grid"]} ${l["subcontainer"]}`}
+        className={`${bottomNavStyles["social-grid"]} ${bottomNavStyles.subcontainer}`}
         ref={socialRef}
       >
-        <nav className={l["subcontainerNav"]}>
-          <div className={l["subcontainerDiv"]}>
+        <nav className={bottomNavStyles.subcontainerNav}>
+          <div className={bottomNavStyles.subcontainerDiv}>
             <GridItem
               name="dribbble"
               type={"social"}
@@ -161,9 +163,12 @@ function Bottomnav() {
         </nav>
       </div>
 
-      <div className={`${l["nav-grid"]} ${l["subcontainer"]}`} ref={navRef}>
-        <nav className={l["subcontainerNav"]}>
-          <div className={l["subcontainerDiv"]}>
+      <div
+        className={`${bottomNavStyles["nav-grid"]} ${bottomNavStyles.subcontainer}`}
+        ref={navRef}
+      >
+        <nav className={bottomNavStyles["subcontainerNav"]}>
+          <div className={bottomNavStyles["subcontainerDiv"]}>
             <GridItem name="01.about" link={"about"} type={"nav"} />
             <GridItem name="02.experience" link={"experience"} type={"nav"} />
             <GridItem name="03.projects" link={"projects"} type={"nav"} />

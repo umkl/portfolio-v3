@@ -11,7 +11,7 @@ import Dribbble from "../../../../assets/Icons/dribbble.svg";
 
 import { Link, animateScroll as scroll } from "react-scroll";
 
-import l from "./gridItem.module.scss";
+import gridItemStyle from "./gridItem.module.scss";
 import f from "@styles/fonts.module.scss";
 
 interface Props {
@@ -23,30 +23,30 @@ interface Props {
 export default function GridItem({ name, link, type }: Props): ReactElement {
   return type == "nav" ? (
     <Link to={link}>
-      <div className={l["gridcontainer"]}>
-        <ul className={l["gridlist"]}>
-          <li className={l["gridlistitem"]}>
+      <div className={gridItemStyle["gridcontainer"]}>
+        <ul className={gridItemStyle["gridlist"]}>
+          <li className={gridItemStyle["gridlistitem"]}>
             <p className={f["nav-code-3"]}>{name}</p>
           </li>
-          <li className={l["gridlistitem"]}>
+          <li className={gridItemStyle["gridlistitem"]}>
             {(() => {
               switch (name) {
                 case "01.about":
-                  return <About className={l["icon"]} />;
+                  return <About className={gridItemStyle["icon"]} />;
                 case "02.experience":
-                  return <Experience className={l["icon"]} />;
+                  return <Experience className={gridItemStyle["icon"]} />;
                 case "03.projects":
-                  return <Projects className={l["icon"]} />;
+                  return <Projects className={gridItemStyle["icon"]} />;
                 case "04.contact":
-                  return <Contact className={l["icon"]} />;
+                  return <Contact className={gridItemStyle["icon"]} />;
                 case "dribbble":
-                  return <Dribbble className={l["icon"]} />;
+                  return <Dribbble className={gridItemStyle["icon"]} />;
                 case "linkedin":
-                  return <Linkedin className={l["icon"]} />;
+                  return <Linkedin className={gridItemStyle["icon"]} />;
                 case "github":
-                  return <Github className={l["icon"]} />;
+                  return <Github className={gridItemStyle["icon"]} />;
                 case "twitter":
-                  return <Twitter className={l["icon"]} />;
+                  return <Twitter className={gridItemStyle["icon"]} />;
               }
             })()}
           </li>
@@ -55,30 +55,30 @@ export default function GridItem({ name, link, type }: Props): ReactElement {
     </Link>
   ) : (
     <a href={link}>
-      <div className={l["gridcontainer"]}>
-        <ul className={l["gridlist"]}>
-          <li className={l["gridlistitem"]}>
+      <div className={gridItemStyle["gridcontainer"]}>
+        <ul className={gridItemStyle["gridlist"]}>
+          <li className={gridItemStyle["gridlistitem"]}>
             <p className={f["nav-code-3"]}>{name}</p>
           </li>
-          <li className={l["gridlistitem"]}>
+          <li className={gridItemStyle["gridlistitem"]}>
             {(() => {
               switch (name) {
                 case "01.about":
-                  return <About className={l["icon"]} />;
+                  return <About className={gridItemStyle["icon"]} />;
                 case "02.experience":
-                  return <Experience className={l["icon"]} />;
+                  return <Experience className={gridItemStyle["icon"]} />;
                 case "03.projects":
-                  return <Projects className={l["icon"]} />;
+                  return <Projects className={gridItemStyle["icon"]} />;
                 case "04.contact":
-                  return <Contact className={l["icon"]} />;
+                  return <Contact className={gridItemStyle["icon"]} />;
                 case "dribbble":
-                  return <Dribbble className={l["icon"]} />;
+                  return <Dribbble className={gridItemStyle["icon"]} />;
                 case "linkedin":
-                  return <Linkedin className={l["icon"]} />;
+                  return <Linkedin className={gridItemStyle["icon"]} />;
                 case "github":
-                  return <Github className={l["icon"]} />;
+                  return <Github className={gridItemStyle["icon"]} />;
                 case "twitter":
-                  return <Twitter className={l["icon"]} />;
+                  return <Twitter className={gridItemStyle["icon"]} />;
               }
             })()}
           </li>
