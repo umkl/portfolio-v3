@@ -1,4 +1,10 @@
 {
   "introduction": "Hi, my name is",
-  "profession": "Developer & Designer from Österreich"
+  "developer": "Developer",
+  "origin": "from Austria",
+  "prop1": "cyclist",
+  "prop2": "designer",
+  "prop3": "member",
+  "prop4": "swimmer",
+  "whatido": "Ich bin Entwickler."
 }

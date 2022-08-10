@@ -1,4 +1,10 @@
 {
   "introduction": "Hallo, mein Name ist",
-  "profession": "Entwickler & Designer aus Österreich"
+  "developer": "Entwickler",
+  "origin": "aus Österreich",
+  "prop1": "Radfahrer",
+  "prop2": "Designer",
+  "prop3": "Mitglied",
+  "prop4": "Schwimmer",
+  "whatido": "I'm a software engineer and creator currently working as a freelancer focused on creating flawless code and maginificient designs."
 }

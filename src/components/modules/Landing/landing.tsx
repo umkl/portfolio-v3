@@ -3,6 +3,7 @@ import landingStyle from "@styles/landing.module.scss";
 import c from "./../../../styles/components.module.scss";
 import useTranslation from "next-translate/useTranslation";
 import { gsap, TweenMax, Power3 } from "gsap";
+import TextLoop from "react-text-loop";
 import { useEffect, useRef } from "react";
 
 const Home = (): JSX.Element => {
@@ -26,12 +27,22 @@ const Home = (): JSX.Element => {
           <p id={landingStyle.myname}>Michael Ungar.</p>
         </h1>
         <h2>
-          <p id={landingStyle.profession}>{t("profession")}</p>
+          <p id={landingStyle.profession}>
+            {t("developer")}
+            &nbsp;
+            {"&"}
+            &nbsp;
+            <TextLoop>
+              <span>{t("prop1")}</span>
+              <span>{t("prop2")}</span>
+              <span>{t("prop3")}</span>
+            </TextLoop>
+            &nbsp;
+            {t("origin")}
+          </p>
         </h2>
         <p id={landingStyle.whatido}>
-          I&apos;m a software engineer and creator currently working as a
-          freelancer focused on creating flawless code and maginificient
-          designs.
+          {t("whatido")}
         </p>
       </div>
     </section>
