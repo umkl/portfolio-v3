@@ -34,10 +34,10 @@ export default function Layout({ children }: ILayout) {
       {/* <Header /> */}
       <main className={layoutStyle.root}>
         {children}
-        {/* <Usculpture
-          className={layoutStyle["u_sculpture"]}
+        <Usculpture
+          id={layoutStyle.u_sculpture}
           style={{ transform: `translateY(${offsetY * 0.8}px)` }}
-        /> */}
+        />
       </main>
       {/* <Footer /> */}
       {/* <Bottomnav /> */}

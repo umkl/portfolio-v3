@@ -6,10 +6,12 @@
   min-height: 100vh;
   overflow-wrap: break-word;
   transform: translateX(-50%);
+
   left: 50%;
   z-index: 0;
   @include a.media("<=ySize_3") {
     height: 600px;
+    width: clamp(100px, 90vw, 1200px);
   }
 }
 
@@ -17,7 +19,7 @@
   color: a.$co_3;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-weight: bold;
-  font-size: 0.8rem;
+  font-size: clamp(1.5rem, 2vw, 3rem);
   font-weight: 100;
   min-height: 0vw;
   margin-top: 0px;
@@ -25,10 +27,12 @@
 
 #myname {
   color: a.$co_4;
-  font-size: 5rem;
+  font-size: clamp(3rem, 8vw, 5rem);
+  white-space: no-wrap;
   font-weight: bold;
   font-family: a.$font-family-text, system-ui, sans-serif;
   line-height: 1.1;
+  width: 100%;
 }
 
 #profession {
@@ -38,6 +42,9 @@
   font-weight: bold;
   font-family: a.$font-family-text, system-ui, sans-serif;
   line-height: 1.1;
+  @include a.media("<=ySize_3") {
+    font-size: clamp(1.5rem, 2vw, 3rem);
+  }
 }
 
 #whatido {
@@ -57,7 +64,7 @@
 }
 
 .Container {
-  width: clamp(100px, 70vw, 800px);
+  width: 100%;
   position: absolute;
   top: 60%;
   transform: translateY(-50%);
