@@ -22,13 +22,13 @@ const Home = (): JSX.Element => {
     <section className={landingStyle["Section"]}>
       <div ref={homeRef} className={landingStyle["Container"]}>
         <h1>
-          <p className={f["Home-Code-1"]}>Hi, my name is</p>
-          <p className={f["Home-Heading-1"]}>Michael Ungar.</p>
+          <p id={landingStyle.introduction}>{t("introduction")}</p>
+          <p id={landingStyle.myname}>Michael Ungar.</p>
         </h1>
         <h2>
-          <p className={f["Home-Heading-2"]}>{t("title")}</p>
+          <p id={landingStyle.profession}>{t("profession")}</p>
         </h2>
-        <p className={f["Home-Text-1"]}>
+        <p id={landingStyle.whatido}>
           I&apos;m a software engineer and creator currently working as a
           freelancer focused on creating flawless code and maginificient
           designs.

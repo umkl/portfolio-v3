@@ -13,6 +13,45 @@
   }
 }
 
+#introduction {
+  color: a.$co_3;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-weight: bold;
+  font-size: 0.8rem;
+  font-weight: 100;
+  min-height: 0vw;
+  margin-top: 0px;
+}
+
+#myname {
+  color: a.$co_4;
+  font-size: 5rem;
+  font-weight: bold;
+  font-family: a.$font-family-text, system-ui, sans-serif;
+  line-height: 1.1;
+}
+
+#profession {
+  color: a.$co_2-1;
+  font-size: 2rem;
+  min-height: 0vw;
+  font-weight: bold;
+  font-family: a.$font-family-text, system-ui, sans-serif;
+  line-height: 1.1;
+}
+
+#whatido {
+  margin-top: 10px;
+  min-height: 0vw;
+  font-size: 0.8rem;
+  color: a.$co_2;
+  font-weight: 300;
+  font-family: a.$font-family-text, system-ui, sans-serif;
+  // margin: 20px 0;
+  line-height: 1.1;
+  max-width: 800px;
+}
+
 .bottomBefore {
   position: relative;
 }
