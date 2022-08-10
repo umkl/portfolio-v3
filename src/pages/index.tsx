@@ -13,6 +13,7 @@ import Links from "@components/modules/Links/links";
 
 import { getCompleteSortedProjectsData, IProject } from "../lib/projects";
 import { GetStaticProps } from "next";
+import Services from "@components/home-sections/services";
 
 export default function Index({
   allProjects,
@@ -22,6 +23,7 @@ export default function Index({
   return (
     <>
       <Home />
+      <Services />
       {/* 
       <About />
       <Experience />

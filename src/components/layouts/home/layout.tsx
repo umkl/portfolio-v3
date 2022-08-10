@@ -31,7 +31,7 @@ export default function Layout({ children }: ILayout) {
           content="Developer and Designer from Austria focused on flawless code and magnificient design."
         />
       </Head>
-      {/* <Header /> */}
+      <Header />
       <main className={layoutStyle.root}>
         {children}
         <Usculpture
@@ -39,9 +39,9 @@ export default function Layout({ children }: ILayout) {
           style={{ transform: `translateY(${offsetY * 0.8}px)` }}
         />
       </main>
-      {/* <Footer /> */}
-      {/* <Bottomnav /> */}
-      {/* <Links /> */}
+      <Footer />
+      <Bottomnav />
+      <Links />
     </>
   );
 }

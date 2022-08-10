@@ -1,6 +1,7 @@
 @use 'abstracts' as a;
 
 #parent {
+  
   display: flex;
   flex-direction: column;
   position: relative;
@@ -8,6 +9,9 @@
   margin: 0px;
   height: fit-content;
   overflow: auto;
+  @include a.media("<=xSize_3", "portrait") {
+   margin-bottom: 300px;
+  }
 
   #initials {
     margin: 20px auto 0 auto;
@@ -16,7 +20,7 @@
     width: fit-content;
     align-items: center;
     justify-content: center;
-    @include a.media("<=544px") {
+    @include a.media("<=444px") {
       width: 240px;
       left: 10px;
       margin: 20px 0 0 10px;
@@ -43,15 +47,15 @@
       }
     }
   }
-  #divider {
-    #dividerLine {
-      width: 100vw;
-      height: 1px;
-      margin: 20px 0;
-      background-color: a.$co_4-1;
-    }
+  #dividerLine {
+    width: 100%;
+    height: 1px;
+    margin: 20px 0;
+    background-color: a.$co_4-1;
   }
+
   #content {
+    
     display: grid;
     grid-gap: 0px;
     // grid-auto-flow: column;

@@ -23,9 +23,9 @@ const Footer = (): JSX.Element => {
           </li>
         </ul>
       </div>
-      <div id={footerStyle.divider}>
-        <div id={footerStyle.dividerLine} />
-      </div>
+
+      <div id={footerStyle.dividerLine} />
+
       <div id={footerStyle.content}>
         <section className={footerStyle.sectionColumn}>
           <div className={footerStyle.sectionContainer}>

@@ -43,6 +43,7 @@
       font-family: a.$font-family-monospace;
       color: a.$co_4-1;
       font-size: clamp(2rem, 5vh, 3rem);
+      cursor: pointer;
     }
     @include a.media(">=xSize_5") {
       margin: 0 50px;

@@ -32,9 +32,10 @@
     position: relative;
     z-index: 10;
     width: 100%;
-    bottom: 0;
+    bottom: 10px;
     opacity: 0;
     display: flex;
+    
     justify-content: space-between;
     box-sizing: border-box;
     @include a.media("<=xSize_5") {
