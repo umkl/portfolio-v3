@@ -1,124 +1,99 @@
 @use "@styles/abstracts" as a;
 
 .bottomNav {
-  z-index: 10;
   position: fixed;
   height: fit-content;
   width: 100vw;
+  margin: 0;
   left: 0;
   bottom: 0;
   display: flex;
-  flex-direction: column-reverse;
+  z-index: 10;
   align-items: center;
-  margin: 0;
   box-sizing: border-box;
+  flex-direction: column-reverse;
   @include a.media(">=xSize_5") {
     display: none;
   }
-}
-
-.bar-icon {
-  height: 40px;
-  color: a.$co_3;
-  &:hover {
-    cursor: pointer;
+  @include a.media("<=xSize_2") {
+    width: 300px;
   }
-}
-.grid-icon {
-  height: 50px;
-}
-
-.tlnav {
-  z-index: 1000;
-  height: 100px;
-  width: 100vw;
-  bottom: 0;
-  opacity: 0;
-  display: flex;
-  margin-bottom: -100px;
-  position: relative;
-  // left: 50%;
-  // transform: translateX(-50%);
-  justify-content: space-between;
-  box-sizing: border-box;
-  @include a.media("<=xSize_5") {
-    background-color: a.$co_4-2;
-    height: clamp(60px, 20vh, 80px);
-    .bottom-nav-btn {
-      &:hover {
-        cursor: pointer;
+  .bar-icon {
+    height: 40px;
+    color: a.$co_3;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .grid-icon {
+    height: 50px;
+  }
+  .tlnav {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    bottom: 0;
+    opacity: 0;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    @include a.media("<=xSize_5") {
+      height: 80px;
+      .bottomNavBtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 30px;
+        padding: 0;
+        width: 50px;
+        height: 50px;
+        background-color: a.$co_4-2;
+        border: 2px solid a.$co_3;
+        border-radius: 10px;
+        &:hover {
+          cursor: pointer;
+          background-color: a.$co_4-1;
+        }
       }
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 80%;
-      margin: 10px 30px;
-      background-color: transparent;
-      border: none;
     }
   }
 }
 
-.social-grid {
-  margin-bottom: -200px;
-}
-
-.nav-grid {
-  margin-bottom: -200px;
-}
-
-.subcontainer {
-  opacity: 0;
-  margin-bottom: -200px;
-  padding: 0;
+.mobileRoutingContainer {
   display: none;
   position: fixed;
+  //center
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 4px 4px 0 0;
-  width: clamp(300px, 80%, 600px);
+  border-radius: 10px;
+  width: 80%;
   background-color: a.$co_4-2;
-  @include a.media("<=xSize_5") {
-    width: 90%;
-  }
+  padding: 20px;
+  min-height: 400px;
+  margin-top: -30px;
+
   @include a.media("<=xSize_2") {
-    width: 100%;
+    left: 10px;
+    width: 300px;
+    transform: translate(0, -50%);
   }
-
-  .subcontainerNav {
-    margin: 0;
-    box-sizing: border-box;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    @include a.media("<=xSize_4") {
-      padding: 0;
-    }
-    @include a.media("<=xSize_2") {
-      width: 100%;
-    }
-    .subcontainerDiv {
+  h1 {
+    font-weight: 500;
+    font-family: a.$font-family-text;
+    color: white;
+  }
+  nav {
+    font-family: a.$font-family-text;
+    color: white;
+    ul {
       display: grid;
-      height: fit-content;
       grid-template-columns: auto auto;
-
-      // @include a.media("<=xSize_2") {
-      //   grid-template-columns: auto;
-      //   width: 100%;
-      // }
-      width: 400px;
-      padding: 10px 30px;
-
-      @include a.media("<=xSize_2") {
-        width: 100%;
-        background-color: red;
-        grid-template-columns: auto;
-      }
-
-      @include a.media("<=xSize_4") {
-        padding: 10px 10px;
+      li {
+        font-family: a.$font-family-monospace;
+        font-size: 1.2rem;
+        list-style: none;
+        margin: 20px 0;
       }
     }
   }

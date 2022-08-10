@@ -107,9 +107,9 @@ function Bottomnav() {
   };
   return (
     <nav className={bottomNavStyles.bottomNav}>
-      <div className={bottomNavStyles["tlnav"]} ref={tlnav}>
+      <div className={bottomNavStyles.tlnav} ref={tlnav}>
         <button
-          className={bottomNavStyles["bottom-nav-btn"]}
+          className={bottomNavStyles.bottomNavBtn}
           ref={socialBtn}
           onClick={() => onClickEvent("social")}
         >
@@ -120,7 +120,7 @@ function Bottomnav() {
           )}
         </button>
         <button
-          className={bottomNavStyles["bottom-nav-btn"]}
+          className={bottomNavStyles.bottomNavBtn}
           ref={navBtn}
           onClick={() => onClickEvent("nav")}
         >
@@ -133,13 +133,18 @@ function Bottomnav() {
           )}
         </button>
       </div>
-      <div
-        className={`${bottomNavStyles["social-grid"]} ${bottomNavStyles.subcontainer}`}
-        ref={socialRef}
-      >
-        <nav className={bottomNavStyles.subcontainerNav}>
-          <div className={bottomNavStyles.subcontainerDiv}>
-            <GridItem
+      <div className={bottomNavStyles.mobileRoutingContainer} ref={socialRef}>
+        <h1>Routing</h1>
+        <nav>
+          <ul>
+            <li>01. aklsjf</li>
+            <li>02. aklsjf</li>
+            <li>03. aklsjf</li>
+            <li>04. aklsjf</li>
+          </ul>
+
+          {/* <div className={bottomNavStyles.subcontainerDiv}> */}
+          {/* <GridItem
               name="dribbble"
               type={"social"}
               link={"https://dribbble.com/ungarmichael"}
@@ -158,21 +163,17 @@ function Bottomnav() {
               name="twitter"
               link={"https://twitter.com/ungarmichael_"}
               type={"social"}
-            />
-          </div>
+            /> */}
+          {/* </div> */}
         </nav>
       </div>
-
-      <div
-        className={`${bottomNavStyles["nav-grid"]} ${bottomNavStyles.subcontainer}`}
-        ref={navRef}
-      >
-        <nav className={bottomNavStyles["subcontainerNav"]}>
-          <div className={bottomNavStyles["subcontainerDiv"]}>
-            <GridItem name="01.about" link={"about"} type={"nav"} />
+      <div className={bottomNavStyles.mobileRoutingContainer} ref={navRef}>
+        <nav className={bottomNavStyles.subcontainerNav}>
+          <div className={bottomNavStyles.subcontainerDiv}>
+            {/* <GridItem name="01.about" link={"about"} type={"nav"} />
             <GridItem name="02.experience" link={"experience"} type={"nav"} />
             <GridItem name="03.projects" link={"projects"} type={"nav"} />
-            <GridItem name="04.contact" link={"contact"} type={"nav"} />
+            <GridItem name="04.contact" link={"contact"} type={"nav"} /> */}
           </div>
         </nav>
       </div>
