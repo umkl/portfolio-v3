@@ -8,6 +8,7 @@ import { useEffect, useRef } from "react";
 const Home = (): JSX.Element => {
   const homeRef = useRef(null);
   const { t } = useTranslation("common");
+
   useEffect(() => {
     gsap.to(homeRef.current, {
       opacity: 1,
@@ -25,7 +26,7 @@ const Home = (): JSX.Element => {
           <p className={f["Home-Heading-1"]}>Michael Ungar.</p>
         </h1>
         <h2>
-          <p className={f["Home-Heading-2"]}>{t("metaTitle")}</p>
+          <p className={f["Home-Heading-2"]}>{t("title")}</p>
         </h2>
         <p className={f["Home-Text-1"]}>
           I&apos;m a software engineer and creator currently working as a
