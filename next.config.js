@@ -1,5 +1,9 @@
-module.exports = {
-  webpack(config) {
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const nextTranslate = require("next-translate");
+
+module.exports = nextTranslate({
+  reactStrictMode: true,
+  webpack: (config) => {
     config.module.rules.push(
       {
         test: /\.svg$/,
@@ -12,25 +16,4 @@ module.exports = {
     );
     return config;
   },
-  i18n: {
-    locales: ["en-US", "fr", "nl-NL"],
-    defaultLocale: "en-US",
-    domains: [
-      {
-        domain: "example.com",
-        defaultLocale: "en-US",
-      },
-      {
-        domain: "example.nl",
-        defaultLocale: "nl-NL",
-      },
-      {
-        domain: "example.fr",
-        defaultLocale: "fr",
-        // an optional http field can also be used to test
-        // locale domains locally with http instead of https
-        http: true,
-      },
-    ],
-  },
-};
+});

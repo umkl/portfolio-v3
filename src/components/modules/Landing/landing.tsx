@@ -1,12 +1,13 @@
 import f from "./../../../styles/fonts.module.scss";
 import landingStyle from "@styles/landing.module.scss";
 import c from "./../../../styles/components.module.scss";
-
+import useTranslation from "next-translate/useTranslation";
 import { gsap, TweenMax, Power3 } from "gsap";
 import { useEffect, useRef } from "react";
 
 const Home = (): JSX.Element => {
   const homeRef = useRef(null);
+  const { t } = useTranslation("common");
   useEffect(() => {
     gsap.to(homeRef.current, {
       opacity: 1,
@@ -24,13 +25,12 @@ const Home = (): JSX.Element => {
           <p className={f["Home-Heading-1"]}>Michael Ungar.</p>
         </h1>
         <h2>
-          <p className={f["Home-Heading-2"]}>
-            Developer and Designer from Austria.
-          </p>
+          <p className={f["Home-Heading-2"]}>{t("metaTitle")}</p>
         </h2>
         <p className={f["Home-Text-1"]}>
-          I&apos;m a software engineer and creator currently working as a freelancer
-          focused on creating flawless code and maginificient designs.
+          I&apos;m a software engineer and creator currently working as a
+          freelancer focused on creating flawless code and maginificient
+          designs.
         </p>
       </div>
     </section>
