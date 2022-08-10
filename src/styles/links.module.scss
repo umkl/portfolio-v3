@@ -1,22 +1,21 @@
-@use '../../../styles/abstracts/index' as a;
-@use '../../../styles/fonts.module.scss' as f;
+@use 'abstracts' as a;
+@use 'fonts.module.scss' as f;
 
 .Linkbar {
   bottom: 0;
   position: fixed;
-  z-index: 9999;
+  z-index: 3;
   margin: 0 clamp(0px, 4vw, 40px);
   @include a.media("<=xSize_7") {
-    margin: 0 clamp(0px, 2vw, 40px);
+    margin: 0 clamp(0px, 1vw, 40px);
   }
   @include a.media("<=xSize_6") {
     margin: 0;
   }
 }
 
-.Linkbar-1 {
+#SocialsBar {
   width: 70px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,13 +24,12 @@
     display: none;
   }
 }
-.Linkbar-2 {
+
+#EmailBar {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  //   left: auto;
-  //   height: 400px;
   width: 70px;
   right: 0;
   @include a.media("<=xSize_5") {
@@ -39,55 +37,40 @@
   }
   a {
     &:hover {
-      // background-color: a.$co_4;
       color: a.$co_3;
       margin-bottom: 10px;
       transition: 0.3s;
     }
     transition: 0.3s;
-    @extend .Side-Code-1;
-    // position: absolute;
-    // // width: fit-content;
-    // transform-origin: bottom left;
-    // transform: rotate(90deg);
-    // // left: 50%;
+    writing-mode: vertical-rl;
+    letter-spacing: 0.1em;
+    font-family: a.$font-family-monospace;
+    color: a.$co_4;
+    font-weight: 200;
+    font-size: 1rem;
   }
 }
 
-.Line-1 {
-  z-index: 999999999;
-  width: 2px;
+#line {
+  z-index: 4;
+  width: 1px;
   height: 100px;
-  margin: 50px 0 0 0;
+  margin: 30px 0 0 0;
   background-color: a.$co_4;
-  bottom: 0px;
-  left: 0px;
+  bottom: 0;
+  left: 0;
   position: relative;
 }
 
-.Icon-frame {
-  height: 70px;
-  position: relative;
-}
-
-.Icon-1 {
+.icon {
   position: relative;
   top: 10px;
-  // bottom: 0;
   height: 40px;
-  // margin: 20px 0;
-  path,
-  circle {
-    stroke: a.$co_4;
-  }
-
+  width: 20px;
+  color: a.$co_4;
   &:hover {
     top: 7px;
     color: a.$co_3;
-    path,
-    circle {
-      stroke: a.$co_3;
-    }
     cursor: pointer;
     transition: 0.3s;
   }

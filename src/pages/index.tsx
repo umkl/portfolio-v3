@@ -11,7 +11,6 @@ import Contact from "@components/home-sections/Contact/contact";
 //components
 import Links from "@components/modules/Links/links";
 
-
 import { getCompleteSortedProjectsData, IProject } from "../lib/projects";
 import { GetStaticProps } from "next";
 
@@ -22,7 +21,8 @@ export default function Index({
 }): JSX.Element {
   return (
     <>
-      {/* <Home />
+      <Home />
+      {/* 
       <About />
       <Experience />
       <Projects allProjects={allProjects} />

@@ -31,7 +31,7 @@ export default function Layout({ children }: ILayout) {
           content="Developer and Designer from Austria focused on flawless code and magnificient design."
         />
       </Head>
-      <Header />
+      {/* <Header /> */}
       <main className={layoutStyle.root}>
         {children}
         {/* <Usculpture
