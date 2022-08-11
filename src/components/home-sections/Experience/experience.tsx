@@ -1,11 +1,12 @@
 import React, { useState, useRef } from "react";
 import Head from "next/head";
+
 import ExperienceComponent from "./Experiences/experience";
 import InlineExperienceComponent from "./Experiences/inlineExperience";
-import f from "./../../../styles/fonts.module.scss";
-import c from "./../../../styles/components.module.scss";
-import a from "./../../../styles/export.module.scss";
-import l from "@styles/experience.module.scss";
+
+import f from "@styles/fonts.module.scss";
+import a from "@styles/export.module.scss";
+import experienceStyle from "@styles/experience.module.scss";
 import { gsap, Power3 } from "gsap";
 import ExperienceFullList from "./Experiences/experienceFullList";
 
@@ -72,20 +73,20 @@ function Experience() {
 
   return (
     <>
-      <section className={l["Section"]} id="experience">
-        <h2 className={l["Heading"]}>
-          <span className={f["Section-Code-1"]}>02.</span>
-          <span className={f["Section-Heading-1"]}>Experience</span>
+      <section id={experienceStyle.parent}>
+        <h2 className={experienceStyle.heading}>
+          <span className={experienceStyle.code}>02.</span>
+          <span>Experience</span>
         </h2>
 
-        <div className={`${l["Container"]}`}>
-          <ul className={l["experience-item-list"]}>
-            <div className={l["bar"]}>
-              <div className={l["indicator"]} ref={indicator} />
+        <div className={experienceStyle.Container}>
+          <ul className={experienceStyle["experience-item-list"]}>
+            <div className={experienceStyle.bar}>
+              <div className={experienceStyle["indicator"]} ref={indicator} />
             </div>
             <li>
               <button
-                className={`${f["Experience-Code-1"]} ${l["experience-item"]}`}
+                className={`${f["Experience-Code-1"]} ${experienceStyle["experience-item"]}`}
                 style={{
                   color: currentExperience == "VortexData" ? a.co3 : a.co2,
                   transition: ".3s",
@@ -105,7 +106,7 @@ function Experience() {
             </li>
             <li>
               <button
-                className={`${f["Experience-Code-1"]} ${l["experience-item"]}`}
+                className={`${f["Experience-Code-1"]} ${experienceStyle["experience-item"]}`}
                 style={{
                   color: currentExperience == "Fiverr" ? a.co3 : a.co2,
                   transition: ".3s",
@@ -125,7 +126,7 @@ function Experience() {
             </li>
             <li>
               <button
-                className={`${f["Experience-Code-1"]} ${l["experience-item"]}`}
+                className={`${f["Experience-Code-1"]} ${experienceStyle["experience-item"]}`}
                 style={{
                   color: currentExperience == "Fronius" ? a.co3 : a.co2,
                   transition: ".3s",
@@ -145,7 +146,7 @@ function Experience() {
             </li>
             <li>
               <button
-                className={`${f["Experience-Code-1"]} ${l["experience-item"]}`}
+                className={`${f["Experience-Code-1"]} ${experienceStyle["experience-item"]}`}
                 style={{
                   color: currentExperience == "Puttinger" ? a.co3 : a.co2,
                   transition: ".3s",

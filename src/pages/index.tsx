@@ -23,12 +23,10 @@ export default function Index({
   return (
     <>
       <Home />
-      <Services />
-      {/* 
-      <About />
+      <Services />      
       <Experience />
       <Projects allProjects={allProjects} />
-      <Contact /> */}
+      <Contact />
     </>
   );
 }

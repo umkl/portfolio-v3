@@ -1,30 +1,28 @@
 import Head from "next/head";
-import f from "./../../../styles/fonts.module.scss";
 import c from "./../../../styles/components.module.scss";
-import l from "./contact.module.scss";
+import contactStyle from "@styles/contact.module.scss";
 
-interface Props {}
-
-function Contact(props: Props) {
-  const {} = props;
+const Contact = () => {
   return (
-    <>
-      <section className={l["Section"]} id="contact">
-        <h2 className={l["Heading"]}>
-          <span className={f["Section-Code-1"]}>04.</span>
-          <span className={f["Section-Heading-1"]}>Contact</span>
-        </h2>
-        <h1 className={f["Contact-Heading-1"]}>Let us get in Touch</h1>
-        <p className={f["Contact-Text-1"]}>
-          I would love to chat with anyone who is interested in saying hello.
-          <br /> So feel free to contact me!
-        </p>
+    <section id={contactStyle.contact}>
+      <h2 className={contactStyle.heading}>
+        <span className={contactStyle.code}>04.</span>
+        <span>Contact</span>
+      </h2>
+      
+      <h1 id={contactStyle.request}>Let us get in Touch!</h1>
+      <p id={contactStyle.briefer}>
+        I would love to chat with anyone who is interested in saying hello.
+        <br /> So feel free to contact me!
+      </p>
+      <div id={contactStyle.buttonRow}>
         <a href="mailto:ungarmichael.mail@gmail.com">
-          <div className={l["Contact-button"]}>Send a mail</div>
+          <button>Send a mail</button>
         </a>
-      </section>
-    </>
+        <button>More about me</button>
+      </div>
+    </section>
   );
-}
+};
 
 export default Contact;

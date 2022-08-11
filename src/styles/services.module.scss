@@ -4,7 +4,7 @@
   color: a.$co_4-1;
   font-size: 1.3rem;
   line-height: 1.5;
-  
+  margin-bottom: 0.3rem;
   font-family: a.$font-family-monospace;
   color: a.$co_3;
   align-self: flex-end;
@@ -13,7 +13,7 @@
 .heading {
   font-family: a.$font-family-text;
   color: a.$co_4;
-  font-size: 1.4rem;
+  font-size: 2rem;
   display: flex;
   margin: 0;
   align-items: baseline;
@@ -27,7 +27,7 @@
     margin: 0 20px;
     display: inline-block;
     align-self: center;
-    background-color: a.$co_4;
+    background-color: a.$co_2;
     width: 100%;
     height: 1px;
     position: relative;
@@ -35,7 +35,6 @@
 }
 
 .content {
-    
   width: 700px;
   margin: 0 auto;
   // background-color: red;

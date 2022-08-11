@@ -10,7 +10,7 @@ import {
   BrandGithub,
 } from "tabler-icons-react";
 
-const links = (): JSX.Element => {
+const Links = (): JSX.Element => {
   return (
     <>
       <aside id={linksStyle.SocialsBar} className={linksStyle.Linkbar}>
@@ -39,4 +39,4 @@ const links = (): JSX.Element => {
   );
 };
 
-export default links;
+export default Links;

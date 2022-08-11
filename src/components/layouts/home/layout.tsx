@@ -38,10 +38,11 @@ export default function Layout({ children }: ILayout) {
           id={layoutStyle.u_sculpture}
           style={{ transform: `translateY(${offsetY * 0.8}px)` }}
         />
+        <Links />
       </main>
       <Footer />
       <Bottomnav />
-      <Links />
+      
     </>
   );
 }

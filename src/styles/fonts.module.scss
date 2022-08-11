@@ -146,71 +146,6 @@
   }
 }
 
-.Projects-code-1 {
-  margin: 20px;
-  color: a.$co_3;
-  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
-  font-size: clamp(18px, 2vw, 34px);
-  line-height: 2;
-  min-height: 0vw;
-  font-weight: 200;
-  margin-top: 0px;
-  margin-left: 0;
-  margin-right: 10px;
-}
-
-.Projects-code-2 {
-  color: a.$co_2-1;
-  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
-  font-weight: Regular;
-  font-size: clamp(22px, 1.2vw, 44px);
-  line-height: 1;
-  margin-bottom: 0px;
-  min-height: 0vw;
-  margin-top: 0px;
-  margin-left: 0;
-  margin-bottom: 10px;
-  margin-right: 10px;
-}
-
-.Projects-heading-1 {
-  margin: 20px;
-  min-height: 0vw;
-  line-height: clamp(90px, 4vw, 100px);
-  font-size: clamp(90px, 3vw, 100px);
-  color: a.$co_4;
-  font-weight: 700;
-  font-family: Inter, Calibre, Inter, "San Francisco", "SF Pro Text",
-    -apple-system, system-ui, sans-serif;
-  // margin: 20px 0
-  margin-left: 0;
-  // line-height: 0.6;
-  max-width: 800px;
-  @include a.media("<=xSize_6") {
-    font-size: clamp(40px, 6vw, 100px);
-    line-height: clamp(40px, 3vw, 100px);
-  }
-}
-
-.Projects-text-1 {
-  color: a.$co_2-1;
-  font-family: Inter, Calibre, Inter, "San Francisco", "SF Pro Text",
-    -apple-system, system-ui, sans-serif;
-  // background-color: red;
-  font-weight: 500;
-  font-size: clamp(20px, 2vw, 34px);
-  line-height: 2;
-  display: flex;
-  min-height: 0vw;
-  margin-top: 0px;
-  margin-right: 10px;
-  @include a.media("<=xSize_5") {
-    color: a.$co_4;
-    // background-color: red;
-  }
-  // background-color: red;
-}
-
 .Projects-code-3 {
   color: a.$co_2-1;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
@@ -221,33 +156,6 @@
   margin-top: 0px;
   margin-right: 10px;
   display: flex;
-}
-
-.Contact-Heading-1 {
-  margin: 50px 20px;
-  min-height: 0vw;
-  font-weight: 300;
-  font-size: clamp(50px, 3vw, 100px);
-  color: a.$co_4-1;
-  font-family: Inter, Calibre, Inter, "San Francisco", "SF Pro Text",
-    -apple-system, system-ui, sans-serif;
-  max-width: 800px;
-  margin-bottom: 0px;
-  line-height: clamp(50px, 3vw, 80px);
-}
-
-.Contact-Text-1 {
-  color: a.$co_2-1;
-  font-family: Inter, Calibre, Inter, "San Francisco", "SF Pro Text",
-    -apple-system, system-ui, sans-serif;
-  width: 90%;
-  font-weight: 300;
-  list-style: none;
-  font-size: clamp(20px, 2vw, 34px);
-  line-height: clamp(20px, 2.2vw, 40px);
-  min-height: 0vw;
-  margin: 30px 20px;
-  margin-bottom: 20px;
 }
 
 .footer-text {
