@@ -144,83 +144,75 @@
       transition: 0.5s;
     }
   }
-}
 
-#featuredProj {
-  margin: 20px;
-  color: a.$co_3;
-  font-family: a.$font-family-monospace;
-  font-size: clamp(1rem, 1vw, 2rem);
-  min-height: 0vw;
-  font-weight: 200;
-  margin-top: 0px;
-  margin-left: 0;
-  margin-right: 10px;
-}
-
-#projDate {
-  color: a.$co_2-1;
-  font-family: a.$font-family-monospace;
-  font-size: clamp(1em, 1.4vw, 2.4em);
-}
-
-#projTitle {
-  min-height: 0vw;
-  line-height: clamp(2em, 4vw, 3em);
-  font-size: clamp(2em, 5vw, 3em);
-  color: a.$co_4;
-  font-weight: 700;
-  font-family: a.$font-family-text;
-  max-width: 800px;
-  @include a.media("<=xSize_6") {
-    font-size: clamp(40px, 6vw, 100px);
-    line-height: clamp(40px, 3vw, 100px);
+  #featuredProj {
+    margin: 20px;
+    color: a.$co_3;
+    font-family: a.$font-family-monospace;
+    font-size: 1rem;
+    min-height: 0vw;
+    font-weight: 200;
+    margin-top: 0px;
+    margin-left: 0;
+    margin-right: 10px;
   }
-}
 
-#textContainer {
-  padding: 20px 30px;
-  margin: 20px 10px 10px 0px;
-  background-color: a.$co_1-1;
-  border-radius: 8px;
-  min-height: 100px;
-  width: 60%;
-  @include a.media("<=xSize_8") {
-    width: 80%;
+  #projDate {
+    color: a.$co_2-1;
+    font-family: a.$font-family-monospace;
+    font-size: 2rem;
   }
-  @include a.media("<=xSize_7") {
-    width: 90%;
-  }
-  @include a.media("<=xSize_6") {
-    background-color: transparent;
-    padding: 20px 0px;
-  }
-}
 
-#components {
-  margin: 20px;
-  color: a.$co_3;
-  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
-  font-size: clamp(18px, 2vw, 34px);
-  line-height: 2;
-  min-height: 0vw;
-  font-weight: 200;
-  margin-top: 0px;
-  margin-left: 0;
-  margin-right: 10px;
-}
-
-#description {
-  color: a.$co_2-1;
-  font-family: a.$font-family-text;
-  font-weight: 500;
-  font-size: clamp(20px, 2vw, 34px);
-  line-height: 2;
-  display: flex;
-  min-height: 0vw;
-  margin-top: 0px;
-  margin-right: 10px;
-  @include a.media("<=xSize_5") {
+  #projTitle {
+    min-height: 0vw;
+    line-height: clamp(2em, 4vw, 3em);
+    font-size: clamp(2em, 5vw, 3em);
     color: a.$co_4;
+    font-weight: 700;
+    font-family: a.$font-family-text;
+    max-width: 800px;
+    @include a.media("<=xSize_6") {
+      font-size: clamp(40px, 6vw, 100px);
+      line-height: clamp(40px, 3vw, 100px);
+    }
+  }
+
+  #textContainer {
+    padding: 20px 30px;
+
+    background-color: a.$co_1-1;
+    border-radius: 8px;
+    width: 40%;
+    // @include a.media("<=xSize_8") {
+    //   width: 80%;
+    // }
+    // @include a.media("<=xSize_7") {
+    //   width: 90%;
+    // }
+    // @include a.media("<=xSize_6") {
+    //   background-color: transparent;
+    //   padding: 20px 0px;
+    // }
+  }
+
+  #components {
+    margin: 20px 0;
+    color: a.$co_3;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    font-size: 1rem;
+    font-weight: 200;
+  
+  }
+
+  #description {
+    color: a.$co_2-1;
+    font-family: a.$font-family-text;
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 2;
+    display: flex;
+    @include a.media("<=xSize_5") {
+      color: a.$co_4;
+    }
   }
 }

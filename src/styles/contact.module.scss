@@ -9,6 +9,13 @@
   @include a.media("<=xSize_5") {
     width: clamp(100px, 85vw, 1200px);
   }
+  #contentField{
+    margin-top: 100px;
+    width: fit-content;
+    left: 30%;
+    transform: translateX(-50%);
+    position: relative;
+  }
   .code {
     color: a.$co_4-1;
     font-size: 1.3rem;
@@ -52,7 +59,8 @@
     font-family: a.$font-family-text;
     color: a.$co_2;
     font-size: 1.2rem;
-    margin: 10px 0;
+    margin: 20px 0;
+    
   }
   #buttonRow {
     display: flex;

@@ -3,25 +3,24 @@ import React from "react";
 import f from "@styles/fonts.module.scss";
 import experienceStyling from "@styles/experience.module.scss";
 
-function ExperienceComponent(props:any) {
+function ExperienceComponent(props: any) {
   const { experience } = props;
   return (
-    <div className={experienceStyling["Experience-Container"]}>
+    <div className={experienceStyling.experienceContainer}>
       <h1>
-        <span className={`${f["Experience-Heading-1"]}`}>{experience.job}</span>
+        <span id={experienceStyling.job}>{experience.job}</span>
         &nbsp;
-        <span className={`${f["Experience-Code-2"]}`}>
-          @{experience.company}{" "}
-        </span>
+        <span id={experienceStyling.company}>@{experience.company} </span>
       </h1>
-      <p className={`${f["Experience-Code-3"]}`}>{experience.time}</p>
-      <ul className={experienceStyling["Experience_detail-list"]}>
+      <p id={experienceStyling.timeSpan}>{experience.time}</p>
+      <ul id={experienceStyling.experienceDescriptionList}>
         {experience.descriptions.map((x) => {
           return (
-            <div key={x} className={experienceStyling["experience_detail-container"]}>
-              <div className={experienceStyling["list-indicator"]} />
-              <li className={`${f["Experience-Text-1"]}`}>{x}</li>
-            </div>
+            <li
+              key={x}
+            >
+              {x}
+            </li>
           );
         })}
       </ul>

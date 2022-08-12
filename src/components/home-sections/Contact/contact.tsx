@@ -9,17 +9,18 @@ const Contact = () => {
         <span className={contactStyle.code}>04.</span>
         <span>Contact</span>
       </h2>
-      
-      <h1 id={contactStyle.request}>Let us get in Touch!</h1>
-      <p id={contactStyle.briefer}>
-        I would love to chat with anyone who is interested in saying hello.
-        <br /> So feel free to contact me!
-      </p>
-      <div id={contactStyle.buttonRow}>
-        <a href="mailto:ungarmichael.mail@gmail.com">
-          <button>Send a mail</button>
-        </a>
-        <button>More about me</button>
+      <div id={contactStyle.contentField}>
+        <h1 id={contactStyle.request}>Let us get in Touch!</h1>
+        <p id={contactStyle.briefer}>
+          I would love to chat with anyone who is interested in saying hello.
+          <br /> So feel free to contact me!
+        </p>
+        <div id={contactStyle.buttonRow}>
+          <a href="mailto:ungarmichael.mail@gmail.com">
+            <button>Send a mail</button>
+          </a>
+          <button>More about me</button>
+        </div>
       </div>
     </section>
   );

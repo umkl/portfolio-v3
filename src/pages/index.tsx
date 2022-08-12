@@ -24,7 +24,7 @@ export default function Index({
     <>
       <Home />
       <Services />      
-      <Experience />
+      {/* <Experience /> */}
       <Projects allProjects={allProjects} />
       <Contact />
     </>
