@@ -1,18 +1,20 @@
 @use 'abstracts' as a;
 
 .content {
-  width: 80%;
+  width: clamp(100px, 70vw, 1200px);
   margin: 0 auto;
 
   #reachbtn {
-    background: radial-gradient(
-      220% 220% at 52.09% -59.09%,
-      #696969 0%,
-      #06253c 100%
-    );
+    // background: radial-gradient(
+    //   220% 220% at 52.09% -59.09%,
+    //   #696969 0%,
+    //   #06253c 100%
+    // );
+    background: none;
+  
     height: 4rem;
     width: 14rem;
-    border: none;
+    border: 1px solid a.$co_3;
     color: a.$co_3;
     font-family: a.$font-family-text;
     border-radius: 0.5rem;
@@ -100,10 +102,13 @@
   }
 
   #gig {
+    margin: 30px 10px;
+    padding: 30px;
     p {
       font-size: 1rem;
       color: a.$co_4;
       margin: 20px 0;
+      
       font-family: a.$font-family-text;
     }
     #picture {
