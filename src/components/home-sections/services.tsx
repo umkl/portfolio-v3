@@ -23,7 +23,7 @@ const Service = () => {
         <span>Webdevelopment</span>
       </h2>
       <div id={servicesStyle.split}>
-        <div id={servicesStyle.text}>
+        <div id={servicesStyle.interaction}>
           <p>
             I am offering the service to build your website. I can build your
             website from scratch or update your existing website.

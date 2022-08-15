@@ -11,7 +11,7 @@
     //   #06253c 100%
     // );
     background: none;
-  
+    margin-right: 20px;
     height: 4rem;
     width: 14rem;
     border: 1px solid a.$co_3;
@@ -118,10 +118,10 @@
     }
   }
 
-  #split {
-    display: flex;
-  }
-  #text {
+  // #split {
+  //   display: flex;
+  // }
+  #interaction {
     flex: 1;
     overflow: auto;
   }
