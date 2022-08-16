@@ -69,6 +69,7 @@
 
 .Container {
   background-color: purple;
+  background-color: purple;
   margin: 60px 0px;
   display: flex;
   height: fit-content;
@@ -93,6 +94,9 @@
       transition: 0.8s;
       margin-right: 50px;
       font-family: a.$font-family-monospace;
+      @include a.media("<=xSize_4") {
+        padding-left: 0px;
+      }
       @include a.media("<=xSize_4") {
         padding-left: 0px;
       }
@@ -210,11 +214,11 @@
     // }
   }
   li::before {
-    content: counter(li, upper-roman) ".";
+    content: counter(li, upper-roman)  ".";
     color: a.$co_3;
     display: inline-block;
     position: absolute;
-    width: 2rem;
+    width: 2rrem;
     margin-left: -1em;
   }
 }
