@@ -10,19 +10,7 @@ import Emoji from "@components/elements/Emoji";
 const Footer = (): JSX.Element => {
   return (
     <footer id={footerStyle.parent}>
-      <div id={footerStyle.initials}>
-        <LogoSkeleton className={footerStyle.LogoSkeleton} />
-        <ul>
-          <li className={footerStyle.initialsText}>
-            &nbsp;
-            <Emoji symbol={"0x1F3D7"} /> 2022 ungarmichael{" "}
-          </li>
-          <li className={footerStyle.initialsText}>
-            Made with <Emoji symbol={"0x1F496"} />
-            &nbsp;in Austria
-          </li>
-        </ul>
-      </div>
+      <Initials />
 
       <div id={footerStyle.dividerLine} />
 
@@ -64,4 +52,22 @@ const Footer = (): JSX.Element => {
   );
 };
 
-export default Footer;
+const Initials = (): JSX.Element => {
+  return (
+    <div id={footerStyle.initials}>
+      <LogoSkeleton className={footerStyle.LogoSkeleton} />
+      <ul>
+        <li className={footerStyle.initialsText}>
+          &nbsp;
+          <Emoji symbol={"0x1F3D7"} /> 2022 ungarmichael{" "}
+        </li>
+        <li className={footerStyle.initialsText}>
+          Made with <Emoji symbol={"0x1F496"} />
+          &nbsp;in Austria
+        </li>
+      </ul>
+    </div>
+  );
+};
+
+export default Initials;

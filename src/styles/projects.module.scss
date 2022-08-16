@@ -1,13 +1,13 @@
 @use './abstracts/index' as a;
 
-#projects {
+.parent {
   width: clamp(100px, 70vw, 1200px);
   left: 50%;
   transform: translateX(-50%);
   margin-bottom: 300px;
   position: relative;
   @include a.media("<=xSize_5") {
-    width: clamp(100px, 85vw, 1200px);
+    width: clamp(100px, 90vw, 1200px);
   }
   .code {
     color: a.$co_4-1;
@@ -183,16 +183,16 @@
     background-color: a.$co_1-1;
     border-radius: 8px;
     width: 40%;
-    // @include a.media("<=xSize_8") {
-    //   width: 80%;
-    // }
-    // @include a.media("<=xSize_7") {
-    //   width: 90%;
-    // }
-    // @include a.media("<=xSize_6") {
-    //   background-color: transparent;
-    //   padding: 20px 0px;
-    // }
+    @include a.media("<=xSize_8") {
+      width: 80%;
+    }
+    @include a.media("<=xSize_7") {
+      width: 90%;
+    }
+    @include a.media("<=xSize_6") {
+      background-color: transparent;
+      padding: 20px 0px;
+    }
   }
 
   #components {
@@ -201,7 +201,6 @@
     font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
     font-size: 1rem;
     font-weight: 200;
-  
   }
 
   #description {
