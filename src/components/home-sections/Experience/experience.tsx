@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import Head from "next/head";
-
+import { Element } from "react-scroll";
 import ExperienceComponent from "./Experiences/experience";
 import InlineExperienceComponent from "./Experiences/inlineExperience";
 
@@ -72,101 +72,102 @@ function Experience() {
   const indicator = useRef(null);
 
   return (
-    <section id={experienceStyle.parent}>
-      <h2 className={experienceStyle.heading}>
-        <span className={experienceStyle.code}>02.</span>
-        <span>Experience</span>
-      </h2>
+    <Element name="021experience">
+      <section className={experienceStyle.parent} id="021experience">
+        <h2 className={experienceStyle.heading}>
+          <span className={experienceStyle.code}>02.</span>
+          <span>Experience</span>
+        </h2>
+        <div className={experienceStyle.Container}>
+          <ul className={experienceStyle.experienceItemList}>
+            <div className={experienceStyle.bar}>
+              <div className={experienceStyle.indicator} ref={indicator} />
+            </div>
+            <li>
+              <button
+                id={experienceStyle.experienceItem}
+                style={{
+                  color: currentExperience == "VortexData" ? a.co3 : a.co2,
+                }}
+                onClick={() => {
+                  setCurrentExperience("VortexData");
+                  gsap.to(indicator.current, {
+                    opacity: 1,
+                    marginTop: "0px",
+                    duration: 0.8,
+                    ease: Power3.easeOut,
+                  });
+                }}
+              >
+                VortexData
+              </button>
+            </li>
+            <li>
+              <button
+                id={experienceStyle.experienceItem}
+                style={{
+                  color: currentExperience == "Fiverr" ? a.co3 : a.co2,
+                }}
+                onClick={() => {
+                  setCurrentExperience("Fiverr");
+                  gsap.to(indicator.current, {
+                    opacity: 1,
+                    marginTop: "4rem",
+                    duration: 0.8,
+                    ease: Power3.easeOut,
+                  });
+                }}
+              >
+                Freelancing
+              </button>
+            </li>
+            <li>
+              <button
+                id={experienceStyle.experienceItem}
+                style={{
+                  color: currentExperience == "Fronius" ? a.co3 : a.co2,
+                }}
+                onClick={() => {
+                  setCurrentExperience("Fronius");
+                  gsap.to(indicator.current, {
+                    opacity: 1,
+                    marginTop: "8rem",
+                    duration: 0.8,
+                    ease: Power3.easeOut,
+                  });
+                }}
+              >
+                Fronius
+              </button>
+            </li>
+            <li>
+              <button
+                id={experienceStyle.experienceItem}
+                style={{
+                  color: currentExperience == "Puttinger" ? a.co3 : a.co2,
+                }}
+                onClick={() => {
+                  setCurrentExperience("Puttinger");
+                  gsap.to(indicator.current, {
+                    opacity: 1,
+                    marginTop: "12rem",
+                    duration: 0.8,
+                    ease: Power3.easeOut,
+                  });
+                }}
+              >
+                Puttinger
+              </button>
+            </li>
+          </ul>
+          <ExperienceComponent
+            experience={getExperienceByCompany(currentExperience)}
+          />
+        </div>
 
-      <div className={experienceStyle.Container}>
-        <ul className={experienceStyle.experienceItemList}>
-          <div className={experienceStyle.bar}>
-            <div className={experienceStyle.indicator} ref={indicator} />
-          </div>
-          <li>
-            <button
-              id={experienceStyle.experienceItem}
-              style={{
-                color: currentExperience == "VortexData" ? a.co3 : a.co2,
-              }}
-              onClick={() => {
-                setCurrentExperience("VortexData");
-                gsap.to(indicator.current, {
-                  opacity: 1,
-                  marginTop: "0px",
-                  duration: 0.8,
-                  ease: Power3.easeOut,
-                });
-              }}
-            >
-              VortexData
-            </button>
-          </li>
-          <li>
-            <button
-              id={experienceStyle.experienceItem}
-              style={{
-                color: currentExperience == "Fiverr" ? a.co3 : a.co2,
-              }}
-              onClick={() => {
-                setCurrentExperience("Fiverr");
-                gsap.to(indicator.current, {
-                  opacity: 1,
-                  marginTop: "4rem",
-                  duration: 0.8,
-                  ease: Power3.easeOut,
-                });
-              }}
-            >
-              Freelancing
-            </button>
-          </li>
-          <li>
-            <button
-              id={experienceStyle.experienceItem}
-              style={{
-                color: currentExperience == "Fronius" ? a.co3 : a.co2,
-              }}
-              onClick={() => {
-                setCurrentExperience("Fronius");
-                gsap.to(indicator.current, {
-                  opacity: 1,
-                  marginTop: "8rem",
-                  duration: 0.8,
-                  ease: Power3.easeOut,
-                });
-              }}
-            >
-              Fronius
-            </button>
-          </li>
-          <li>
-            <button
-              id={experienceStyle.experienceItem}
-              style={{
-                color: currentExperience == "Puttinger" ? a.co3 : a.co2,
-              }}
-              onClick={() => {
-                setCurrentExperience("Puttinger");
-                gsap.to(indicator.current, {
-                  opacity: 1,
-                  marginTop: "12rem",
-                  duration: 0.8,
-                  ease: Power3.easeOut,
-                });
-              }}
-            >
-              Puttinger
-            </button>
-          </li>
-        </ul>
-        <ExperienceComponent
-          experience={getExperienceByCompany(currentExperience)}
-        />
-      </div>
-
-      <ExperienceFullList />
-    </section>
+        <ExperienceFullList />
+      </section>
+    </Element>
   );
 }
 

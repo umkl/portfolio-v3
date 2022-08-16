@@ -1,18 +1,18 @@
 @use 'abstracts' as a;
 
-#contact {
+.parent {
   position: relative;
   width: clamp(100px, 70vw, 1200px);
   left: 50%;
   transform: translateX(-50%);
   margin-bottom: 300px;
   @include a.media("<=xSize_5") {
-    width: clamp(100px, 85vw, 1200px);
+    width: clamp(100px, 90vw, 1200px);
   }
-  #contentField{
+  #contentField {
     margin-top: 100px;
     width: fit-content;
-    left: 30%;
+    left: 50%;
     transform: translateX(-50%);
     position: relative;
   }
@@ -60,14 +60,17 @@
     color: a.$co_2;
     font-size: 1.2rem;
     margin: 20px 0;
-    
   }
   #buttonRow {
     display: flex;
-
     margin-top: 20px;
+    @include a.media("<=xSize_5") {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
   }
-  button {
+  #mail {
     margin-right: 20px;
     height: 30px;
     background-color: transparent;
@@ -85,5 +88,42 @@
       background-color: rgba(149, 184, 209, 0.144);
       cursor: pointer;
     }
+    #icon {
+      margin-right: 6px;
+      height: 1.4rem;
+    }
+    @include a.media("<=xSize_5") {
+      margin-bottom: 10px;
+    }
+  }
+  #more {
+    margin-right: 20px;
+    height: 30px;
+    background-color: transparent;
+    color: a.$co_4;
+    font-size: 1.2rem;
+    // border: 1px solid a.$co_3;
+    border: none;
+    font-family: a.$font-family-monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    transition: 0.3s;
+
+    &:hover {
+      transition: 0.3s;
+      background-color: a.$co_1;
+      text-decoration: underline;
+      cursor: pointer;
+      #icon {
+        margin-left: 10px;
+      }
+    }
+  }
+  .wavinghand {
+    font-size: 50px;
+    margin: 0;
+    line-height: 0.1rem;
   }
 }

@@ -2,7 +2,9 @@ import React from "react";
 import Head from "next/head";
 import f from "@styles/fonts.module.scss";
 import projectsStyle from "@styles/projects.module.scss";
+import "@styles/projects.module.scss";
 import FProject from "./fProject";
+import { Element } from "react-scroll";
 import { getCompleteSortedProjectsData, IProject } from "../../../lib/projects";
 
 const Projects = ({
@@ -11,8 +13,8 @@ const Projects = ({
   allProjects: IProject[];
 }): JSX.Element => {
   return (
-    <>
-      <section id={projectsStyle.projects}>
+    <Element name="01projects">
+      <section className={projectsStyle.parent} id="01projects">
         <h2 className={projectsStyle.heading}>
           <span className={projectsStyle.code}>03.</span>
           <span>Projects</span>
@@ -24,7 +26,7 @@ const Projects = ({
           featured?<Project/> : null
         })} */}
       </section>
-    </>
+    </Element>
   );
 };
 
