@@ -17,6 +17,7 @@ function Bottomnav() {
   const [socialsActive, setSocialsActive] = useState(false);
   const tlnav = useRef(null);
 
+
   const socialRef = useRef(null);
   const navRef = useRef(null);
 
