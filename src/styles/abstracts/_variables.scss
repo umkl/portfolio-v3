@@ -1,0 +1,28 @@
+@use './include-media' as i;
+
+:export {
+  xSize_1: map-get(i.$breakpoints, "xSize_1");
+  xSize_2: map-get(i.$breakpoints, "xSize_2");
+  xSize_3: map-get(i.$breakpoints, "xSize_3");
+  xSize_4: map-get(i.$breakpoints, "xSize_4");
+  xSize_5: map-get(i.$breakpoints, "xSize_5");
+  xSize_6: map-get(i.$breakpoints, "xSize_6");
+  xSize_7: map-get(i.$breakpoints, "xSize_7");
+  xSize_8: map-get(i.$breakpoints, "xSize_8");
+  ySize_1: map-get(i.$breakpoints, "ySize_1");
+  ySize_2: map-get(i.$breakpoints, "ySize_2");
+  ySize_3: map-get(i.$breakpoints, "ySize_3");
+}
+$button-border-radius: 6px;
+$container-border-radius: 8px;
+
+// $xSize_1: map-get(i.$breakpoints, "small_phone");
+// $xSize_2: map-get(i.$breakpoints, "phone");
+// $xSize_3: map-get(i.$breakpoints, "large_phone");
+// $xSize_4: map-get(i.$breakpoints, "tablet");
+// $xSize_5: map-get(i.$breakpoints, "large_tablet");
+// $xSize_6: map-get(i.$breakpoints, "desktop");
+// $xSize_7: map-get(i.$breakpoints, "large_desktop");
+// $ySize_1: map-get(i.$breakpoints, "hSmall");
+// $ySize_2: map-get(i.$breakpoints, "hMedium");
+// $ySize_3: map-get(i.$breakpoints, "hLarge");

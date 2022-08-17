@@ -1,0 +1,52 @@
+@use "abstracts" as a;
+
+.Parent {
+  z-index: 2;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  height: clamp(70px, 20vh, 100px);
+  width: 100%;
+  @include a.media("height<=ySize_3", "portrait") {
+    height: clamp(40px, 20vh, 60px);
+    
+  }
+  @include a.media("height<=ySize_4", "portrait") {
+    height: clamp(40px, 20vh, 70px);
+    margin-top: 20px;
+  }
+  @include a.media("height>=ySize_4", "portrait") {
+    height: clamp(50px, 12vh, 150px);
+    margin-top: 20px;
+  }
+  @include a.media("height<=ySize_3", "landscape") {
+    height: clamp(50px, 20vh, 80px);
+  }
+  @include a.media("height>=ySize_4", "height<=ySize_4", "landscape") {
+    height: clamp(70px, 20vh, 100px);
+  }
+  .Positioner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 10px 5%;
+    @include a.media("height>=ySize_4", "portrait") {
+      margin: 0px 40px;
+    }
+    .Logo {
+      position: relative;
+      height: clamp(40px, 8vh, 60px);
+    }
+    .languageSelector {
+      font-family: a.$font-family-monospace;
+      color: a.$co_4-1;
+      font-size: clamp(2rem, 5vh, 3rem);
+      cursor: pointer;
+    }
+    @include a.media(">=xSize_5") {
+      margin: 0 50px;
+    }
+  }
+}
