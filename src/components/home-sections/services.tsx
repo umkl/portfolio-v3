@@ -33,11 +33,10 @@ const Service = () => {
             I am offering the service to build your website. I can build your
             website from scratch or update your existing website.
           </p>
-
-          <button id={servicesStyle.reachbtn}>reach out to me</button>
-          <button id={servicesStyle.fiverrbtn}>fiverr gig</button>
+          <a href="https://www.fiverr.com/share/7LKGDb">
+            <button id={servicesStyle.fiverrbtn}>my fiverr gig</button>
+          </a>
         </div>
-        {/* <div id={servicesStyle.picture}>picture</div> */}
       </div>
     </div>
   );
