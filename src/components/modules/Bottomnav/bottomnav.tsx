@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-
+import { animateScroll as scroll, scroller } from "react-scroll";
 import f from "@styles/fonts.module.scss";
 import c from "@styles/components.module.scss";
 import bottomNavStyles from "@styles/bottomnav.module.scss";
@@ -9,14 +9,66 @@ import { ArrowsSplit2, X, Link } from "tabler-icons-react";
 import GlobeIcon from "../../../../assets/Icons/globe.svg";
 import GridIcon from "../../../../assets/Icons/gridburger.svg";
 import XIcon from "../../../../assets/Icons/x.svg";
+import useTranslation from "next-translate/useTranslation";
+import { useRouter } from "next/router";
 
 function Bottomnav() {
-  const [currentGrid, setCurrentGrid] = useState(null);
+  const [navActive, setNavActive] = useState(false);
+  const [socialsActive, setSocialsActive] = useState(false);
   const tlnav = useRef(null);
+
   const socialRef = useRef(null);
   const navRef = useRef(null);
-  const socialBtn = useRef(null);
-  const navBtn = useRef(null);
+
+  const router = useRouter();
+  const { t } = useTranslation("common");
+  const evalauteIfPushRoute = (callback: () => void) => {
+    if (router.pathname !== "/") {
+      router.push("/").then(() => callback());
+      return;
+    }
+    callback();
+  };
+
+  const scrollToServices = () => {
+    evalauteIfPushRoute(() =>
+      scroller.scrollTo("02services", {
+        duration: 500,
+        smooth: true,
+        offset: -70,
+      })
+    );
+  };
+
+  const scrollToExperiences = () => {
+    evalauteIfPushRoute(() =>
+      scroller.scrollTo("021experience", {
+        duration: 500,
+        smooth: true,
+        offset: -70,
+      })
+    );
+  };
+
+  const scrollToProjects = () => {
+    evalauteIfPushRoute(() =>
+      scroller.scrollTo("01projects", {
+        duration: 500,
+        smooth: true,
+        offset: -70,
+      })
+    );
+  };
+
+  const scrollToContact = () => {
+    evalauteIfPushRoute(() =>
+      scroller.scrollTo("002contact", {
+        duration: 500,
+        smooth: true,
+        offset: -70,
+      })
+    );
+  };
 
   useEffect(() => {
     gsap.to(tlnav.current, {
@@ -27,92 +79,55 @@ function Bottomnav() {
     });
   }, []);
 
-  const onClickEvent = (selection: string) => {
-    if (selection == "social") {
-      if (currentGrid == null) {
-        gsap.to(socialRef.current, {
-          opacity: 1,
-          display: "block",
-          marginBottom: "0px",
-          duration: 0.5,
-          ease: Power3.easeOut,
-        });
-        setCurrentGrid("social");
-      } else if (currentGrid == "nav") {
-        gsap.to(navRef.current, {
-          opacity: 0,
-          display: "none",
-          marginBottom: "-100px",
-          duration: 0.5,
-          ease: Power3.easeOut,
-        });
-        gsap.to(socialRef.current, {
-          opacity: 1,
-          display: "block",
-          delay: 0.5,
-          marginBottom: "0px",
-          duration: 0.5,
-          ease: Power3.easeOut,
-        });
-        setCurrentGrid("social");
-      } else {
-        gsap.to(socialRef.current, {
-          opacity: 0,
-          display: "none",
-          marginBottom: "-100px",
-          duration: 0.5,
-          ease: Power3.easeOut,
-        });
-        setCurrentGrid(null);
-      }
-    } else if (selection == "nav") {
-      if (currentGrid == null) {
-        gsap.to(navRef.current, {
-          opacity: 1,
-          display: "block",
-          marginBottom: "0px",
-          duration: 0.5,
-          ease: Power3.easeOut,
-        });
-        setCurrentGrid("nav");
-      } else if (currentGrid == "social") {
-        gsap.to(socialRef.current, {
-          opacity: 0,
-          display: "none",
-          marginBottom: "-100px",
-          duration: 0.5,
-          ease: Power3.easeOut,
-        });
-        gsap.to(navRef.current, {
-          opacity: 1,
-          display: "block",
-          delay: 0.5,
-          marginBottom: "0px",
-          duration: 0.5,
-          ease: Power3.easeOut,
-        });
-        setCurrentGrid("nav");
-      } else {
-        gsap.to(navRef.current, {
-          opacity: 0,
-          display: "none",
-          marginBottom: "-100px",
-          duration: 0.5,
-          ease: Power3.easeOut,
-        });
-        setCurrentGrid(null);
-      }
-    }
+  const toggleNavContainer = () => {
+    gsap.to(navRef.current, {
+      opacity: navActive ? 0 : 1,
+      display: "block",
+      marginBottom: "0px",
+      duration: 0.5,
+      ease: Power3.easeOut,
+    });
   };
+
+  const toggleSocialContainer = () => {
+    gsap.to(socialRef.current, {
+      opacity: socialsActive ? 0 : 1,
+      display: "block",
+      marginBottom: "0px",
+      duration: 0.5,
+      ease: Power3.easeOut,
+    });
+  };
+  const onClickNavBtn = () => {
+    if (socialsActive) hideSocials();
+    setNavActive(!navActive);
+    toggleNavContainer();
+  };
+
+  const onClickSocialsBtn = () => {
+    if (navActive) hideNav();
+    setSocialsActive(!socialsActive);
+    toggleSocialContainer();
+  };
+
+  const hideNav = () => {
+    setNavActive(false);
+    toggleNavContainer();
+  };
+
+  const hideSocials = () => {
+    setSocialsActive(false);
+    toggleSocialContainer();
+  };
+
   return (
     <nav className={bottomNavStyles.bottomNav}>
       <div className={bottomNavStyles.tlnav} ref={tlnav}>
         <button
           className={bottomNavStyles.bottomNavBtn}
-          ref={socialBtn}
-          onClick={() => onClickEvent("social")}
+          onClick={() => onClickNavBtn()}
         >
-          {currentGrid == "social" ? (
+          {navActive ? (
             <X className={bottomNavStyles["bar-icon"]} />
           ) : (
             <ArrowsSplit2 className={bottomNavStyles["bar-icon"]} />
@@ -120,10 +135,9 @@ function Bottomnav() {
         </button>
         <button
           className={bottomNavStyles.bottomNavBtn}
-          ref={navBtn}
-          onClick={() => onClickEvent("nav")}
+          onClick={() => onClickSocialsBtn()}
         >
-          {currentGrid == "nav" ? (
+          {socialsActive ? (
             <X className={bottomNavStyles["bar-icon"]} />
           ) : (
             <Link
@@ -132,47 +146,45 @@ function Bottomnav() {
           )}
         </button>
       </div>
-      <div className={bottomNavStyles.mobileRoutingContainer} ref={socialRef}>
-        <h1>Routing</h1>
+      <div className={bottomNavStyles.mobileRoutingContainer} ref={navRef}>
+        <h1>Routes</h1>
         <nav>
-          <ul>
-            <li>01. aklsjf</li>
-            <li>02. aklsjf</li>
-            <li>03. aklsjf</li>
-            <li>04. aklsjf</li>
+          <ul className={bottomNavStyles.ListParent}>
+            <li onClick={scrollToServices}>
+              <span className={bottomNavStyles.navCode}> 02.</span>
+              <span className={bottomNavStyles.navHeading}>
+                {t("services")}
+              </span>
+            </li>
+            <li onClick={scrollToExperiences}>
+              <span className={bottomNavStyles.navCode}> 02.1.</span>
+              <span className={bottomNavStyles.navHeading}>
+                {t("experience")}
+              </span>
+            </li>
+            <li onClick={scrollToProjects}>
+              <span className={bottomNavStyles.navCode}> 01.</span>
+              <span className={bottomNavStyles.navHeading}>
+                {t("projects")}
+              </span>
+            </li>
+            <li onClick={scrollToContact}>
+              <span className={bottomNavStyles.navCode}> 00.2.</span>
+              <span className={bottomNavStyles.navHeading}>{t("contact")}</span>
+            </li>
           </ul>
-
-          {/* <div className={bottomNavStyles.subcontainerDiv}> */}
-          {/* <GridItem
-              name="dribbble"
-              type={"social"}
-              link={"https://dribbble.com/ungarmichael"}
-            />
-            <GridItem
-              name="github"
-              link={"https://github.com/ungarmichael"}
-              type={"social"}
-            />
-            <GridItem
-              name="linkedin"
-              link={"https://www.linkedin.com/in/michael-ungar-9624391b4/"}
-              type={"social"}
-            />
-            <GridItem
-              name="twitter"
-              link={"https://twitter.com/ungarmichael_"}
-              type={"social"}
-            /> */}
-          {/* </div> */}
         </nav>
       </div>
-      <div className={bottomNavStyles.mobileRoutingContainer} ref={navRef}>
+      <div className={bottomNavStyles.mobileRoutingContainer} ref={socialRef}>
         <nav className={bottomNavStyles.subcontainerNav}>
           <div className={bottomNavStyles.subcontainerDiv}>
-            {/* <GridItem name="01.about" link={"about"} type={"nav"} />
-            <GridItem name="02.experience" link={"experience"} type={"nav"} />
-            <GridItem name="03.projects" link={"projects"} type={"nav"} />
-            <GridItem name="04.contact" link={"contact"} type={"nav"} /> */}
+            <h1>Socials</h1>
+            <a href="https://www.linkedin.com/in/michael-ungar-9624391b4/">
+              LinkedIn
+            </a>
+            <a href="https://twitter.com/ungarmichael_">Twitter</a>
+            <a href="https://github.com/ungarmichael">Github</a>
+            <a href="https://dribbble.com/ungarmichael">Dribbble</a>
           </div>
         </nav>
       </div>
