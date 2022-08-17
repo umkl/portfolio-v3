@@ -7,7 +7,7 @@ import Header from "@components/modules/Header/header";
 import Links from "@components/modules/Links/links";
 import Bottomnav from "@components/modules/Bottomnav/bottomnav";
 
-import Usculpture from "../../../../assets/Illustrations/Usculpture.svg";
+import Usculpture from "./usculpture.svg";
 import styled from "styled-components";
 
 interface ILayout {
@@ -16,7 +16,7 @@ interface ILayout {
 
 const MainChildren = styled.div`
   min-height: 100vh;
-`
+`;
 
 export default function Layout({ children }: ILayout) {
   const [offsetY, setOffsetY] = useState(0);
