@@ -6,6 +6,7 @@ import font from "@styles/fonts.module.scss";
 
 import LogoSkeleton from "../../../../assets/Logo/logoSkeleton.svg";
 import Emoji from "@components/elements/Emoji";
+import useTranslation from "next-translate/useTranslation";
 
 const Footer = (): JSX.Element => {
   return (
@@ -53,6 +54,7 @@ const Footer = (): JSX.Element => {
 };
 
 const Initials = (): JSX.Element => {
+  const { t } = useTranslation("common");
   return (
     <div id={footerStyle.initials}>
       <LogoSkeleton className={footerStyle.LogoSkeleton} />
@@ -62,8 +64,8 @@ const Initials = (): JSX.Element => {
           <Emoji symbol={"0x1F3D7"} /> 2022 ungarmichael{" "}
         </li>
         <li className={footerStyle.initialsText}>
-          Made with <Emoji symbol={"0x1F496"} />
-          &nbsp;in Austria
+          {t("madewith")} <Emoji symbol={"0x1F496"} />
+          &nbsp;{t("inAT")}
         </li>
       </ul>
     </div>

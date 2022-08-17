@@ -68,9 +68,7 @@
 }
 
 .Container {
-  background-color: purple;
-  background-color: purple;
-  margin: 60px 0px;
+  margin: 60px 0px; 
   display: flex;
   height: fit-content;
   @include a.media("<=xSize_6") {

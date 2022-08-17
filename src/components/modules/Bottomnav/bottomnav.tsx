@@ -4,7 +4,6 @@ import f from "@styles/fonts.module.scss";
 import c from "@styles/components.module.scss";
 import bottomNavStyles from "@styles/bottomnav.module.scss";
 import { gsap, TweenMax, Power3 } from "gsap";
-import GridItem from "@components/elements/GridItem/gridItem";
 import { ArrowsSplit2, X, Link } from "tabler-icons-react";
 
 import GlobeIcon from "../../../../assets/Icons/globe.svg";

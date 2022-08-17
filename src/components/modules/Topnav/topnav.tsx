@@ -4,9 +4,11 @@ import c from "./../../styles/components.module.scss";
 import topNavStyle from "@styles/topnav.module.scss";
 import { useRouter } from "next/router";
 import { callbackify } from "util";
+import useTranslation from "next-translate/useTranslation";
 
 const TopNav = () => {
   const router = useRouter();
+  const { t } = useTranslation("common");
   const evalauteIfPushRoute = (callback: () => void) => {
     if (router.pathname !== "/") {
       router.push("/").then(() => callback());
@@ -60,19 +62,19 @@ const TopNav = () => {
       <ul className={topNavStyle.ListParent}>
         <li onClick={scrollToServices}>
           <span className={topNavStyle.navCode}> 02.</span>
-          <span className={topNavStyle.navHeading}>Services</span>
+          <span className={topNavStyle.navHeading}>{t("services")}</span>
         </li>
         <li onClick={scrollToExperiences}>
           <span className={topNavStyle.navCode}> 02.1.</span>
-          <span className={topNavStyle.navHeading}>Experience</span>
+          <span className={topNavStyle.navHeading}>{t("experience")}</span>
         </li>
         <li onClick={scrollToProjects}>
           <span className={topNavStyle.navCode}> 01.</span>
-          <span className={topNavStyle.navHeading}>Projects</span>
+          <span className={topNavStyle.navHeading}>{t("projects")}</span>
         </li>
         <li onClick={scrollToContact}>
           <span className={topNavStyle.navCode}> 00.2.</span>
-          <span className={topNavStyle.navHeading}>Contact</span>
+          <span className={topNavStyle.navHeading}>{t("contact")}</span>
         </li>
       </ul>
     </nav>

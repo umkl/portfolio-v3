@@ -30,8 +30,8 @@ const Links = (): JSX.Element => {
       </aside>
 
       <aside id={linksStyle.EmailBar} className={linksStyle.Linkbar}>
-        <a href="mailto:ungarmichael.mail@gmail.com">
-          ungarmichael.mail@gmail.com
+        <a href="mailto:michael.ungar03+ppl@gmail.com">
+          michael.ungar03@gmail.com
         </a>
         <div id={linksStyle.line}></div>
       </aside>
