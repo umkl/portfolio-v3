@@ -1,0 +1,222 @@
+@use './abstracts/index' as a;
+
+.parent {
+  position: relative;
+  overflow: auto;
+  width: clamp(100px, 70vw, 1200px);
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 300px;
+  @include a.media("<=xSize_5") {
+    width: clamp(100px, 90vw, 1200px);
+  }
+}
+
+.experienceContainer {
+  width: fit-content;
+  word-wrap: break-word;
+  margin-bottom: 30px;
+}
+
+.code {
+  color: a.$co_4-1;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin-bottom: 0.3rem;
+  font-family: a.$font-family-monospace;
+  color: a.$co_3;
+  align-self: flex-end;
+}
+
+.heading {
+  font-family: a.$font-family-text;
+  color: a.$co_4;
+  font-size: 2rem;
+  display: flex;
+  margin: 0;
+  align-items: baseline;
+  span {
+    line-height: 1.5;
+    padding: 0;
+    align-self: flex-end;
+  }
+  &:after {
+    content: "";
+    margin: 0 20px;
+    display: inline-block;
+    align-self: center;
+    background-color: a.$co_2;
+    width: 100%;
+    height: 1px;
+    position: relative;
+  }
+}
+
+.ContainerLargeExperienceList {
+  @include a.media("<=xSize_6") {
+    display: none;
+  }
+}
+.ContainerSmallExperienceList {
+  @include a.media(">=xSize_6") {
+    display: none;
+  }
+}
+
+.Experience-Container {
+  margin: 10px 0px;
+}
+
+.Container {
+  margin: 60px 0px; 
+  display: flex;
+  height: fit-content;
+  @include a.media("<=xSize_6") {
+    display: none;
+  }
+  .experienceItemList {
+    list-style: none;
+    height: fit-content;
+
+    @include a.media("<=xSize_5") {
+      display: flex;
+      flex-direction: column;
+    }
+    #experienceItem {
+      text-align: start;
+      border: none;
+      height: 4rem;
+      width: 14vw;
+      padding-left: 40px;
+      background-color: transparent;
+      transition: 0.8s;
+      margin-right: 50px;
+      font-family: a.$font-family-monospace;
+      @include a.media("<=xSize_4") {
+        padding-left: 0px;
+      }
+      @include a.media("<=xSize_4") {
+        padding-left: 0px;
+      }
+      &:hover {
+        cursor: pointer;
+        background-color: #4e53581a;
+      }
+    }
+  }
+}
+
+.bar {
+  background-color: a.$co_2;
+  height: calc(4rem * 4);
+  width: 1px;
+  position: absolute;
+  display: flex;
+}
+
+.indicator {
+  position: absolute;
+  left: -1px;
+  background-color: a.$co_3;
+  height: 4rem;
+  width: 3px;
+}
+
+.Heading {
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    width: clamp(10px, 40vw, 200px);
+    height: 1px;
+    background-color: a.$co_3;
+    margin: 0 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    @include a.media("<=xSize_5") {
+      width: clamp(10px, 40vw, 200px);
+    }
+    @include a.media("<=xSize_4") {
+      width: clamp(10px, 50vw, 200px);
+    }
+  }
+}
+
+.list-indicator {
+  background-color: a.$co_3;
+  height: 20px;
+  border-radius: 2px;
+  width: 15px;
+  margin: 20px;
+}
+
+.experience_detail-container {
+  justify-content: flex-start;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.Experience_detail-list {
+  padding: 0;
+}
+
+#job {
+  color: a.$co_4;
+  font-family: a.$font-family-text;
+  line-height: 1.1;
+  font-size: 2rem;
+  @include a.media("<=xSize_5") {
+    font-size: clamp(30px, 4vw, 51px);
+  }
+}
+
+#company {
+  color: a.$co_4;
+  font-family: a.$font-family-monospace;
+  font-size: 2rem;
+  color: a.$co_3;
+  @include a.media("<=xSize_5") {
+    font-size: clamp(30px, 4vw, 51px);
+  }
+}
+
+#timeSpan {
+  color: a.$co_2-1;
+  font-family: a.$font-family-monospace;
+  font-size: 1.3rem;
+  margin: 10px 0;
+}
+
+#experienceDescriptionList {
+  width: 100%;
+  padding: 0;
+  li {
+    color: a.$co_4;
+    font-family: a.$font-family-text;
+    font-weight: 300;
+    line-height: 1.8rem;
+    margin-top: 10px;
+    font-size: 1.3rem;
+    width: 90%;
+    list-style-type: none;
+    min-height: 0vw;
+    counter-increment: li;
+    display: block;
+    // &:before{
+    //   color: green;
+    //   font-size: 1em;
+    //   content: "♫ ";
+    // }
+  }
+  li::before {
+    content: counter(li, upper-roman)  ".";
+    color: a.$co_3;
+    display: inline-block;
+    position: absolute;
+    width: 2rrem;
+    margin-left: -1em;
+  }
+}

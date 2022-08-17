@@ -1,0 +1,131 @@
+@use "@styles/abstracts" as a;
+
+.bottomNav {
+  position: fixed;
+  height: fit-content;
+  width: 100vw;
+  margin: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  z-index: 10;
+  align-items: center;
+  box-sizing: border-box;
+  flex-direction: column-reverse;
+  @include a.media(">=xSize_5") {
+    display: none;
+  }
+  @include a.media("<=xSize_2") {
+    width: 300px;
+  }
+  .bar-icon {
+    height: 40px;
+    color: a.$co_3;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .grid-icon {
+    height: 50px;
+  }
+  .tlnav {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    bottom: 10px;
+    opacity: 0;
+    display: flex;
+
+    justify-content: space-between;
+    box-sizing: border-box;
+    @include a.media("<=xSize_5") {
+      height: 80px;
+      .bottomNavBtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 30px;
+        padding: 0;
+        width: 50px;
+        height: 50px;
+        background-color: a.$co_4-2;
+        border: 2px solid a.$co_3;
+        border-radius: 10px;
+        &:hover {
+          cursor: pointer;
+          background-color: a.$co_4-1;
+        }
+      }
+    }
+  }
+}
+
+.mobileRoutingContainer {
+  display: none;
+  position: fixed;
+  //center
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  width: 80%;
+  background-color: a.$co_4-2;
+  padding: 20px;
+  min-height: 400px;
+  margin-top: -30px;
+
+  @include a.media("<=xSize_2") {
+    left: 10px;
+    width: 300px;
+    transform: translate(0, -50%);
+  }
+  h1 {
+    font-weight: 500;
+    font-family: a.$font-family-text;
+    color: white;
+    &:after{
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: a.$co_2;
+    }
+  }
+  nav {
+    font-family: a.$font-family-text;
+    color: white;
+    ul {
+      display: grid;
+      grid-template-columns: auto;
+      align-items: center;
+      li {
+        font-family: a.$font-family-monospace;
+        font-size: 1.2rem;
+        list-style: none;
+        margin: 20px 0;
+        width: fit-content;
+        display: inline;
+        .navCode {
+          font-family: a.$font-family-monospace;
+          color: a.$co_3;
+          font-size: 1.2rem;
+        }
+        .navHeading {
+          font-family: a.$font-family-text;
+          color: a.$co_4;
+          font-size: 1.1rem;
+        }
+        &:hover {
+          color: a.$co_3;
+          background-color: a.$co_4-1;
+          cursor: pointer;
+        }
+        &:active{
+          color: a.$co_3;
+          text-decoration: underline a.$co_3;; 
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

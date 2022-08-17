@@ -1,0 +1,110 @@
+@use './abstracts/index' as a;
+
+.Section-Code-1 {
+  color: a.$co_3;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-weight: Regular;
+  font-size: clamp(20px, 4vw, 34px);
+  min-height: 0vw;
+  margin-top: 0px;
+  margin-right: 10px;
+  line-height: 2;
+}
+
+.Section-Heading-1 {
+  min-height: 0vw;
+  font-size: clamp(30px, 8vw, 51px);
+  color: a.$co_4;
+  font-weight: Semi Bold;
+  font-family: Inter, Calibre, Inter, "San Francisco", "SF Pro Text",
+    -apple-system, system-ui, sans-serif;
+  margin: 20px 0;
+  line-height: 1.1;
+  max-width: 800px;
+}
+
+.About-Text-1 {
+  min-height: 0vw;
+  font-size: clamp(12px, 8vw, 25px);
+  color: a.$co_2;
+  font-weight: 300;
+  font-family: Inter, Calibre, "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif;
+  margin: 20px 0;
+  line-height: 1.1;
+  max-width: 800px;
+}
+
+.about-code-1 {
+  color: a.$co_2;
+  font-size: 23px;
+  margin: 0px 30px;
+  width: 80%;
+  line-break: auto;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-weight: 700;
+}
+
+.Nav-Code-1 {
+  color: a.$co_3;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-size: clamp(10px, 2.4vw, 20px);
+  min-height: 0vw;
+  font-weight: 200;
+  line-height: 1.1;
+}
+
+.Nav-Heading-1 {
+  color: a.$co_4;
+  font-family: Inter, Calibre, Inter, "San Francisco", "SF Pro Text",
+    -apple-system system-ui, sans-serif;
+  font-size: clamp(10px, 2.4vw, 20px);
+  min-height: 0vw;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+
+.Projects-code-3 {
+  color: a.$co_2-1;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-weight: Regular;
+  font-size: clamp(20px, 2vw, 34px);
+  line-height: 2;
+  min-height: 0vw;
+  margin-top: 0px;
+  margin-right: 10px;
+  display: flex;
+}
+
+.footer-text {
+  color: a.$co_4;
+  color: a.$co_2-1;
+  font-family: Inter, Calibre, Inter, "San Francisco", "SF Pro Text",
+    -apple-system, system-ui, sans-serif;
+  font-weight: 300;
+  list-style: none;
+  font-size: clamp(20px, 2vw, 34px);
+  line-height: clamp(30px, 2.2vw, 40px);
+  min-height: 0vw;
+  margin: 5px 0px;
+  // margin-bottom: 20px;
+}
+
+.nav-code-3 {
+  color: a.$co_4;
+  font-family: Inter, Calibre, Inter, "San Francisco", "SF Pro Text",
+    -apple-system, system-ui, sans-serif;
+
+  font-weight: 500;
+  list-style: none;
+  font-size: clamp(20px, 3.4vw, 40px);
+  line-height: clamp(10px, 3vw, 40px);
+  min-height: 0vw;
+  margin: 5px 0px;
+  @include a.media("<=xSize_2", "height>=xSize_6") {
+    width: 150px;
+    overflow: visible;
+    z-index: 9999;
+  }
+}
