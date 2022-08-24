@@ -75,7 +75,7 @@ function Experience() {
     <Element name="021experience">
       <section className={experienceStyle.parent} id="021experience">
         <h2 className={experienceStyle.heading}>
-          <span className={experienceStyle.code}>02.</span>
+          <span className={experienceStyle.code}>02.1.</span>
           <span>Experience</span>
         </h2>
         <div className={experienceStyle.Container}>

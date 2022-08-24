@@ -24,14 +24,13 @@ const Service = () => {
   return (
     <div id={servicesStyle.gig}>
       <h2 className={servicesStyle.heading2}>
-        <span className={servicesStyle.code}>02.1.</span>{" "}
+        <span className={servicesStyle.code}>02.0.1</span>{" "}
         <span>Webdevelopment</span>
       </h2>
       <div id={servicesStyle.split}>
         <div id={servicesStyle.interaction}>
           <p>
-            I am offering the service to build your website. I can build your
-            website from scratch or update your existing website.
+            I can build you a website!
           </p>
           <a href="https://www.fiverr.com/share/7LKGDb">
             <button id={servicesStyle.fiverrbtn}>my fiverr gig</button>
