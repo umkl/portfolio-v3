@@ -25,7 +25,7 @@
     position: absolute;
     width: clamp(10px, 30vw, 200px);
     height: 1px;
-    background-color: a.$co_3;
+    background-color: a.$co_1;
     margin: 0 20px;
     top: 50%;
     transform: translateY(-50%);
@@ -76,7 +76,7 @@
     }
   }
   .Image-Frame {
-    border: 2px solid a.$co_3;
+    border: 2px solid a.$co_1;
     margin-left: 10%;
     margin-top: 5%;
     height: 100%;
@@ -143,7 +143,7 @@
   height: fit-content;
   // align-items: flex-start;
   .list-indicator {
-    background-color: a.$co_3;
+    background-color: a.$co_1;
     height: 20px;
     width: 15px;
     border-radius: 2px;

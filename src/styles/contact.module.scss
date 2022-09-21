@@ -17,17 +17,17 @@
     position: relative;
   }
   .code {
-    color: a.$co_4-1;
+    color: a.$co_5;
     font-size: 1.3rem;
     line-height: 1.5;
     margin-bottom: 0.3rem;
     font-family: a.$font-family-monospace;
-    color: a.$co_3;
+    color: a.$co_1;
     align-self: flex-end;
   }
   .heading {
     font-family: a.$font-family-text;
-    color: a.$co_4;
+    color: a.$co_2;
     font-size: 2rem;
     display: flex;
     margin: 0;
@@ -42,7 +42,7 @@
       margin: 0 20px;
       display: inline-block;
       align-self: center;
-      background-color: a.$co_2;
+      background-color: a.$co_4
       width: 100%;
       height: 1px;
       position: relative;
@@ -51,13 +51,13 @@
   #request {
     margin-top: 40px;
     font-family: a.$font-family-text;
-    color: a.$co_4;
+    color: a.$co_2;
     font-size: 4rem;
     text-decoration: underline;
   }
   #briefer {
     font-family: a.$font-family-text;
-    color: a.$co_2;
+    color: a.$co_4
     font-size: 1.2rem;
     margin: 20px 0;
   }
@@ -74,9 +74,9 @@
     margin-right: 20px;
     height: 30px;
     background-color: transparent;
-    color: a.$co_3;
+    color: a.$co_1;
     font-size: 1.2rem;
-    border: 1px solid a.$co_3;
+    border: 1px solid a.$co_1;
     font-family: a.$font-family-monospace;
     display: flex;
     align-items: center;
@@ -100,9 +100,9 @@
     margin-right: 20px;
     height: 30px;
     background-color: transparent;
-    color: a.$co_4;
+    color: a.$co_2;
     font-size: 1.2rem;
-    // border: 1px solid a.$co_3;
+    // border: 1px solid a.$co_1;
     border: none;
     font-family: a.$font-family-monospace;
     display: flex;
@@ -113,7 +113,7 @@
 
     &:hover {
       transition: 0.3s;
-      background-color: a.$co_1;
+      background-color: a.$co_7;
       text-decoration: underline;
       cursor: pointer;
       #icon {

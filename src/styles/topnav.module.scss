@@ -17,17 +17,17 @@
     margin: 0px 0px 0px clamp(4px, 2vw, 20px);
     .navCode {
       font-family: a.$font-family-monospace;
-      color: a.$co_3;
+      color: a.$co_1;
       font-size: 1.2rem;
     }
     .navHeading {
       font-family: a.$font-family-text;
-      color: a.$co_4;
+      color: a.$co_2;
       font-size: 1.1rem;
     }
     &:hover {
-      color: a.$co_3;
-      background-color: a.$co_4-1;
+      color: a.$co_1;
+      background-color: a.$co_5;
       cursor: pointer;
     }
   }

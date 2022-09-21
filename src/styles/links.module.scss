@@ -37,7 +37,7 @@
   }
   a {
     &:hover {
-      color: a.$co_3;
+      color: a.$co_1;
       margin-bottom: 10px;
       transition: 0.3s;
     }
@@ -45,7 +45,7 @@
     writing-mode: vertical-rl;
     letter-spacing: 0.1em;
     font-family: a.$font-family-monospace;
-    color: a.$co_4;
+    color: a.$co_2;
     font-weight: 200;
     font-size: 1rem;
   }
@@ -56,7 +56,7 @@
   width: 1px;
   height: 100px;
   margin: 30px 0 0 0;
-  background-color: a.$co_4;
+  background-color: a.$co_2;
   bottom: 0;
   left: 0;
   position: relative;
@@ -67,10 +67,10 @@
   top: 10px;
   height: 40px;
   width: 20px;
-  color: a.$co_4;
+  color: a.$co_2;
   &:hover {
     top: 7px;
-    color: a.$co_3;
+    color: a.$co_1;
     cursor: pointer;
     transition: 0.3s;
   }

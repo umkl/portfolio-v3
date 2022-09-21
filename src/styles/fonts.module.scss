@@ -1,7 +1,7 @@
 @use './abstracts/index' as a;
 
 .Section-Code-1 {
-  color: a.$co_3;
+  color: a.$co_1;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-weight: Regular;
   font-size: clamp(20px, 4vw, 34px);
@@ -14,7 +14,7 @@
 .Section-Heading-1 {
   min-height: 0vw;
   font-size: clamp(30px, 8vw, 51px);
-  color: a.$co_4;
+  color: a.$co_2;
   font-weight: Semi Bold;
   font-family: Inter, Calibre, Inter, "San Francisco", "SF Pro Text",
     -apple-system, system-ui, sans-serif;
@@ -26,7 +26,7 @@
 .About-Text-1 {
   min-height: 0vw;
   font-size: clamp(12px, 8vw, 25px);
-  color: a.$co_2;
+  color: a.$co_4
   font-weight: 300;
   font-family: Inter, Calibre, "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
@@ -36,7 +36,7 @@
 }
 
 .about-code-1 {
-  color: a.$co_2;
+  color: a.$co_4
   font-size: 23px;
   margin: 0px 30px;
   width: 80%;
@@ -46,7 +46,7 @@
 }
 
 .Nav-Code-1 {
-  color: a.$co_3;
+  color: a.$co_1;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-size: clamp(10px, 2.4vw, 20px);
   min-height: 0vw;
@@ -55,7 +55,7 @@
 }
 
 .Nav-Heading-1 {
-  color: a.$co_4;
+  color: a.$co_2;
   font-family: Inter, Calibre, Inter, "San Francisco", "SF Pro Text",
     -apple-system system-ui, sans-serif;
   font-size: clamp(10px, 2.4vw, 20px);
@@ -66,7 +66,7 @@
 
 
 .Projects-code-3 {
-  color: a.$co_2-1;
+  color: a.$co_3;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-weight: Regular;
   font-size: clamp(20px, 2vw, 34px);
@@ -78,8 +78,8 @@
 }
 
 .footer-text {
-  color: a.$co_4;
-  color: a.$co_2-1;
+  color: a.$co_2;
+  color: a.$co_3;
   font-family: Inter, Calibre, Inter, "San Francisco", "SF Pro Text",
     -apple-system, system-ui, sans-serif;
   font-weight: 300;
@@ -92,7 +92,7 @@
 }
 
 .nav-code-3 {
-  color: a.$co_4;
+  color: a.$co_2;
   font-family: Inter, Calibre, Inter, "San Francisco", "SF Pro Text",
     -apple-system, system-ui, sans-serif;
 

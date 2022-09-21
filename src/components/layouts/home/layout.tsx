@@ -30,7 +30,7 @@ export default function Layout({ children }: ILayout) {
   return (
     <>
       <Head>
-        <link rel="icon" href="/ungarmichael-logo.ico" />
+        <link rel="icon" href="/logo.ico" />
         <meta
           name="description"
           content="Developer and Designer from Austria focused on flawless code and magnificient design."

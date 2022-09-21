@@ -4,7 +4,7 @@ import Link from "next/link";
 import footerStyle from "@styles/footer.module.scss";
 import font from "@styles/fonts.module.scss";
 
-import LogoSkeleton from "../../../../assets/Logo/logoSkeleton.svg";
+import LogoSkeleton from "../../../../assets/Logo/LogoSkeleton.svg";
 import Emoji from "@components/elements/Emoji";
 import useTranslation from "next-translate/useTranslation";
 

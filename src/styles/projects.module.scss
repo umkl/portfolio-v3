@@ -10,18 +10,18 @@
     width: clamp(100px, 90vw, 1200px);
   }
   .code {
-    color: a.$co_4-1;
+    color: a.$co_5;
     font-size: 1.3rem;
     line-height: 1.5;
     margin-bottom: 0.3rem;
     font-family: a.$font-family-monospace;
-    color: a.$co_3;
+    color: a.$co_1;
     align-self: flex-end;
   }
 
   .heading {
     font-family: a.$font-family-text;
-    color: a.$co_4;
+    color: a.$co_2;
     font-size: 2rem;
     display: flex;
     margin: 0;
@@ -36,7 +36,7 @@
       margin: 0 20px;
       display: inline-block;
       align-self: center;
-      background-color: a.$co_2;
+      background-color: a.$co_4
       width: 100%;
       height: 1px;
       position: relative;
@@ -53,7 +53,7 @@
       position: absolute;
       width: 200px;
       height: 1px;
-      background-color: a.$co_3;
+      background-color: a.$co_1;
       margin: 0 20px;
       top: 50%;
       transform: translateY(-50%);
@@ -147,7 +147,7 @@
 
   #featuredProj {
     margin: 20px;
-    color: a.$co_3;
+    color: a.$co_1;
     font-family: a.$font-family-monospace;
     font-size: 1rem;
     min-height: 0vw;
@@ -158,7 +158,7 @@
   }
 
   #projDate {
-    color: a.$co_2-1;
+    color: a.$co_3;
     font-family: a.$font-family-monospace;
     font-size: 2rem;
   }
@@ -167,7 +167,7 @@
     min-height: 0vw;
     line-height: clamp(2em, 4vw, 3em);
     font-size: clamp(2em, 5vw, 3em);
-    color: a.$co_4;
+    color: a.$co_2;
     font-weight: 700;
     font-family: a.$font-family-text;
     max-width: 800px;
@@ -180,7 +180,7 @@
   #textContainer {
     padding: 20px 30px;
 
-    background-color: a.$co_1-1;
+    background-color: a.$co_6;
     border-radius: 8px;
     width: 40%;
     @include a.media("<=xSize_8") {
@@ -197,21 +197,21 @@
 
   #components {
     margin: 20px 0;
-    color: a.$co_3;
+    color: a.$co_1;
     font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
     font-size: 1rem;
     font-weight: 200;
   }
 
   #description {
-    color: a.$co_2-1;
+    color: a.$co_3;
     font-family: a.$font-family-text;
     font-weight: 400;
     font-size: 1.2em;
     line-height: 2;
     display: flex;
     @include a.media("<=xSize_5") {
-      color: a.$co_4;
+      color: a.$co_2;
     }
   }
 }

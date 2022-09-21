@@ -15,9 +15,9 @@
     margin-right: 20px;
     height: 30px;
     background-color: transparent;
-    color: a.$co_3;
+    color: a.$co_1;
     font-size: 1.2rem;
-    border: 1px solid a.$co_3;
+    border: 1px solid a.$co_1;
     font-family: a.$font-family-monospace;
     display: flex;
     align-items: center;
@@ -38,9 +38,9 @@
     margin-right: 20px;
     height: 30px;
     background-color: transparent;
-    color: a.$co_3;
+    color: a.$co_1;
     font-size: 1.2rem;
-    border: 1px solid a.$co_3;
+    border: 1px solid a.$co_1;
     font-family: a.$font-family-monospace;
     display: flex;
     align-items: center;
@@ -63,13 +63,13 @@
     height: 4rem;
     width: 14rem;
     border: none;
-    color: a.$co_3;
+    color: a.$co_1;
     font-family: a.$font-family-text;
     border-radius: 0.5rem;
   }
   .heading {
     font-family: a.$font-family-text;
-    color: a.$co_4;
+    color: a.$co_2;
     font-size: 2rem;
     display: flex;
     margin: 0;
@@ -84,25 +84,25 @@
       margin: 0 20px;
       display: inline-block;
       align-self: center;
-      background-color: a.$co_2;
+      background-color: a.$co_4
       width: 100%;
       height: 1px;
       position: relative;
     }
     .code {
-      color: a.$co_4-1;
+      color: a.$co_5;
       font-size: 1.3rem;
       line-height: 1.5;
       margin-bottom: 0.3rem;
       font-family: a.$font-family-monospace;
-      color: a.$co_3;
+      color: a.$co_1;
       align-self: flex-end;
     }
   }
 
   .heading2 {
     font-family: a.$font-family-text;
-    color: a.$co_4;
+    color: a.$co_2;
     font-size: 1.3rem;
     display: flex;
     margin: 0;
@@ -113,12 +113,12 @@
       align-self: flex-end;
     }
     .code {
-      color: a.$co_4-1;
+      color: a.$co_5;
       font-size: 1.3rem;
       line-height: 1.1;
       margin-bottom: 0.3rem;
       font-family: a.$font-family-monospace;
-      color: a.$co_3;
+      color: a.$co_1;
       align-self: flex-end;
     }
   }
@@ -128,7 +128,7 @@
     padding: 30px;
     p {
       font-size: 1rem;
-      color: a.$co_4;
+      color: a.$co_2;
       margin: 20px 0;
 
       font-family: a.$font-family-text;

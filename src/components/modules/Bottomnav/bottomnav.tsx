@@ -8,7 +8,6 @@ import { ArrowsSplit2, X, Link } from "tabler-icons-react";
 
 import GlobeIcon from "../../../../assets/Icons/globe.svg";
 import GridIcon from "../../../../assets/Icons/gridburger.svg";
-import XIcon from "../../../../assets/Icons/x.svg";
 import useTranslation from "next-translate/useTranslation";
 import { useRouter } from "next/router";
 
