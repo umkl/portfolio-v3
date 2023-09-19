@@ -16,14 +16,14 @@ import { GetStaticProps } from "next";
 import Services from "@components/home-sections/services";
 
 export default function Index({
-  allProjects,
+  allProjects
 }: {
   allProjects: IProject[];
 }): JSX.Element {
   return (
     <>
       <Home />
-      <Services />      
+      <Services />
       <Experience />
       <Projects allProjects={allProjects} />
       <Contact />
@@ -35,7 +35,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const allProjects: IProject[] = await getCompleteSortedProjectsData();
   return {
     props: {
-      allProjects,
-    },
+      allProjects
+    }
   };
 };

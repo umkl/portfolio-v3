@@ -15,7 +15,7 @@ const Home = (): JSX.Element => {
       opacity: 1,
       top: "50%",
       duration: 0.8,
-      ease: Power3.easeOut,
+      ease: Power3.easeOut
     });
   }, []);
 
@@ -41,9 +41,7 @@ const Home = (): JSX.Element => {
             {t("origin")}
           </p>
         </h2>
-        <p id={landingStyle.whatido}>
-          {t("whatido")}
-        </p>
+        <p id={landingStyle.whatido}>{t("whatido")}</p>
       </div>
     </section>
   );
