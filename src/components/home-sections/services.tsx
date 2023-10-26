@@ -23,21 +23,25 @@ const Services = () => {
 const Service = () => {
   return (
     <div id={servicesStyle.gig}>
-      <h2 className={servicesStyle.heading2}>
-        <span className={servicesStyle.code}>02.1.</span>{" "}
-        <span>Webdevelopment</span>
-      </h2>
-      <div id={servicesStyle.split}>
-        <div id={servicesStyle.interaction}>
-          <p>
-            I am offering the service to build your website. I can build your
-            website from scratch or update your existing website.
-          </p>
-
-          <button id={servicesStyle.reachbtn}>reach out to me</button>
-          <button id={servicesStyle.fiverrbtn}>fiverr gig</button>
+      <div id={servicesStyle.container}>
+        <h1>Webdeveloper</h1>
+        <h2>since 2020</h2>
+        <h3>20€ per hour</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum
+          dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
+          amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit.
+        </p>
+        <p>
+          <span>React</span>·<span>Javascript ES6</span>·<span>Typescript</span>
+          ·<span>LoislScript</span>
+        </p>
+        <div id={servicesStyle.spacer}></div>
+        <div id={servicesStyle.buttonParent}>
+          <button>make an inquiry</button>
+          <button>projects</button>
         </div>
-        {/* <div id={servicesStyle.picture}>picture</div> */}
       </div>
     </div>
   );

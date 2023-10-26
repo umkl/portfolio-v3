@@ -20,14 +20,14 @@ export interface IProject {
 
 export function getSortedProjectsData() {
   const fileNames = fs.readdirSync(projectsDirectory);
-  const allProjectsData = fileNames.map((fileName) => {
+  const allProjectsData = fileNames.map(fileName => {
     const id = fileName.replace(/\.md$/, "");
     const fullPath = path.join(projectsDirectory, fileName);
     const fileContents = fs.readFileSync(fullPath, "utf8");
     const matterResult = matter(fileContents);
     return {
       id,
-      ...(<{ date: string; title: string }>matterResult.data),
+      ...(<{ date: string; title: string }>matterResult.data)
     };
   });
   return allProjectsData.sort((a, b) => {
@@ -46,11 +46,11 @@ export async function getUpcomingEvent() {
 
 export function getAllProjectsIds() {
   const fileNames = fs.readdirSync(projectsDirectory);
-  return fileNames.map((fileName) => {
+  return fileNames.map(fileName => {
     return {
       params: {
-        id: fileName.replace(/\.md$/, ""),
-      },
+        id: fileName.replace(/\.md$/, "")
+      }
     };
   });
 }
@@ -66,26 +66,26 @@ export async function getProjectData(id: string) {
   return {
     id,
     contentHtml,
-    ...(matterResult.data as IProject),
+    ...(matterResult.data as IProject)
   };
 }
 
 export async function getCompleteSortedProjectsData(): Promise<IProject[]> {
   const fileNames = fs.readdirSync(projectsDirectory);
   const allProjectsData = await Promise.all(
-    fileNames.map(async (fileName) => {
+    fileNames.map(async fileName => {
       const id = fileName.replace(/\.md$/, "");
       const fullPath = path.join(projectsDirectory, fileName);
       const fileContents = fs.readFileSync(fullPath, "utf8");
       const matterResult = matter(fileContents);
       const processedContent = await remark()
         .use(html)
-        .process(matterResult.content); 
+        .process(matterResult.content);
       const contentHtml = processedContent.toString();
       return {
         id,
         contentHtml,
-        ...(<IProject>matterResult.data),
+        ...(<IProject>matterResult.data)
       };
     })
   );
@@ -105,7 +105,7 @@ export async function getStaticProps() {
   const allProjectsData = getCompleteSortedProjectsData();
   return {
     props: {
-      allPostsData: allProjectsData,
-    },
+      allPostsData: allProjectsData
+    }
   };
 }

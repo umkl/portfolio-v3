@@ -16,7 +16,7 @@ import { GetStaticProps } from "next";
 import Services from "@components/home-sections/services";
 
 export default function Index({
-	allProjects,
+  allProjects
 }: {
 	allProjects: IProject[];
 }): JSX.Element {
