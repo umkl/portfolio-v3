@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Neue Plak Wide';
+    src: url('../fonts/NeuePlak-WideBlack.eot');
+    src: local('Neue Plak Wide Bold'), local('NeuePlak-WideBold'),
+        url('../fonts/NeuePlak-WideBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NeuePlak-WideBold.woff2') format('woff2'),
+        url('../fonts/NeuePlak-WideBold.woff') format('woff'),
+        url('../fonts/NeuePlak-WideBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}

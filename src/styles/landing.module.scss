@@ -1,4 +1,5 @@
 @use 'abstracts' as a;
+@import url(fonts.css);
 
 .Section {
   position: relative;
@@ -30,7 +31,8 @@
   font-size: clamp(3rem, 8vw, 5rem);
   white-space: no-wrap;
   font-weight: bold;
-  font-family: a.$font-family-text, system-ui, sans-serif;
+  font-family: 'Neue Plak Wide';
+//   font-family: a.$font-family-text, system-ui, sans-serif;
   line-height: 1.1;
   width: 100%;
 }
